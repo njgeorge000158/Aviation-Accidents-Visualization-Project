@@ -1,4 +1,4 @@
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/6d1db698-7a1a-44f2-847c-dbf96322b59d)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/ee5675d2-4286-4b11-b95e-dfa479b223ad)
 
 # Aviation Accidents Visualization Project
 ----
@@ -13,46 +13,45 @@ To find the answer to our many questions, we obtained the requisite information 
 
 ## Aviation Accident Visualization:
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e822aaf8-0029-49fa-ab7f-f7a8dacf7296)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/3fce8318-739b-414d-b65b-b517fdab0269)
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c0ea6fe9-e7d1-4fdd-a314-8f2e9bf73686)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/811b062a-d574-4d0e-807e-388ffe3443f0)
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/ec49b69d-13fb-482d-82b5-2939c57c69dc)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e670cc73-e09b-4263-8583-b3ba341f5175)
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/2130e4ba-844f-46a6-a642-0a3fa0d42681)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/d91573cd-9001-4250-b707-5c59084e43d4)
 
 ## Aviation Accident Heatmap:
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/76966f4a-cf48-4d78-9a3f-af41a8f760e2)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/5acddd9f-f938-4ff6-9072-7a10d97685a9)
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e5d4cb89-2a5b-4861-9f01-b189724f228f)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/cb121ea0-def8-4656-b24b-40da1dda95f1)
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/2846df83-1f44-43de-a582-a6ef443ad40f)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/a7aa13af-9682-4d26-ae4f-0cfe29c80977)
 
 ## Aviation Accident Dashboard:
 
-<img width="1889" alt="Screenshot 2023-11-04 at 12 41 22 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/5585dcdf-ab26-4c7
+<img width="1889" alt="Screenshot 2023-11-04 at 12 41 22 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/85f1a2df-acea-45a4-bbf6-7c18114b8457">
 
-<img width="1888" alt="Screenshot 2023-11-04 at 11 36 57 AM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/1e5baa0b-76e1-40e8-83ce-16df605ec863">
-5-b9ef-72365bbfa25d">
+<img width="1888" alt="Screenshot 2023-11-04 at 11 36 57 AM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/f1a3ccb8-1c94-4605-b0e0-7d53dc440311">
 
 On a positive note, our analysis demonstarted reduced mortality from aviation accidents over the last fifty years. We summarized our findings in a series of visual aids.
 
-<img width="547" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/317bcfb2-3e82-4138-a159-f451b8c17130">
+<img width="547" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/118c23b0-96c0-4f0c-a9c9-8441a1006139">
 
-<img width="670" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/fb767b32-cd8d-4b7d-8aea-1b81fc133f2c">
+<img width="670" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/35e26c20-ae8f-418a-965e-0b7edb8e5676">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/5131c55a-7d71-4764-a4af-1e1aed77c689">
+<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/08c897da-ec90-4fb8-8113-1b634a1156f9">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/623e3450-cb31-4fb6-85a3-1eee26763bac">
+<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/eacad6d0-3f4f-48fb-9adb-4548efc12072">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/a532b425-d500-4405-ba3e-dd44d6a67635">
+<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/fe7c1ea0-ad64-4a09-946d-3f875f7eeb05">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/088013c5-76a9-4d68-9489-a33826eb6146">
+<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/80ce7a58-549e-4c3f-bf0b-0e57783a7342">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c46fee3c-8c95-4724-8b25-7f73666dadf9">
+<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/af2324ae-bb87-47ad-ab12-db951ee8805a">
 
-<img width="549" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/583e5750-cf8b-43b9-8f9e-7c751ef3bb33">
+<img width="549" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/570722e3-7b13-4998-b1b8-b6e9f35dbe56">
 
 Although we could not accurately predict the locations of plane crashes only the likelihood based on past events, we did observe some trends.  During the last ten years, China Eastern Airlines has experienced the largest fatalities. Although the reasons for and concentrations of aviation accidents varied from decade to decade, currently, possible outside factors include terrorism, poor maintenance, and employee malfeasance, misfeasance, or nonfeasance. But, one thing for certain, the next flight on China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided!
 
