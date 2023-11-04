@@ -13,8 +13,6 @@ To find the answer to our many questions, we obtained the requisite information 
 
 ## Aviation Accident Visualization:
 
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/3fce8318-739b-414d-b65b-b517fdab0269)
-
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/811b062a-d574-4d0e-807e-388ffe3443f0)
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e670cc73-e09b-4263-8583-b3ba341f5175)
