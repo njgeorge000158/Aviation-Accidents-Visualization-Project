@@ -1,0 +1,7 @@
+This folder and subfolders include the Aviation Accidents Visualization Project's HTML, CSS, Javascript, SQLite database, and webpage image files for its visualization.
+
+----
+
+## Copyright
+
+N. James George © 2023. All Rights Reserved.

@@ -1,0 +1,165 @@
+<!--*******************************************************************************************
+ #
+ #  File Name:  index.html
+ #
+ #  File Description:
+ #      This html file, index.html, contains the html code for the landing page
+ #      for the Aviation Accidents Analysis Project.
+ #
+ #
+ #  Date            Description                             Programmer
+ #  ----------      ------------------------------------    ------------------
+ #  10/18/2023      Initial Development                     Arame Diasse
+ #  10/24/2023      Integerated code with new data set      N. James George
+ #
+ #******************************************************************************************-->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+
+  <head>
+
+    <meta charset = 'UTF-8'>
+
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+
+    <meta http-equiv = 'X-UA-Compatible' content = 'ie = edge'>  
+  
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .menu {
+        float: left;
+        width: 30%;
+        text-align: center;
+      }
+
+      .menu a {
+        background-color: #9ACBFF;
+        color: black;
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .main {
+        color: black;
+        float: left;
+        padding: 0 20px;
+        width: 50%;
+      }
+
+      .right {
+        background-color: #9ACBFF;
+        float: left;
+        margin-top: 7px;
+        padding: 15px;
+        text-align: center;
+        width: 20%;
+      }
+
+      @media only screen and (max-width: 620px) {
+        .menu, .main, .right {
+          width: 100%;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body style = 'font-family: Verdana; color: black;'>
+
+    <div style = 'background-color: #9ACBFF; padding: 15px; text-align: center;'>
+
+      <h1>Flight Mishap Maps: Exploring Aviation Accidents Worldwide</h1>
+
+    </div>
+
+    <div style = 'overflow:auto'>
+
+      <div class = 'menu'>
+
+        <a href = './indexAccidentsVisualization.html'>
+          Aviation Accidents Visualization Toolkit
+        </a>
+
+        <a href = './indexAccidentsHeatmap.html'>
+          Aviation Accidents Heatmap Toolkit
+        </a>
+
+        <a href = './indexAccidentsDashboard.html'>
+          Aviation Accidents Dashboard
+        </a>
+
+        <img src = './img/srm-safety-assurance-flowchart-lrg.www.faa.gov.png' style = 'max-width: 100%; height: 100%;'>
+
+      </div>
+
+      <div class = 'main'>
+
+        <h2>Background</h2>
+
+        <p>
+          Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages. These include unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges and predicaments, especially concerning the issue of safety. In the pages that follow, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators.
+        </p>
+        
+        <img src = 'https://www.unitingaviation.com/wp-content/uploads/2019/04/GOALS_FOR_DRAFT_2020_Infographic.png' style = 'max-width: 100%; height: auto;'>
+        
+        <p style = 'font-size: 10px;'>
+          Image Source: Title: The draft 2020-2022 editiohttps://i0.wp.com/designerly.com/wp-content/uploads/sites/6/2021/03/Designerly-MGB-What-Is-the-Best-Background-Color-for-a-Website-000.png?w=1280&ssl=1n of the GASP, Creator: GASP vision and goals, Source: GASP vision and goals
+        </p>
+      
+      </div>
+
+      <div class = 'right'>
+ 
+        <h2>About</h2>
+
+        <p>
+          This project involves a comprehensive analysis of plane crash data collected over 50 years from 1973 to 2023. We employed D3, JSON, JS, Plotly, and JQuery. We aimed to create an informative representation of historical plane crash data which could allow stakeholders to uncover patterns, trends, and insight.
+        </p>
+
+        <h4 style = 'font-family: Helvetica;'>
+          Questions to be considered:
+        </h4>
+      
+        <ol>
+
+          <li>Can we accurately predict where plane crashes are likely to occur?</li>
+        
+          <li>Are there certain airlines that have more crashes than others?</li>
+        
+          <li>Are there possible outside factors affecting these trends?</li>
+        
+        </ol>
+
+        <img src = './img/safety-risk-management.www.easa.europa.eu.jpg' alt = 'Historical context'  width = '100%' height = 'auto'>
+
+      </div>
+
+    </div>
+
+    <div style = 'background-color:#9ACBFF; text-align: center; padding: 10px; margin-top: 7px;'>
+
+      <h4> Historical Context</h4>
+
+      <h5 style = "font-weight: normal; font-family: 'Arial'"> 
+        In 1783,the Montgolfier brothers launched the first flight using a hot air balloon.the early 20th century that the Wright Brothers achieved the first powered, controlled, and sustained flight with their aircraft, the Wright Flyer.As aviation technology advanced, commercial aviation took off in the 1920s and 1930s.The 1950s brought the Jet Age, with the introduction of commercial jet airliners like the Boeing 707. In the 21st century, aviation continues to evolve, with a focus on sustainability, fuel efficiency, and exciting new frontiers, such as electric aviation and space exploration.
+      </h5>
+      
+      <img src = 'https://images.vexels.com/content/198596/preview/evolution-of-aircraft-timeline-infographic-6b2c42.png' alt = 'Historical context'  width = '100%' height = 'auto'>
+      
+      <p style = 'font-size: 10px;'>
+        Image Source: Title: Evolution of Aircraft Timeline Infographic, Creator: Unknown, Source:Vexels
+      </p>
+    
+    </div>
+
+  </body>
+
+</html>

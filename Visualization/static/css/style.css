@@ -1,0 +1,64 @@
+/*******************************************************************************************
+ #
+ #  File Name:  indexAccidentVisualization.html
+ #
+ #  File Description:
+ #      This css file, style.css, contains the css code for the Aviation Accidents 
+ #      Analysis Project's visualization maps.
+ #
+ #
+ #  Date            Description                             Programmer
+ #  ----------      ------------------------------------    ------------------
+ #  10/18/2023      Initial Development                     Theresa Bravo
+ #  10/24/2023      Integerated code with new data set      N. James George
+ #
+ #******************************************************************************************/
+
+#mapid,
+body,
+html {
+  height: 95%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  margin: 0px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: -5px;
+  padding: -6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  margin: 5px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+  padding: 1px 10px;
+  background: #ebfae2;
+  border-radius: 5px;
+}
+
+.legend {
+  line-height: 25px;
+  color: #000000;
+}
+
+.legend i {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+  opacity: 0.75;
+}

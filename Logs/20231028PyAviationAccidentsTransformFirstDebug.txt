@@ -1,0 +1,14091 @@
+
+Timepoint: 10/28/2023 13:25:06
+Program execution begins...
+
+
+
+
+     accident_id                                             status  \
+126       ACC100  Accident investigation report completed and in...   
+1026     ACC1000  Accident investigation report completed and in...   
+1027     ACC1001                                                NaN   
+1028     ACC1002  Information verified through authorities or ot...   
+1029     ACC1003                                                NaN   
+...          ...                                                ...   
+1021      ACC995  Information is only available from news, socia...   
+1022      ACC996  Accident investigation report completed and in...   
+1023      ACC997                                                NaN   
+1024      ACC998  Information verified through authorities or ot...   
+1025      ACC999                                                NaN   
+
+        acc_date acc_time         acc_datetime  \
+126   1970-01-02    12:15  1970-01-02 12:15:00   
+1026  1992-07-22    15:30  1992-07-22 15:30:00   
+1027  1992-07-25    14:00  1992-07-25 14:00:00   
+1028  1992-07-30    14:50  1992-07-30 14:50:00   
+1029  1992-07-31    15:12  1992-07-31 15:12:00   
+...          ...      ...                  ...   
+1021  1992-07-05    00:00  1992-07-05 00:00:00   
+1022  1992-07-13    12:30  1992-07-13 12:30:00   
+1023  1992-07-14    00:00  1992-07-14 00:00:00   
+1024  1992-07-14    00:00  1992-07-14 00:00:00   
+1025  1992-07-14    00:00  1992-07-14 00:00:00   
+
+                                          type                      operator  \
+126                    Lockheed 18 Learstar II                 Sky King Inc.   
+1026           de Havilland Canada DHC-3 Otter             Woods Air Service   
+1027                              Learjet 24XR                  Bonanza Hire   
+1028               Fokker F-28 Fellowship 1000                      Time Air   
+1029                          Yakovlev Yak-42D  China General Aviation Corp.   
+...                                        ...                           ...   
+1021  de Havilland Canada DHC-6 Twin Otter 300          Royal Nepal Airlines   
+1022                 Shorts SC.7 Skyvan 3A-200     Arctic Circle Air Service   
+1023                             Antonov An-12               Yemen Air Force   
+1024                            Antonov An-12B               Magadanaerogruz   
+1025                             Antonov An-12             Russian Air Force   
+
+              registration            msn first_flight  ...  total_fatalities  \
+126                  N13VV        18-2497         1943  ...                 0   
+1026                N41755            339         1959  ...                 0   
+1027                ZS-MGJ         24-207         1969  ...                 0   
+1028                C-GTUU          11006         1969  ...                 0   
+1029                B-2755  4520422116644         1991  ...               107   
+...                    ...            ...          ...  ...               ...   
+1021                9N-ABB            302         1971  ...                 0   
+1022                N20086        SH.1918         1973  ...                 1   
+1023  registration unknown        Unknown         Unkn  ...                58   
+1024            CCCP-11111       01347906         1971  ...                 0   
+1025  registration unknown        Unknown         Unkn  ...                29   
+
+      total_occupants        aircraft_damage                phase  \
+126                 2  Damaged beyond repair        Landing (LDG)   
+1026                2            Substantial       En route (ENR)   
+1027                2            Substantial        Landing (LDG)   
+1028               66            Substantial        Takeoff (TOF)   
+1029              126              Destroyed        Takeoff (TOF)   
+...               ...                    ...                  ...   
+1021               18            Substantial        Takeoff (TOF)   
+1022                1              Destroyed  Initial climb (ICL)   
+1023               58  Damaged beyond repair       En route (ENR)   
+1024                7  Damaged beyond repair       Approach (APR)   
+1025               34  Damaged beyond repair        Takeoff (TOF)   
+
+                                nature  \
+126                           Training   
+1026  Domestic Non Scheduled Passenger   
+1027                              Test   
+1028      Domestic Scheduled Passenger   
+1029      Domestic Scheduled Passenger   
+...                                ...   
+1021      Domestic Scheduled Passenger   
+1022                             Cargo   
+1023                          Military   
+1024                             Cargo   
+1025                          Military   
+
+                                         depart_airport  \
+126   North Little Rock Municipal Airport, AR (KORK)...   
+1026  Nikolai Airport, AK (NIB/PAFS), United States ...   
+1027          Lanseria Airport (HLA/FALA), South Africa   
+1028  Calgary International Airport, AB (YYC/CYYC), ...   
+1029      Nanjing Dajiaochang Airport (NKG/ZSNJ), China   
+...                                                 ...   
+1021                    Jumla Airport (JUM/VNJL), Nepal   
+1022  Bethel Airport, AK (BET/PABE), United States o...   
+1023                  Socotra Airport (SCT/ODSQ), Yemen   
+1024                 Magadan Airport (GDX/UHMM), Russia   
+1025         Nakhichevan Airport (NAJ/UBBN), Azerbaijan   
+
+                                    destination_airport flight_number  \
+126   North Little Rock Municipal Airport, AR (KORK)...           NaN   
+1026      Silvertip Lodge, AK, United States of America           NaN   
+1027          Lanseria Airport (HLA/FALA), South Africa           NaN   
+1028             Kelowna Airport, BC (YLW/CYLW), Canada           NaN   
+1029                   Xiamen Airport (XMN/ZSAM), China        GP7552   
+...                                                 ...           ...   
+1021                  Surkhet Airport (SKH/VNSK), Nepal           NaN   
+1022  Chevak Airport, AK (VAK/PAVA), United States o...           NaN   
+1023       Aden International Airport (ADE/ODAA), Yemen           NaN   
+1024                 Irkutsk Airport (IKT/UIII), Russia           NaN   
+1025                  Rostov Airport (ROV/URRR), Russia           NaN   
+
+                                               location  \
+126   North Little Rock Municipal Airport, AR (Unite...   
+1026        near McGrath, AK (United States of America)   
+1027              Lanseria Airport (HLA) (South Africa)   
+1028   Calgary International Airport, AB (YYC) (Canada)   
+1029                      Nanking Airport (NKG) (China)   
+...                                                 ...   
+1021                        Jumla Airport (JUM) (Nepal)   
+1022  Bethel Airport, AK (BET) (United States of Ame...   
+1023              100 km (62.5 mls) E of Sana'a (Yemen)   
+1024               48 km (30 mls) from Irkutsk (Russia)   
+1025             Nakhichevan Airport (NAJ) (Azerbaijan)   
+
+                                        classifications  
+126                                                 NaN  
+1026                     Forced landing outside airport  
+1027                                   Runway excursion  
+1028  ['Passenger door failure', 'Forced landing on ...  
+1029  ['Wrong takeoff configuration (flaps/trim)', '...  
+...                                                 ...  
+1021           ['Rejected takeoff', 'Runway excursion']  
+1022  ['Cargo shift', 'Centre of Gravity outside lim...  
+1023                                                NaN  
+1024  ['Fuel exhaustion', 'All engine powerloss', 'F...  
+1025  ['Rejected takeoff', 'Runway excursion (overru...  
+
+[2304 rows x 24 columns]
+
+
+
+     accident_id                                          narrative
+126       ACC100                          Ground looped into trees.
+1026     ACC1000  Inflight fire; damaged beyond repair in forced...
+1027     ACC1001  The nose gear centralizing cam was damaged whe...
+1028     ACC1002  During take-off from runway 34 at Calgary Airp...
+1029     ACC1003  China General Aviation Corp. flight 7552, a Ya...
+...          ...                                                ...
+1021      ACC995  A de Havilland Canada DHC-6 Twin Otter operate...
+1022      ACC996  Inadequate cargo restraint caused balance prob...
+1023      ACC997  An Antonov 12 transport plane of the Yemen Air...
+1024      ACC998  The plane was carrying a cargo of fish (11 060...
+1025      ACC999  Takeoff was aborted at a speed of 230 km/h. Th...
+
+[2304 rows x 2 columns]
+
+
+
+     accident_id    acc_date                                      type  \
+126       ACC100  1970-01-02                   Lockheed 18 Learstar II   
+1026     ACC1000  1992-07-22           de Havilland Canada DHC-3 Otter   
+1027     ACC1001  1992-07-25                              Learjet 24XR   
+1028     ACC1002  1992-07-30               Fokker F-28 Fellowship 1000   
+1029     ACC1003  1992-07-31                          Yakovlev Yak-42D   
+...          ...         ...                                       ...   
+1021      ACC995  1992-07-05  de Havilland Canada DHC-6 Twin Otter 300   
+1022      ACC996  1992-07-13                 Shorts SC.7 Skyvan 3A-200   
+1023      ACC997  1992-07-14                             Antonov An-12   
+1024      ACC998  1992-07-14                            Antonov An-12B   
+1025      ACC999  1992-07-14                             Antonov An-12   
+
+                          operator          registration  total_fatalities  \
+126                  Sky King Inc.                 N13VV                 0   
+1026             Woods Air Service                N41755                 0   
+1027                  Bonanza Hire                ZS-MGJ                 0   
+1028                      Time Air                C-GTUU                 0   
+1029  China General Aviation Corp.                B-2755               107   
+...                            ...                   ...               ...   
+1021          Royal Nepal Airlines                9N-ABB                 0   
+1022     Arctic Circle Air Service                N20086                 1   
+1023               Yemen Air Force  registration unknown                58   
+1024               Magadanaerogruz            CCCP-11111                 0   
+1025             Russian Air Force  registration unknown                29   
+
+      total_occupants        aircraft_damage                phase  \
+126                 2  Damaged beyond repair        Landing (LDG)   
+1026                2            Substantial       En route (ENR)   
+1027                2            Substantial        Landing (LDG)   
+1028               66            Substantial        Takeoff (TOF)   
+1029              126              Destroyed        Takeoff (TOF)   
+...               ...                    ...                  ...   
+1021               18            Substantial        Takeoff (TOF)   
+1022                1              Destroyed  Initial climb (ICL)   
+1023               58  Damaged beyond repair       En route (ENR)   
+1024                7  Damaged beyond repair       Approach (APR)   
+1025               34  Damaged beyond repair        Takeoff (TOF)   
+
+                                nature  \
+126                           Training   
+1026  Domestic Non Scheduled Passenger   
+1027                              Test   
+1028      Domestic Scheduled Passenger   
+1029      Domestic Scheduled Passenger   
+...                                ...   
+1021      Domestic Scheduled Passenger   
+1022                             Cargo   
+1023                          Military   
+1024                             Cargo   
+1025                          Military   
+
+                                         depart_airport  \
+126   North Little Rock Municipal Airport, AR (KORK)...   
+1026  Nikolai Airport, AK (NIB/PAFS), United States ...   
+1027          Lanseria Airport (HLA/FALA), South Africa   
+1028  Calgary International Airport, AB (YYC/CYYC), ...   
+1029      Nanjing Dajiaochang Airport (NKG/ZSNJ), China   
+...                                                 ...   
+1021                    Jumla Airport (JUM/VNJL), Nepal   
+1022  Bethel Airport, AK (BET/PABE), United States o...   
+1023                  Socotra Airport (SCT/ODSQ), Yemen   
+1024                 Magadan Airport (GDX/UHMM), Russia   
+1025         Nakhichevan Airport (NAJ/UBBN), Azerbaijan   
+
+                                    destination_airport  \
+126   North Little Rock Municipal Airport, AR (KORK)...   
+1026      Silvertip Lodge, AK, United States of America   
+1027          Lanseria Airport (HLA/FALA), South Africa   
+1028             Kelowna Airport, BC (YLW/CYLW), Canada   
+1029                   Xiamen Airport (XMN/ZSAM), China   
+...                                                 ...   
+1021                  Surkhet Airport (SKH/VNSK), Nepal   
+1022  Chevak Airport, AK (VAK/PAVA), United States o...   
+1023       Aden International Airport (ADE/ODAA), Yemen   
+1024                 Irkutsk Airport (IKT/UIII), Russia   
+1025                  Rostov Airport (ROV/URRR), Russia   
+
+                                               location  
+126   North Little Rock Municipal Airport, AR (Unite...  
+1026        near McGrath, AK (United States of America)  
+1027              Lanseria Airport (HLA) (South Africa)  
+1028   Calgary International Airport, AB (YYC) (Canada)  
+1029                      Nanking Airport (NKG) (China)  
+...                                                 ...  
+1021                        Jumla Airport (JUM) (Nepal)  
+1022  Bethel Airport, AK (BET) (United States of Ame...  
+1023              100 km (62.5 mls) E of Sana'a (Yemen)  
+1024               48 km (30 mls) from Irkutsk (Russia)  
+1025             Nakhichevan Airport (NAJ) (Azerbaijan)  
+
+[2304 rows x 13 columns]
+
+
+
+     accident_id    acc_date                                      type  \
+1029     ACC1003  1992-07-31                          Yakovlev Yak-42D   
+1030     ACC1004  1992-08-27                           Tupolev Tu-134A   
+1031     ACC1005  1992-08-27        de Havilland Canada DHC-4T Caribou   
+1032     ACC1006  1992-08-27  de Havilland Canada DHC-6 Twin Otter 300   
+1036     ACC1010  1992-09-10                Fokker F-27 Friendship 500   
+...          ...         ...                                       ...   
+1010      ACC984  1992-04-22  de Havilland Canada DHC-6 Twin Otter 200   
+1012      ACC986  1992-05-02                               Learjet 35A   
+1017      ACC991  1992-06-12                               Learjet 25B   
+1019      ACC993  1992-06-22                            Antonov An-12A   
+1022      ACC996  1992-07-13                 Shorts SC.7 Skyvan 3A-200   
+
+                                               operator registration  \
+1029                       China General Aviation Corp.       B-2755   
+1030  Aeroflot, Central Region Civil Aviation Direct...     RA-65058   
+1031                                    NewCal Aviation       N400NC   
+1032   Transportes Aéreos Nacionales de la Selva - TANS      OB-1153   
+1036                                     Expresso Aéreo      OB-1443   
+...                                                 ...          ...   
+1010                             Perris Valley Aviation       N141PV   
+1012                            Transamérica Táxi Aéreo       PT-OEF   
+1017                                  Jet Charter Group        N38DJ   
+1019                            Krasnoyarskie Avialinii   CCCP-11896   
+1022                          Arctic Circle Air Service       N20086   
+
+      total_fatalities  total_occupants        aircraft_damage  \
+1029               107              126              Destroyed   
+1030                84               84              Destroyed   
+1031                 3                3              Destroyed   
+1032                 8               21  Damaged beyond repair   
+1036                 1               43              Destroyed   
+...                ...              ...                    ...   
+1010                16               22              Destroyed   
+1012                 2                2  Damaged beyond repair   
+1017                 2                2              Destroyed   
+1019                10               12  Damaged beyond repair   
+1022                 1                1              Destroyed   
+
+                    phase                            nature  \
+1029        Takeoff (TOF)      Domestic Scheduled Passenger   
+1030       Approach (APR)      Domestic Scheduled Passenger   
+1031  Initial climb (ICL)                              Test   
+1032       En route (ENR)  Domestic Non Scheduled Passenger   
+1036        Landing (LDG)      Domestic Scheduled Passenger   
+...                   ...                               ...   
+1010  Initial climb (ICL)                       Parachuting   
+1012        Landing (LDG)                    Illegal Flight   
+1017        Takeoff (TOF)                 Ferry/positioning   
+1019       Approach (APR)                             Cargo   
+1022  Initial climb (ICL)                             Cargo   
+
+                                         depart_airport  \
+1029      Nanjing Dajiaochang Airport (NKG/ZSNJ), China   
+1030                Donetsk Airport (DOK/UKCC), Ukraine   
+1031               Gimli Airport, MB (YGM/GYGM), Canada   
+1032                   Iquitos Airport (IQT/SPQT), Peru   
+1036                  Tarapoto Airport (TPP/SPST), Peru   
+...                                                 ...   
+1010  Perris Valley Airport, CA, United States of Am...   
+1012                  Cali Airport (CLO/SKCL), Colombia   
+1017  Sheboygan Memorial Airport, WI (SBM/KSBM), Uni...   
+1019                  Igarka Airport (IAA/UOII), Russia   
+1022  Bethel Airport, AK (BET/PABE), United States o...   
+
+                                    destination_airport  \
+1029                   Xiamen Airport (XMN/ZSAM), China   
+1030                 Ivanovo Airport (IWA/UUBI), Russia   
+1031               Gimli Airport, MB (YGM/GYGM), Canada   
+1032                   El Estrecho Airport (SPEE), Peru   
+1036                Bellavista Airport (BLP/SPBL), Peru   
+...                                                 ...   
+1010  Perris Valley Airport, CA, United States of Am...   
+1012                        Cumuatillo Airstrip, Mexico   
+1017  Manitowoc/Newton Municipal Airport, WI (MTW/KM...   
+1019                    Omsk Airport (OMS/UNOO), Russia   
+1022  Chevak Airport, AK (VAK/PAVA), United States o...   
+
+                                               location  
+1029                      Nanking Airport (NKG) (China)  
+1030  3 km (1.9 mls) SE of Ivanovo Airport (IWA) (Ru...  
+1031                   Gimli Airport, MB (YGM) (Canada)  
+1032               near San Antonio del Estrecho (Peru)  
+1036                    Bellavista Airport (BLP) (Peru)  
+...                                                 ...  
+1010  Perris Valley Airport, CA (United States of Am...  
+1012                       Cumuatillo Airstrip (Mexico)  
+1017     Sheboygan Falls, WI (United States of America)  
+1019                    Noril'sk Airport (NSK) (Russia)  
+1022  Bethel Airport, AK (BET) (United States of Ame...  
+
+[838 rows x 13 columns]
+
+
+
+     accident_id                                          narrative
+1029     ACC1003  China General Aviation Corp. flight 7552, a Ya...
+1030     ACC1004  The Tu-134 operated on a passenger flight from...
+1031     ACC1005  The aircraft had just taken off on an experime...
+1032     ACC1006  The float-equipped Twin Otter crashed into the...
+1036     ACC1010  The aircraft touched down short of runway 25 a...
+...          ...                                                ...
+1010      ACC984  A DHC-6 Twin Otter 200, N141PV, crashed during...
+1012      ACC986  A Learjet 35A was destroyed when it crashed du...
+1017      ACC991  Remained in ground effect after lifting off pr...
+1019      ACC993  Decision to land was made before having establ...
+1022      ACC996  Inadequate cargo restraint caused balance prob...
+
+[838 rows x 2 columns]
+
+
+
+     accident_id    acc_date                                      type  \
+1029     ACC1003  1992-07-31                          Yakovlev Yak-42D   
+1030     ACC1004  1992-08-27                           Tupolev Tu-134A   
+1031     ACC1005  1992-08-27        de Havilland Canada DHC-4T Caribou   
+1032     ACC1006  1992-08-27  de Havilland Canada DHC-6 Twin Otter 300   
+1036     ACC1010  1992-09-10                Fokker F-27 Friendship 500   
+...          ...         ...                                       ...   
+1010      ACC984  1992-04-22  de Havilland Canada DHC-6 Twin Otter 200   
+1012      ACC986  1992-05-02                               Learjet 35A   
+1017      ACC991  1992-06-12                               Learjet 25B   
+1019      ACC993  1992-06-22                            Antonov An-12A   
+1022      ACC996  1992-07-13                 Shorts SC.7 Skyvan 3A-200   
+
+                                               operator registration  \
+1029                       China General Aviation Corp.       B-2755   
+1030  Aeroflot, Central Region Civil Aviation Direct...     RA-65058   
+1031                                    NewCal Aviation       N400NC   
+1032   Transportes Aéreos Nacionales de la Selva - TANS      OB-1153   
+1036                                     Expresso Aéreo      OB-1443   
+...                                                 ...          ...   
+1010                             Perris Valley Aviation       N141PV   
+1012                            Transamérica Táxi Aéreo       PT-OEF   
+1017                                  Jet Charter Group        N38DJ   
+1019                            Krasnoyarskie Avialinii   CCCP-11896   
+1022                          Arctic Circle Air Service       N20086   
+
+      total_fatalities  total_occupants        aircraft_damage  \
+1029               107              126              Destroyed   
+1030                84               84              Destroyed   
+1031                 3                3              Destroyed   
+1032                 8               21  Damaged beyond repair   
+1036                 1               43              Destroyed   
+...                ...              ...                    ...   
+1010                16               22              Destroyed   
+1012                 2                2  Damaged beyond repair   
+1017                 2                2              Destroyed   
+1019                10               12  Damaged beyond repair   
+1022                 1                1              Destroyed   
+
+                    phase                            nature  \
+1029        Takeoff (TOF)      Domestic Scheduled Passenger   
+1030       Approach (APR)      Domestic Scheduled Passenger   
+1031  Initial climb (ICL)                              Test   
+1032       En route (ENR)  Domestic Non Scheduled Passenger   
+1036        Landing (LDG)      Domestic Scheduled Passenger   
+...                   ...                               ...   
+1010  Initial climb (ICL)                       Parachuting   
+1012        Landing (LDG)                    Illegal Flight   
+1017        Takeoff (TOF)                 Ferry/positioning   
+1019       Approach (APR)                             Cargo   
+1022  Initial climb (ICL)                             Cargo   
+
+                                         depart_airport  \
+1029      Nanjing Dajiaochang Airport (NKG/ZSNJ), China   
+1030                Donetsk Airport (DOK/UKCC), Ukraine   
+1031               Gimli Airport, MB (YGM/GYGM), Canada   
+1032                   Iquitos Airport (IQT/SPQT), Peru   
+1036                  Tarapoto Airport (TPP/SPST), Peru   
+...                                                 ...   
+1010  Perris Valley Airport, CA, United States of Am...   
+1012                  Cali Airport (CLO/SKCL), Colombia   
+1017  Sheboygan Memorial Airport, WI (SBM/KSBM), Uni...   
+1019                  Igarka Airport (IAA/UOII), Russia   
+1022  Bethel Airport, AK (BET/PABE), United States o...   
+
+                                    destination_airport  \
+1029                   Xiamen Airport (XMN/ZSAM), China   
+1030                 Ivanovo Airport (IWA/UUBI), Russia   
+1031               Gimli Airport, MB (YGM/GYGM), Canada   
+1032                   El Estrecho Airport (SPEE), Peru   
+1036                Bellavista Airport (BLP/SPBL), Peru   
+...                                                 ...   
+1010  Perris Valley Airport, CA, United States of Am...   
+1012                        Cumuatillo Airstrip, Mexico   
+1017  Manitowoc/Newton Municipal Airport, WI (MTW/KM...   
+1019                    Omsk Airport (OMS/UNOO), Russia   
+1022  Chevak Airport, AK (VAK/PAVA), United States o...   
+
+                                               location  
+1029                      Nanking Airport (NKG) (China)  
+1030  3 km (1.9 mls) SE of Ivanovo Airport (IWA) (Ru...  
+1031                   Gimli Airport, MB (YGM) (Canada)  
+1032               near San Antonio del Estrecho (Peru)  
+1036                    Bellavista Airport (BLP) (Peru)  
+...                                                 ...  
+1010  Perris Valley Airport, CA (United States of Am...  
+1012                       Cumuatillo Airstrip (Mexico)  
+1017     Sheboygan Falls, WI (United States of America)  
+1019                    Noril'sk Airport (NSK) (Russia)  
+1022  Bethel Airport, AK (BET) (United States of Ame...  
+
+[838 rows x 13 columns]
+
+
+
+1029                        China General Aviation Corp.
+1030                                            Aeroflot
+1031                                     NewCal Aviation
+1032    Transportes Aéreos Nacionales de la Selva - TANS
+1036                                      Expresso Aéreo
+                              ...                       
+1010                              Perris Valley Aviation
+1012                             Transamérica Táxi Aéreo
+1017                                   Jet Charter Group
+1019                             Krasnoyarskie Avialinii
+1022                           Arctic Circle Air Service
+Name: operator, Length: 838, dtype: object
+
+
+
+1029              Yakovlev YAK-42
+1030               Tupolev TU-134
+1031    de Havilland Canada DHC-4
+1032    de Havilland Canada DHC-6
+1036                  Fokker F-27
+                  ...            
+1010    de Havilland Canada DHC-6
+1012                   Learjet 35
+1017                   Learjet 25
+1019                Antonov AN-12
+1022           Shorts SC.7 Skyvan
+Name: type, Length: 838, dtype: object
+
+
+
+1029              Yakovlev YAK-42
+1030               Tupolev TU-134
+1031    de Havilland Canada DHC-4
+1032    de Havilland Canada DHC-6
+1036                  Fokker F-27
+                  ...            
+1010    de Havilland Canada DHC-6
+1012                   Learjet 35
+1017                   Learjet 25
+1019                Antonov AN-12
+1022           Shorts SC.7 Skyvan
+Name: type, Length: 838, dtype: object
+
+
+
+Nanjing Dajiaochang Airport
+
+
+
+Donetsk Airport
+
+
+
+Gimli Airport
+
+
+
+Iquitos Airport
+
+
+
+Tarapoto Airport
+
+
+
+Stockton Airport
+
+
+
+Uruapan Airport
+
+
+
+Dayton Airport
+
+
+
+Kindu Airport
+
+
+
+Southend Municipal Airport
+
+
+
+Trujillo Airport
+
+
+
+Bronson Creek Airport
+
+
+
+Chokurdah Airport
+
+
+
+Luena Airport
+
+
+
+Cancún Airport
+
+
+
+Edmonton/Villeneuve Airport
+
+
+
+Köln/Bonn Airport
+
+
+
+Chelyabinsk Airport
+
+
+
+Ba'kelalan Airport
+
+
+
+Elefsis Air Base
+
+
+
+Uchur, Russia
+
+
+
+Khorog Airport
+
+
+
+Tashkent Airport
+
+
+
+Hut Bay, India
+
+
+
+Winchester Regional Airport
+
+
+
+Sandy Lake Airport
+
+
+
+Dubai Airport
+
+
+
+Tuktoyaktuk Airport
+
+
+
+Ampuriabrava Airport
+
+
+
+Edmonton International Airport
+
+
+
+Volgograd Airport
+
+
+
+Armidale Airport
+
+
+
+Key West Harbor, FL, United States of America
+
+
+
+Spokane International Airport
+
+
+
+Tripoli International Airport
+
+
+
+Weipa Airport
+
+
+
+Okayama Airport
+
+
+
+Dar es Salaam International Airport
+
+
+
+Itaituba Airport
+
+
+
+Sasasama Airport, Bolivia
+
+
+
+Lázaro Cárdenas Airport
+
+
+
+Nouakchott Airport
+
+
+
+Missoula Airport
+
+
+
+Coralici Airport
+
+
+
+Fish Egg Inlet, BC, Canada
+
+
+
+Feijó Airport
+
+
+
+Krasnoyarsk Airport
+
+
+
+Chaybukha
+
+
+
+Makhachkala Airport
+
+
+
+Batagay Airport
+
+
+
+Nabire Airport
+
+
+
+Laredo International Airport
+
+
+
+Trujillo Airport
+
+
+
+Burbank/Glendale/Pasadena Airport
+
+
+
+Selbang Airport
+
+
+
+Tabubil Airport
+
+
+
+Johannesburg International Airport
+
+
+
+Lourenço Marques Airport
+
+
+
+Bima Airport
+
+
+
+Vancouver International Airport
+
+
+
+Krasnoyarsk Airport
+
+
+
+Cafunfo Airport
+
+
+
+Sacramento Metropolitan Airport
+
+
+
+Rostov Airport
+
+
+
+Red Lake Airport
+
+
+
+Sibay Airport, Russia
+
+
+
+Auckland International Airport
+
+
+
+Herpuchi, Russia
+
+
+
+Ondjiva Airport
+
+
+
+Ciudad Obregón Airport
+
+
+
+Elmira Regional Airport
+
+
+
+Kabul Airport
+
+
+
+Kota Kinabalu Airport
+
+
+
+Tamworth Airport
+
+
+
+Triumph Bay, BC, Canada
+
+
+
+Tyumen Airport
+
+
+
+Saltillo Airport
+
+
+
+Jos Airport
+
+
+
+Cotonou Airport
+
+
+
+Madang Airport
+
+
+
+Des Moines Airport
+
+
+
+Kuban State Farm Airport, Russia
+
+
+
+Bagua Airport
+
+
+
+Cauayan Airport
+
+
+
+Dar es Salaam International Airport
+
+
+
+Dawson Creek Airport
+
+
+
+Menyamya Airport
+
+
+
+Inverness Airport
+
+
+
+Dalian Airport
+
+
+
+Yamoussoukro Airport
+
+
+
+Bosavi Airstrip, Papua New Guinea
+
+
+
+Emmonak Airport
+
+
+
+Iqaluit Airport
+
+
+
+Bronson Creek Airport
+
+
+
+Tasu Airport
+
+
+
+Bahía Tortugas Airfield, Mexico
+
+
+
+Goroka Airport
+
+
+
+Manta Airport
+
+
+
+Most Pyssa Airfield, Russia
+
+
+
+Bethel Airport
+
+
+
+Edwards Air Force Base
+
+
+
+St. Mary's
+
+
+
+Jos Airport
+
+
+
+Marabá Airport
+
+
+
+Chisinau Airport
+
+
+
+Stavropol Airport
+
+
+
+Nunapitchuk Airport
+
+
+
+Gyandzha Airport
+
+
+
+El Paso International Airport
+
+
+
+Bunia Airport
+
+
+
+Tula Airport
+
+
+
+Phuket International Airport
+
+
+
+Athens Airport
+
+
+
+Montrose County Airport
+
+
+
+Manila International Airport
+
+
+
+Muscle Shoals Airport
+
+
+
+Winnipeg International Airport
+
+
+
+Dushanbe Airport
+
+
+
+Thandwe Airport
+
+
+
+Hsinchu Airport
+
+
+
+Kandahar Airport
+
+
+
+Tumbes Airport
+
+
+
+McGrath Airport
+
+
+
+Erdenet Airport
+
+
+
+Ras Al Khaimah International Airport
+
+
+
+Cochin Airport
+
+
+
+Keflavík International Airport
+
+
+
+Entebbe Airport
+
+
+
+Málaga Airport
+
+
+
+Canaima Airport
+
+
+
+Playa Grande Airport
+
+
+
+Vancouver International Airport
+
+
+
+Guernsey Airport
+
+
+
+Rawalpindi
+
+
+
+Mena Intermountain Municipal Airport
+
+
+
+Baie Comeau Airport
+
+
+
+Vancouver International Airport
+
+
+
+Horn Island Airport
+
+
+
+Jumla Airport
+
+
+
+Hoskins Airport
+
+
+
+Vinnitsa Airport
+
+
+
+Tonopah Airport
+
+
+
+Chengdu Airport
+
+
+
+Goose Bay Airport
+
+
+
+Ol Kiombo, Kenya
+
+
+
+Dallas/Fort Worth International Airport
+
+
+
+Long Haul Lake, MB, Canada
+
+
+
+Manila International Airport
+
+
+
+Midden Zeeland Airfield
+
+
+
+Points North Landing Airport
+
+
+
+Rostov Airport
+
+
+
+Estancia Las Cruces, ER, Argentina
+
+
+
+Kahului Airport
+
+
+
+Libreville Airport
+
+
+
+Enshi Airport
+
+
+
+Frunze Airport
+
+
+
+Bajhang Airport
+
+
+
+Teslin Airport
+
+
+
+Cairo International Airport
+
+
+
+Perth Airport
+
+
+
+Kugluktuk Airport
+
+
+
+Málaga Airport
+
+
+
+Nondalton Airport
+
+
+
+Portland Airport
+
+
+
+Blackbushe Airport
+
+
+
+Kato Airport
+
+
+
+Unalaska Airport
+
+
+
+Anchorage International Airport
+
+
+
+Ciudad Bolívar Airport
+
+
+
+El Yopal Airport
+
+
+
+Los Angeles International Airport
+
+
+
+San Fernando Airport
+
+
+
+Ballieston East, VIC, Australia
+
+
+
+Srednyaya Akhtuba Airfield, Russia
+
+
+
+Chkalovsky Airport
+
+
+
+Keflavík International Airport
+
+
+
+Kama, Democratic Republic of the Congo
+
+
+
+Melilla Airport
+
+
+
+Newark International Airport
+
+
+
+Chichén Itzá Airport
+
+
+
+Dillingham Municipal Airport
+
+
+
+Gods Lake Narrows Airport
+
+
+
+Pittsburgh International Airport
+
+
+
+Little Rock National Airport
+
+
+
+Adelaide Airport
+
+
+
+Bunia Airport
+
+
+
+Bremerhaven Airport
+
+
+
+Birmingham International Airport
+
+
+
+Cienfuegos Airport
+
+
+
+Port Harcourt Airport
+
+
+
+Nabire Airport
+
+
+
+Bloemfontein International Airport
+
+
+
+Jumla Airport
+
+
+
+Jomsom Airport
+
+
+
+Poliny Osipenko, Russia
+
+
+
+Xichang Airport
+
+
+
+Lake de l'Avion, QC, Canada
+
+
+
+Gohu Airstrip, Papua New Guinea
+
+
+
+Burlington International Airport
+
+
+
+Borki Airport, Russia
+
+
+
+Larandia Air Base, Colombia
+
+
+
+Mulia Airport
+
+
+
+Tulum Airport
+
+
+
+San Antonio International Airport
+
+
+
+Omsk Airport
+
+
+
+Cranbrook Airport
+
+
+
+Lins Airport
+
+
+
+Pickle Lake Airport
+
+
+
+Funchal Airport
+
+
+
+El Paso International Airport
+
+
+
+Prescott Airport
+
+
+
+Christchurch International Airport
+
+
+
+Maconacon Airport, Philippines
+
+
+
+El Yopal Airport
+
+
+
+Cotonou Airport
+
+
+
+Termez Airport
+
+
+
+Pelee Island
+
+
+
+Kish Island Airport
+
+
+
+Skopje Airport
+
+
+
+Ciudad Bolívar Airport
+
+
+
+Jiech, South Sudan
+
+
+
+Juba Airport
+
+
+
+Libreville Airport
+
+
+
+Memphis International Airport
+
+
+
+Goma Airport
+
+
+
+McGrath Airport
+
+
+
+El Obeid Airport
+
+
+
+Halifax International Airport
+
+
+
+Coron Airport
+
+
+
+Stornoway Airport
+
+
+
+Vanavara
+
+
+
+Bangor International Airport
+
+
+
+Columbia Regional Airport
+
+
+
+Tabubil Airport
+
+
+
+Toluca Airport
+
+
+
+La Paragua Airport
+
+
+
+Chico Airport
+
+
+
+Kuybyshev Airport
+
+
+
+Goma Airport
+
+
+
+Los Angeles International Airport
+
+
+
+Vancouver International Airport
+
+
+
+Ekimchan
+
+
+
+Kaduna Airport
+
+
+
+Abuja International Airport
+
+
+
+Twin Falls City County Airport
+
+
+
+Tofino Airport
+
+
+
+Helena Airport
+
+
+
+Cuenca Airport
+
+
+
+Thermal Airport
+
+
+
+Kozlovets, Bulgaria
+
+
+
+Polson Airport, MT, United States of America
+
+
+
+Yerevan Airport
+
+
+
+La Ronge Airport
+
+
+
+São Tomé Island Airport
+
+
+
+Taiynsha  Airport, Kazakhstan
+
+
+
+Surkhet Airport
+
+
+
+Multan Airport
+
+
+
+Bandar Abbas Airport
+
+
+
+Abuja International Airport
+
+
+
+Mulia Airport
+
+
+
+Los Angeles International Airport
+
+
+
+La Ronge Airport
+
+
+
+Adana Airport
+
+
+
+North Caicos Airport
+
+
+
+Goma Airport
+
+
+
+Shelter Cove Airport, CA, United States of America
+
+
+
+Surgut Airport
+
+
+
+Kato Airport
+
+
+
+Walikale Airstrip, Democratic Republic of the Congo
+
+
+
+Orellana Airport
+
+
+
+Guam International Airport
+
+
+
+Inishmaan Airport
+
+
+
+Kongolo Airport
+
+
+
+Entebbe Airport
+
+
+
+Chino Airport
+
+
+
+Sentvid Pri Sticni Field Airport, Slovenia
+
+
+
+Honolulu International Airport
+
+
+
+Luanda Airport
+
+
+
+Augusta State Airport
+
+
+
+Yakutat Airport
+
+
+
+Mwanza Airport
+
+
+
+Chisinau Airport
+
+
+
+Chelyabinsk Airport
+
+
+
+Atlantic City International Airport
+
+
+
+Bauru Airport
+
+
+
+Sena Madureira Airport
+
+
+
+Al Asad Air Base
+
+
+
+Luxor Airport
+
+
+
+Simferopol Airport
+
+
+
+Entebbe Airport
+
+
+
+Tuguegarao Airport
+
+
+
+Canaima Airport
+
+
+
+Missoula Airport
+
+
+
+Lensk Airport
+
+
+
+Dekai Airport
+
+
+
+Krabi Airport
+
+
+
+Taiping Airport
+
+
+
+Umgalala Airstrip, Sudan
+
+
+
+Ufa Airport
+
+
+
+Mirny Airport
+
+
+
+Darwin Airport
+
+
+
+Kunduz Airport
+
+
+
+Taiynsha  Airport, Kazakhstan
+
+
+
+Trivandrum Airport
+
+
+
+Kamloops Airport
+
+
+
+Semendwa Airport
+
+
+
+Karachi International Airport
+
+
+
+Tangier Airport
+
+
+
+Long Beach Municipal Airport
+
+
+
+Korla Airport
+
+
+
+Mayo Airport
+
+
+
+Saskatoon Airport
+
+
+
+Roswell International Air Center Airport
+
+
+
+Neuquén Airport
+
+
+
+Pukatawagan Airport
+
+
+
+Yellowknife Airport
+
+
+
+Baranikovsky Airfield, Russia
+
+
+
+Toksook Bay Airport
+
+
+
+Wamena Airport
+
+
+
+Thor Lake, NT, Canada
+
+
+
+Old Harbor Airport
+
+
+
+Yellowknife Airport
+
+
+
+Xakanaka Airstrip, Botswana
+
+
+
+Vancouver International Airport
+
+
+
+Nabire Airport
+
+
+
+Pokhara Airport
+
+
+
+Valencia Airport
+
+
+
+Cedar City Airport
+
+
+
+Borodyanka Airfield
+
+
+
+Hotan Airport
+
+
+
+Bolshoe Gryzlovo Airport, Russia
+
+
+
+Bremen Airport
+
+
+
+Snow Lake Airport, MB, Canada
+
+
+
+Coolidge Municipal Airport, AZ, United States of America
+
+
+
+Winnipeg International Airport
+
+
+
+Mandalay International Airport
+
+
+
+Kokshetau Airport
+
+
+
+Lodja Airport
+
+
+
+King Salmon Airport
+
+
+
+Tash Kumyr Airstrip, Kyrgyzstan
+
+
+
+Moundou Airport
+
+
+
+Lanseria Airport
+
+
+
+Soldotna Airport
+
+
+
+Reykjavík Domestic Airport
+
+
+
+Scott Lake Lodge, SK, Canada
+
+
+
+Los Pelambres Airport
+
+
+
+Sault Ste. Marie Airport
+
+
+
+Vieques Airport
+
+
+
+Kota Kinabalu Airport
+
+
+
+Loreto Airport
+
+
+
+Sioux Lookout Airport
+
+
+
+Fort Lauderdale International Airport
+
+
+
+Kamusi Airport
+
+
+
+Bethel Airport
+
+
+
+Maputo International Airport
+
+
+
+Pikany Indian Airstrip, PA, Brazil
+
+
+
+Kalaupapa Airport
+
+
+
+Tucson International Airport
+
+
+
+Olive Creek Airport
+
+
+
+Pokhara Airport
+
+
+
+Bethel Airport
+
+
+
+Irkutsk Airport
+
+
+
+San Fernando Airport
+
+
+
+Huntsville International Airport
+
+
+
+Kaohsiung International Airport
+
+
+
+Tamanrasset Airport
+
+
+
+Juba Airport
+
+
+
+Ciudad Bolívar Airport
+
+
+
+Mahdia Airport
+
+
+
+Balkhash Airport
+
+
+
+Miami Executive Airport
+
+
+
+Vancouver International Airport
+
+
+
+Sevilla Airport
+
+
+
+Luanda Airport
+
+
+
+Kattleberg Airport, Sweden
+
+
+
+Querétaro Intercontinental Airport
+
+
+
+Rudyerd Bay, AK, United States of America
+
+
+
+Stancuta Airstrip, Romania
+
+
+
+Dubnica Airport
+
+
+
+Dubnica Airport
+
+
+
+Helgoland Airfield
+
+
+
+Stapleford Airport
+
+
+
+Lanseria Airport
+
+
+
+Pickle Lake Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Sterlitamark Airfield, Russia
+
+
+
+Pokhara Airport
+
+
+
+Cox's Bazar Airport
+
+
+
+Dubai Airport
+
+
+
+Tekin Airport
+
+
+
+Dwyer Airport
+
+
+
+Novopokrovskoye Airstrip, Russia
+
+
+
+Irkutsk Airport
+
+
+
+Blackpool Airport
+
+
+
+Kelowna Airport
+
+
+
+Dunnellon/Marion County Airport, FL, United States of America
+
+
+
+Serpentine Airport
+
+
+
+Beira Airport
+
+
+
+Tanahmerah Airport
+
+
+
+Port Heiden Airport
+
+
+
+Ekereku Airport
+
+
+
+Okha Airport
+
+
+
+Chernoye Airport, Russia
+
+
+
+Alamogordo Municipal Airport
+
+
+
+Almaty Airport
+
+
+
+Dundo Airport
+
+
+
+Contamana Airport
+
+
+
+Ekimchan
+
+
+
+Chumikan Airport
+
+
+
+Egelsbach Airfield
+
+
+
+Villavicencio Airport
+
+
+
+Surkhet Airport
+
+
+
+Kamako Airstrip, Democratic Republic of the Congo
+
+
+
+Locarno Air Base
+
+
+
+Pohnpei Airport
+
+
+
+Hobart Cambridge Airport
+
+
+
+Yellowknife Airport
+
+
+
+Canaima Airport
+
+
+
+Rudyerd Bay, AK, United States of America
+
+
+
+Minj Airport
+
+
+
+Vancouver International Water Airport, BC, Canada
+
+
+
+Fakhrabad Airfield, Tajikistan
+
+
+
+Rau Airstrip, YT, Canada
+
+
+
+Axum Airport
+
+
+
+Goma Airport
+
+
+
+Almaty Airport
+
+
+
+George Airport
+
+
+
+Richmond RAAF Base
+
+
+
+Nazimovo Airstrip, Russia
+
+
+
+Wichita Dwight D. Eisenhower National Airport
+
+
+
+Baidoa Airport
+
+
+
+Adelaide Airport
+
+
+
+Bolshoye Boldino Airport
+
+
+
+Kyren Airport, Russia
+
+
+
+Juba Airport
+
+
+
+Keflavík International Airport
+
+
+
+Troutdale Airport
+
+
+
+Ganzhou Airport
+
+
+
+Pieri Airstrip, South Sudan
+
+
+
+Cairo International Airport
+
+
+
+Tanay Airfield, Russia
+
+
+
+Gilgit Airport
+
+
+
+Coeur d'Alene Airport/Pappy Boyington Field
+
+
+
+Borkum Airfield
+
+
+
+Irkutsk Airport
+
+
+
+Nabire Airport
+
+
+
+Menzelinsk Airport
+
+
+
+Juba Airport
+
+
+
+Yakutsk Airport
+
+
+
+Toronto International Airport
+
+
+
+Goma Airport
+
+
+
+Kunming Changshui International Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Zaporozhye Airport
+
+
+
+Kazan Airport, Russia
+
+
+
+Pokhara Airport
+
+
+
+Oceanside Municipal Airport
+
+
+
+Cairo International Airport
+
+
+
+Raeford West Airport, NC, United States of America
+
+
+
+Piotrków Trybunalski Airport
+
+
+
+Friday Harbor Seaplane Base
+
+
+
+Dar es Salaam International Airport
+
+
+
+Renton Airport
+
+
+
+Dushanbe Airport
+
+
+
+Semipalatinsk Airport
+
+
+
+Nabire Airport
+
+
+
+Elushkino Airstrip, Russia
+
+
+
+Bristol Airport
+
+
+
+Irkutsk Airport
+
+
+
+Casey, QC, Canada
+
+
+
+Kuybyshev Airport
+
+
+
+Elko Airport
+
+
+
+Skopje Airport
+
+
+
+Itaituba Airport
+
+
+
+Yakutsk Airport
+
+
+
+Dasoguz Airport
+
+
+
+Miami International Airport
+
+
+
+Rostov Airport
+
+
+
+Auckland International Airport
+
+
+
+Qui Nhon Airport
+
+
+
+Trinidad Airport
+
+
+
+Baltimore/Washington International Airport
+
+
+
+Keflavík International Airport
+
+
+
+Kirov Airport
+
+
+
+Rostov Airport
+
+
+
+White River Airport
+
+
+
+Savannah International Airport
+
+
+
+Cairo International Airport
+
+
+
+Mariquita Airport
+
+
+
+Bamako Airport
+
+
+
+Cumaná Airport
+
+
+
+Anchorage International Airport
+
+
+
+Fairbanks International Airport
+
+
+
+Edmonton International Airport
+
+
+
+Soddu Airport
+
+
+
+Nairobi International Airport
+
+
+
+Irkutsk Airport
+
+
+
+Bukhara Airport
+
+
+
+Seattle/Tacoma International Airport
+
+
+
+Niamey Airport
+
+
+
+Neiva Airport
+
+
+
+Ontario International Airport
+
+
+
+Harrisburg International Airport
+
+
+
+Lawton Municipal Airport
+
+
+
+Fairbanks International Airport
+
+
+
+Mosul Airport
+
+
+
+El Palomar Airport
+
+
+
+Hilton Head Airport
+
+
+
+Gainesville Municipal Airport
+
+
+
+Legazpi Airport
+
+
+
+Chita Airport
+
+
+
+Nome Airport
+
+
+
+Bahar Dar Airport
+
+
+
+Pickle Lake Airport
+
+
+
+Prince George Airport
+
+
+
+Vologda Airport
+
+
+
+Mount Isa Airport
+
+
+
+Rostov Airport
+
+
+
+Beirut International Airport
+
+
+
+Cozumel Airport
+
+
+
+Frunze Airport
+
+
+
+Port Radium
+
+
+
+Ashgabat Airport
+
+
+
+Juneau International Airport
+
+
+
+Rincón de Los Sauces Airport
+
+
+
+Labuan Airport
+
+
+
+Angarakan Airstrip, Russia
+
+
+
+Kazan Airport, Russia
+
+
+
+Cold Bay Airport
+
+
+
+Avalon Airport
+
+
+
+Moosonee Airport
+
+
+
+Santiago de Compostela Airport
+
+
+
+Rostov Airport
+
+
+
+Donetsk Airport
+
+
+
+Split Airport
+
+
+
+Bella Bella/Shearwater Water Aerodrome
+
+
+
+Zaporozhye Airport
+
+
+
+Trujillo Airport
+
+
+
+Prince George Airport
+
+
+
+Beograd Airport
+
+
+
+Anchorage International Airport
+
+
+
+Nukus Airport
+
+
+
+Frobisher Bay Airport
+
+
+
+Aden International Airport
+
+
+
+Forish Airstrip, Uzbekistan
+
+
+
+Dnepropetrovsk Airport
+
+
+
+Philadelphia International Airport
+
+
+
+New Orleans International Airport
+
+
+
+Ayanka Airstrip, Russia
+
+
+
+Varna Airport
+
+
+
+Elefsis Air Base
+
+
+
+Sukhumi Airport
+
+
+
+Vitim
+
+
+
+Tippi Airport
+
+
+
+Ruby Airport
+
+
+
+Alatna River, AK, United States of America
+
+
+
+Iliamna Airport
+
+
+
+Mong Hsat Airport
+
+
+
+Yakutat Airport
+
+
+
+Rostov Airport
+
+
+
+Palma de Mallorca Airport
+
+
+
+Manila International Airport
+
+
+
+Palenque Airport
+
+
+
+Point Hope Airport
+
+
+
+Penang International Airport
+
+
+
+San Francisco International Airport
+
+
+
+Pond Inlet Airport
+
+
+
+Pueblo Memorial Airport
+
+
+
+Bethel Airport
+
+
+
+Neiva Airport
+
+
+
+Richland Airport
+
+
+
+Calgary International Airport
+
+
+
+Sokoto Airport
+
+
+
+Los Angeles International Airport
+
+
+
+Lafayette Regional Airport
+
+
+
+Mobile Municipal Airport
+
+
+
+Memphis International Airport
+
+
+
+Toronto International Airport
+
+
+
+Cebu Airport
+
+
+
+Papun Airport
+
+
+
+Kariba Airport
+
+
+
+Yablunivka Airstrip, Ukraine
+
+
+
+Los Angeles International Airport
+
+
+
+Stavropol Airport
+
+
+
+Alexandria Airport
+
+
+
+Juneau International Airport
+
+
+
+Cherskiy Airport
+
+
+
+Karachi International Airport
+
+
+
+Samarkand Airport
+
+
+
+South Caicos International Airport
+
+
+
+Molodezhnaya Ice Station, Antarctica
+
+
+
+Belgorod Airport
+
+
+
+Rodez Airport
+
+
+
+Kariba Airport
+
+
+
+Gisborne Airport
+
+
+
+Los Angeles International Airport
+
+
+
+Gorkiy Airport
+
+
+
+Yeniseysk Airport
+
+
+
+Fort Lauderdale International Airport
+
+
+
+San Jose Municipal Airport
+
+
+
+Beirut International Airport
+
+
+
+Akron/Canton Regional Airport
+
+
+
+Voronezh Airport
+
+
+
+Noril'sk Airport
+
+
+
+Brevoort Island Airstrip
+
+
+
+Comox Airport
+
+
+
+Fairbanks International Airport
+
+
+
+Pickle Lake Airport
+
+
+
+Kerema Airport
+
+
+
+Velikij Ustyug Airport
+
+
+
+Río Gallegos Internacional Airport
+
+
+
+Jeddah International Airport
+
+
+
+Auckland International Airport
+
+
+
+Nome Airport
+
+
+
+Pucallpa Airport
+
+
+
+N'Djamena Airport
+
+
+
+Guiyang Airport
+
+
+
+Krasnoyarsk Airport
+
+
+
+Varadero Airport
+
+
+
+West Palm Beach International Airport
+
+
+
+Lubango Airport
+
+
+
+Leninabad Airport
+
+
+
+Columbus Municipal Airport
+
+
+
+Tepic Airport
+
+
+
+Togiak Village Airport
+
+
+
+Riyadh International Airport
+
+
+
+Bakkafjördur Airport
+
+
+
+Dhahran International Airport
+
+
+
+Karachi International Airport
+
+
+
+Batagay Airport
+
+
+
+Puerto Escondido Airport
+
+
+
+Severomuysk, Russia
+
+
+
+Pilot Point Airport
+
+
+
+Santa Barbara Municipal Airport
+
+
+
+Kenai Airport
+
+
+
+Kodiak Airport
+
+
+
+Mogadishu International Airport
+
+
+
+Penonomé, Panama
+
+
+
+Cochrane Airport
+
+
+
+Chita Airport
+
+
+
+Rotterdam Airport
+
+
+
+Krasnoyarsk Airport
+
+
+
+Manila International Airport
+
+
+
+Berlevåg Airport
+
+
+
+Oberpfaffenhofen Airport
+
+
+
+Teterboro Airport
+
+
+
+Mukalla Airport
+
+
+
+Budaörs Airport
+
+
+
+Eirunepé Airport
+
+
+
+Jolo Airport
+
+
+
+Zumba Airport
+
+
+
+Tucurui Airport
+
+
+
+Santa Fe Airport
+
+
+
+Rostov Airport
+
+
+
+Philadelphia International Airport
+
+
+
+Seattle/Tacoma International Airport
+
+
+
+Uruzgan Airport
+
+
+
+Caracas Airport
+
+
+
+Poti Airport
+
+
+
+Nome Airport
+
+
+
+Nalchik Airport
+
+
+
+Dallas/Fort Worth International Airport
+
+
+
+Cairo International Airport
+
+
+
+Windorah Airport
+
+
+
+Campbell River Airport
+
+
+
+Karachi International Airport
+
+
+
+Taitung Airport
+
+
+
+Campo Grande Internacional Airport
+
+
+
+Lonkin, Myanmar
+
+
+
+Sandy Lake Airport
+
+
+
+Lagos/Ikeja International Airport
+
+
+
+Inuvik/Mike Zubko Airport
+
+
+
+Kuybyshev Airport
+
+
+
+Townsville Airport
+
+
+
+Trinidad Airport
+
+
+
+Pago Pago International Airport
+
+
+
+East Midlands Airport
+
+
+
+Tabubil Airport
+
+
+
+Opole/Polska Nowa Wies Airport
+
+
+
+Tulita Airport
+
+
+
+St. Anthony Airport
+
+
+
+Krasnodar Airport
+
+
+
+Loja Airport
+
+
+
+Dubai Airport
+
+
+
+Kostroma Airport
+
+
+
+Jacksonville International Airport
+
+
+
+Dar es Salaam International Airport
+
+
+
+Krasnoyarsk Airport
+
+
+
+Nanjing Dajiaochang Airport
+
+
+
+Neiva Airport
+
+
+
+Ridgeland Airport, SC, United States of America
+
+
+
+Tombouctou Airport
+
+
+
+Lewistown Municipal Airport
+
+
+
+Nashville Metropolitan Airport
+
+
+
+Karshi Airport
+
+
+
+Fort Lauderdale International Airport
+
+
+
+Anchorage International Airport
+
+
+
+Kandahar Airport
+
+
+
+Jenkinsburg, GA, United States of America
+
+
+
+Kutaisi Airport
+
+
+
+Anchorage International Airport
+
+
+
+Bethel Airport
+
+
+
+Morristown Municipal Airport
+
+
+
+Molodezhnaya Ice Station, Antarctica
+
+
+
+Cheboksary Airport
+
+
+
+Palmer Municipal Airport
+
+
+
+Snegamook Lake, NL, Canada
+
+
+
+Tbilisi Airport
+
+
+
+Cairo International Airport
+
+
+
+Penza Airport
+
+
+
+Buffalo Municipal Airport
+
+
+
+Little Rock National Airport
+
+
+
+Karachi International Airport
+
+
+
+Ufa Airport
+
+
+
+Mbala Airport
+
+
+
+Lahore Airport
+
+
+
+Christiansted Harbor Seaplane Base
+
+
+
+Elyria Airport, OH, United States of America
+
+
+
+Savusavu Airport
+
+
+
+St. Catharines Airport
+
+
+
+Pocatello Airport
+
+
+
+Big Trout Airport
+
+
+
+Wamena Airport
+
+
+
+Kandahar Airport
+
+
+
+Heho Airport
+
+
+
+Hayward Air Terminal
+
+
+
+Hat Yai Airport
+
+
+
+Cairo International Airport
+
+
+
+Memphis International Airport
+
+
+
+Rancho Murieta
+
+
+
+Teesside International Airport
+
+
+
+Oakland International Airport
+
+
+
+El Paso International Airport
+
+
+
+Fort Nelson Airport
+
+
+
+Kodiak Airport
+
+
+
+Wellington International Airport
+
+
+
+Bella Coola Airport
+
+
+
+Los Angeles International Airport
+
+
+
+Memphis International Airport
+
+
+
+Taitung Airport
+
+
+
+Nizhnevartovsk Airport
+
+
+
+Hannover Airport
+
+
+
+Tyumen Airport
+
+
+
+Cairo International Airport
+
+
+
+Bloemfontein International Airport
+
+
+
+Muya Airport, Russia
+
+
+
+Hilo International Airport
+
+
+
+Namsos Airport
+
+
+
+Teterboro Airport
+
+
+
+Billund Airport
+
+
+
+Resistencia Airport
+
+
+
+Myitkyina Airport
+
+
+
+Basel/Mulhouse Airport
+
+
+
+Bandar Abbas Airport
+
+
+
+Tucson International Airport
+
+
+
+Narsarsuaq Airport
+
+
+
+Bahawalpur Airport
+
+
+
+Kirensk Airport
+
+
+
+Zhigansk Airport
+
+
+
+Dallas/Fort Worth International Airport
+
+
+
+Uruapan Airport
+
+
+
+Sitka Airport
+
+
+
+Jackson Hole Airport
+
+
+
+Bahar Dar Airport
+
+
+
+Tiksi Airport
+
+
+
+Linfen Air Base, China
+
+
+
+Red Lake Airport
+
+
+
+Timmins Airport
+
+
+
+Hamada al Hamra Airfield, Libya
+
+
+
+Dar es Salaam International Airport
+
+
+
+Ketchikan Harbor Seaplane Base
+
+
+
+Honolulu International Airport
+
+
+
+Dryden Municipal Airport
+
+
+
+Chichén Itzá Airport
+
+
+
+Santa Monica Airport
+
+
+
+Boboc Air Base
+
+
+
+El Yopal Airport
+
+
+
+Kabul Airport
+
+
+
+Bonaventure Airport
+
+
+
+Hargeisa Airport
+
+
+
+Mys Shmidta Airport
+
+
+
+Auckland International Airport
+
+
+
+Thessaloniki International Airport
+
+
+
+Wanaka Airport
+
+
+
+Puerto Ordaz Airport
+
+
+
+Gilgit Airport
+
+
+
+Orlando Executive Airport
+
+
+
+Vancouver International Airport
+
+
+
+Tampa International Airport
+
+
+
+Uncertain, TX, United States of America
+
+
+
+Adana Airport
+
+
+
+Ulyanovsk/Baratayevka Airport
+
+
+
+Kahului Airport
+
+
+
+Tromsø/Langnes Airport
+
+
+
+Perm Airport
+
+
+
+Dzhambul Airport
+
+
+
+Kamina Airport
+
+
+
+Block Island Airport
+
+
+
+Tyumen Airport
+
+
+
+Denver International Airport
+
+
+
+Burlington International Airport
+
+
+
+Manila International Airport
+
+
+
+Timmins Airport
+
+
+
+Prosperine Airport
+
+
+
+Manila International Airport
+
+
+
+Thistle Lake, NT, Canada
+
+
+
+Kingston Airport
+
+
+
+Albuquerque International Airport
+
+
+
+Keflavík International Airport
+
+
+
+Los Angeles International Airport
+
+
+
+Nain Airport
+
+
+
+Macas Airport
+
+
+
+Uberaba Airport
+
+
+
+Sturdee Airport
+
+
+
+Hiva Oa Airport
+
+
+
+Köln/Bonn Airport
+
+
+
+Chicoutimi St Honoré Airport
+
+
+
+Bellavista Airport
+
+
+
+Mobile Municipal Airport
+
+
+
+Uraj Airport
+
+
+
+Kano International Airport
+
+
+
+Ketchikan International Airport
+
+
+
+Sampit Airport
+
+
+
+Bario Airport
+
+
+
+Lensk Airport
+
+
+
+Palangkaraya Airport
+
+
+
+Elista Airport
+
+
+
+Ryazan Airport
+
+
+
+Nizhnevartovsk Airport
+
+
+
+Egelsbach Airfield
+
+
+
+Chokurdah Airport
+
+
+
+Orchid Island Airport
+
+
+
+Madang Airport
+
+
+
+Perris Valley Airport, CA, United States of America
+
+
+
+Cali Airport
+
+
+
+Sheboygan Memorial Airport
+
+
+
+Igarka Airport
+
+
+
+Bethel Airport
+
+
+
+     icao iata                         name state                   country  \
+0    ZSNJ  NKG  Nanjing Dajiaochang Airport                           China   
+1    UKCC  DOK              Donetsk Airport                         Ukraine   
+2    GYGM  YGM                Gimli Airport    MB                    Canada   
+3    SPQT  IQT              Iquitos Airport                            Peru   
+4    SPST  TPP             Tarapoto Airport                            Peru   
+..    ...  ...                          ...   ...                       ...   
+833  xxxx  xxx        Perris Valley Airport    CA  United States of America   
+834  SKCL  CLO                 Cali Airport                        Colombia   
+835  KSBM  SBM   Sheboygan Memorial Airport    WI  United States of America   
+836  UOII  IAA               Igarka Airport                          Russia   
+837  PABE  BET               Bethel Airport    AK  United States of America   
+
+    country_code        lat         lon  
+0             CN  31.742001  118.862000  
+1             UA  48.073601   37.739700  
+2             CA  50.628101  -97.043297  
+3             PE  -3.784740  -73.308800  
+4             PE  -6.508740  -76.373199  
+..           ...        ...         ...  
+833           US  33.864800 -117.256180  
+834           CO   3.543220  -76.381600  
+835           US  43.769778  -87.851722  
+836           RU  67.437202   86.621902  
+837           US  60.778556 -161.837167  
+
+[838 rows x 8 columns]
+
+
+
+     accident_id  icao iata                         name state  \
+1029     ACC1003  ZSNJ  NKG  Nanjing Dajiaochang Airport         
+1030     ACC1004  UKCC  DOK              Donetsk Airport         
+1031     ACC1005  GYGM  YGM                Gimli Airport    MB   
+1032     ACC1006  SPQT  IQT              Iquitos Airport         
+1036     ACC1010  SPST  TPP             Tarapoto Airport         
+...          ...   ...  ...                          ...   ...   
+1010      ACC984  xxxx  xxx        Perris Valley Airport    CA   
+1012      ACC986  SKCL  CLO                 Cali Airport         
+1017      ACC991  KSBM  SBM   Sheboygan Memorial Airport    WI   
+1019      ACC993  UOII  IAA               Igarka Airport         
+1022      ACC996  PABE  BET               Bethel Airport    AK   
+
+                       country country_code        lat         lon  
+1029                     China           CN  31.742001  118.862000  
+1030                   Ukraine           UA  48.073601   37.739700  
+1031                    Canada           CA  50.628101  -97.043297  
+1032                      Peru           PE  -3.784740  -73.308800  
+1036                      Peru           PE  -6.508740  -76.373199  
+...                        ...          ...        ...         ...  
+1010  United States of America           US  33.864800 -117.256180  
+1012                  Colombia           CO   3.543220  -76.381600  
+1017  United States of America           US  43.769778  -87.851722  
+1019                    Russia           RU  67.437202   86.621902  
+1022  United States of America           US  60.778556 -161.837167  
+
+[838 rows x 9 columns]
+
+
+
+Xiamen Airport
+
+
+
+Ivanovo Airport
+
+
+
+Gimli Airport
+
+
+
+El Estrecho Airport
+
+
+
+Bellavista Airport
+
+
+
+Stockton Airport
+
+
+
+Apatzingan Airport
+
+
+
+Baltimore/Washington International Airport
+
+
+
+Goma Airport
+
+
+
+Glasgow International Airport
+
+
+
+Juanjuí Airport
+
+
+
+Wrangell Airport
+
+
+
+Batagay Airport
+
+
+
+Catumbela Airport
+
+
+
+Cancún Airport
+
+
+
+Edmonton/Villeneuve Airport
+
+
+
+Nürnberg Airport
+
+
+
+Magnitogorsk Airport
+
+
+
+Marudi Airport
+
+
+
+Elefsis Air Base
+
+
+
+Aldan Airport
+
+
+
+Dushanbe Airport
+
+
+
+Samarkand Airport
+
+
+
+Port Blair Airport
+
+
+
+Newport News/Williamsburg International Airport
+
+
+
+Winnipeg International Airport
+
+
+
+Kerman Airport
+
+
+
+Inuvik/Mike Zubko Airport
+
+
+
+Ampuriabrava Airport
+
+
+
+Meadow Lake Airport
+
+
+
+Nalchik Airport
+
+
+
+Tamworth Airport
+
+
+
+Key West International Airport
+
+
+
+Portland International Airport
+
+
+
+Tripoli International Airport
+
+
+
+Aurukun Mission Airport
+
+
+
+Hiroshima West Airport
+
+
+
+Kigali Airport
+
+
+
+Jacareacanga Airport
+
+
+
+San Borja Airport
+
+
+
+Uruapan Airport
+
+
+
+Tidjikja Airport
+
+
+
+Missoula Airport
+
+
+
+Pula Airport
+
+
+
+Pruth Bay, BC, Canada
+
+
+
+Tarauacá Airport
+
+
+
+Tura
+
+
+
+Provedenia Airport
+
+
+
+Rostov Airport
+
+
+
+Verkhoyansk Airport
+
+
+
+Obano Airport
+
+
+
+Fresnillo, Mexico
+
+
+
+Saposoa Airport
+
+
+
+Oakland International Airport
+
+
+
+Bolovip Airport
+
+
+
+Selbang Airport
+
+
+
+Durban International Airport
+
+
+
+Lourenço Marques Airport
+
+
+
+Ruteng Airport
+
+
+
+Masset Airport
+
+
+
+Abakan Airport
+
+
+
+Luanda Airport
+
+
+
+Reno/Tahoe International Airport
+
+
+
+Zaporozhye Airport
+
+
+
+Sioux Lookout Airport
+
+
+
+Magnitogorsk Airport
+
+
+
+Palmerston North Airport
+
+
+
+Oktyabrsky Airfield, Russia
+
+
+
+Catumbela Airport
+
+
+
+Toluca Airport
+
+
+
+Kansas City Downtown Municipal Airport
+
+
+
+Jalalabad Airport
+
+
+
+Tawau Airport
+
+
+
+Tamworth Airport
+
+
+
+Campbell River Airport
+
+
+
+Ufa Airport
+
+
+
+Piedras Negras Airport
+
+
+
+Kaduna Airport
+
+
+
+Douala Airport
+
+
+
+Bundi Airport
+
+
+
+Eagle River Airport
+
+
+
+Kuban State Farm Airport, Russia
+
+
+
+Bagua Airport
+
+
+
+Manila Airport
+
+
+
+Morogoro Airport
+
+
+
+Buffalo Narrows Airport
+
+
+
+Marawaka Airport
+
+
+
+Lerwick/Tingwall Airport
+
+
+
+Changhai Airport
+
+
+
+Yamoussoukro Airport
+
+
+
+Mendi Airport
+
+
+
+Aniak Airport
+
+
+
+Markham Bay, NU, Canada
+
+
+
+Wrangell Airport
+
+
+
+Alliford Bay, BC, Canada
+
+
+
+Ensenada Airport
+
+
+
+Kainantu Airstrip, Papua New Guinea
+
+
+
+Miami International Airport
+
+
+
+Koslan Airfield, Russia
+
+
+
+Kwigillingok Airport
+
+
+
+Edwards Air Force Base
+
+
+
+Kenai Airport
+
+
+
+Yola Airport
+
+
+
+Carajás Airport
+
+
+
+Chisinau Airport
+
+
+
+Trabzon Airport
+
+
+
+Bethel Airport
+
+
+
+Gyandzha Airport
+
+
+
+Toluca Airport
+
+
+
+Kisangani Airport
+
+
+
+Shakhty Airport, Russia
+
+
+
+Ranong Airport
+
+
+
+Dalton Municipal Airport
+
+
+
+Page Airport
+
+
+
+Bacolod Airport
+
+
+
+Jackson International Airport
+
+
+
+Little Grand Rapids Airport
+
+
+
+Sharjah Airport
+
+
+
+Kyaukpyu Airport
+
+
+
+Kaohsiung International Airport
+
+
+
+Kabul Airport
+
+
+
+Piura Airport
+
+
+
+Galena Airport
+
+
+
+Moron Airport
+
+
+
+Nikolaev Airport
+
+
+
+Thiruvananthapuram International Airport
+
+
+
+Gander International Airport
+
+
+
+Kasese Airport
+
+
+
+Melilla Airport
+
+
+
+Canaima Airport
+
+
+
+Quetzaltenango Airport
+
+
+
+Victoria International Airport
+
+
+
+Guernsey Airport
+
+
+
+Lahore Airport
+
+
+
+Texarkana Municipal Airport
+
+
+
+Rimouski Airport
+
+
+
+Victoria International Airport
+
+
+
+Coconut Island Airport
+
+
+
+Nepalganj Airport
+
+
+
+Kandrian Airport
+
+
+
+Simferopol Airport
+
+
+
+Bishop Airport
+
+
+
+Wenzhou Yongqiang Airport
+
+
+
+Davis Inlet Airport
+
+
+
+Mara Shika Airstrip, Kenya
+
+
+
+Little Rock National Airport
+
+
+
+Long Haul Lake, MB, Canada
+
+
+
+Cauayan Airport
+
+
+
+Midden Zeeland Airfield
+
+
+
+Ennadai Lake Airport
+
+
+
+Vilnius Airport
+
+
+
+San Fernando Airport
+
+
+
+Molokai/Kaunakakai Airport
+
+
+
+Moanda Airport
+
+
+
+Wuhan Tianhe International Airport
+
+
+
+Leninabad Airport
+
+
+
+Dhangadhi Airport
+
+
+
+Dease Lake Airport
+
+
+
+Bahrain International Airport
+
+
+
+Leonora Airport
+
+
+
+Yellowknife Airport
+
+
+
+Córdoba Airport
+
+
+
+Kenai Airport
+
+
+
+Rangeley Municipal Airport, ME, United States of America
+
+
+
+Palma de Mallorca Airport
+
+
+
+Mahdia Airport
+
+
+
+Anchorage International Airport
+
+
+
+Anchorage International Airport
+
+
+
+Porlamar Airport
+
+
+
+Mitú Airport
+
+
+
+Aspen Airport
+
+
+
+Trelew Airport
+
+
+
+Ballieston East, VIC, Australia
+
+
+
+Srednyaya Akhtuba Airfield, Russia
+
+
+
+Noril'sk Airport
+
+
+
+Narsarsuaq Airport
+
+
+
+Kampene Airport
+
+
+
+Málaga Airport
+
+
+
+San Francisco International Airport
+
+
+
+Cozumel Airport
+
+
+
+King Salmon Airport
+
+
+
+Shamattawa Airport
+
+
+
+Boca Raton Public Airport
+
+
+
+Bessemer Airport
+
+
+
+Mount Gambier Airport
+
+
+
+Beni Airport
+
+
+
+Wangerooge Airfield
+
+
+
+Bangor International Airport
+
+
+
+Cayo Coco/Jardines del Rey Airport
+
+
+
+Calabar Airport
+
+
+
+Enarotali Airport
+
+
+
+George Airport
+
+
+
+Surkhet Airport
+
+
+
+Pokhara Airport
+
+
+
+Ayan Airport, Russia
+
+
+
+Xichang Airport
+
+
+
+Aguanish River, QC, Canada
+
+
+
+Madang Airport
+
+
+
+Providence Airport
+
+
+
+Borki Airport, Russia
+
+
+
+Larandia Air Base, Colombia
+
+
+
+Wamena Airport
+
+
+
+Chetumal Airport
+
+
+
+San Antonio International Airport
+
+
+
+Surgut Airport
+
+
+
+Cranbrook Airport
+
+
+
+Sorocaba Airport
+
+
+
+Summer Beaver Airport
+
+
+
+Málaga Airport
+
+
+
+Del Rio International Airport
+
+
+
+San Bernardino International Airport
+
+
+
+Palmerston North Airport
+
+
+
+Tuguegarao Airport
+
+
+
+Mitú Airport
+
+
+
+Kufrah Airport
+
+
+
+Tashkent Airport
+
+
+
+Windsor Airport
+
+
+
+Sharjah Airport
+
+
+
+Mostar Airport
+
+
+
+Uonquen Airport
+
+
+
+Ayod Airstrip, South Sudan
+
+
+
+El Obeid Airport
+
+
+
+Franceville/Mvengue Airport
+
+
+
+Cincinnati/Northern Kentucky Airport
+
+
+
+Walikale Airstrip, Democratic Republic of the Congo
+
+
+
+Unalakleet Airport
+
+
+
+Juba Airport
+
+
+
+Zaragoza Airport
+
+
+
+Puerto Princesa Airport
+
+
+
+Inverness Airport
+
+
+
+Tura
+
+
+
+Manchester Municipal Airport
+
+
+
+Pueblo Memorial Airport
+
+
+
+Wobagen Airstrip, Papua New Guinea
+
+
+
+Colima Airport
+
+
+
+Canaima Airport
+
+
+
+Chico Airport
+
+
+
+Voroshilovgrad Airport
+
+
+
+Kindu Airport
+
+
+
+Ontario International Airport
+
+
+
+Smithers Airport
+
+
+
+Udskoye Airstrip, Russia
+
+
+
+Abuja International Airport
+
+
+
+Port Harcourt Airport
+
+
+
+Truckee Airport
+
+
+
+Vancouver International Airport
+
+
+
+Butte Airport
+
+
+
+Macas Airport
+
+
+
+Ontario International Airport
+
+
+
+Kozlovets, Bulgaria
+
+
+
+Butte Airport
+
+
+
+Adler/Sochi Airport
+
+
+
+La Ronge Airport
+
+
+
+São Tomé Island Airport
+
+
+
+Taiynsha  Airport, Kazakhstan
+
+
+
+Jumla Airport
+
+
+
+Lahore Airport
+
+
+
+Mashhad Airport
+
+
+
+Sokoto Airport
+
+
+
+Ilaga Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Sandy Bay Airport, SK, Canada
+
+
+
+Balad Air Base
+
+
+
+Grand Turk Island Airport
+
+
+
+Walikale Airstrip, Democratic Republic of the Congo
+
+
+
+San Jose Municipal Airport
+
+
+
+Samara Airport
+
+
+
+Kopinang Airfield
+
+
+
+Goma Airport
+
+
+
+Pampa Hermosa Airport
+
+
+
+Manila International Airport
+
+
+
+Connemara Airport
+
+
+
+Goma Airport
+
+
+
+Masindi Airport
+
+
+
+Visalia Airport
+
+
+
+Maribor Airport
+
+
+
+Kauai Island/Lihue Airport
+
+
+
+Huambo Airport
+
+
+
+Lincoln Municipal Airport
+
+
+
+Juneau International Airport
+
+
+
+Mwanza Airport
+
+
+
+Antalya Airport
+
+
+
+Perm Airport
+
+
+
+Owatonna Airport
+
+
+
+Sorocaba Airport
+
+
+
+Rio Branco Airport
+
+
+
+Baghdad International Airport
+
+
+
+Nikolaev Airport
+
+
+
+Kerch Airport
+
+
+
+Mogadishu International Airport
+
+
+
+Maconacon Airport, Philippines
+
+
+
+Ciudad Bolívar Airport
+
+
+
+Alamogordo Municipal Airport
+
+
+
+Yakutsk Airport
+
+
+
+Wamena Airport
+
+
+
+Koh Samui Airport
+
+
+
+Taiping Airport
+
+
+
+Umgalala Airstrip, Sudan
+
+
+
+Saratov Airport
+
+
+
+Irkutsk Airport
+
+
+
+Darwin Airport
+
+
+
+Kabul Airport
+
+
+
+Sorochinskiy Airstrip, Kazakhstan
+
+
+
+Madurai Airport
+
+
+
+Kamloops Airport
+
+
+
+Bandundu Airport
+
+
+
+Zahedan Airport
+
+
+
+Ouarzazate Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Korla Airport
+
+
+
+Rackla Airstrip, YT, Canada
+
+
+
+Saskatoon Airport
+
+
+
+Roswell International Air Center Airport
+
+
+
+Comodoro Rivadavia Airport
+
+
+
+The Pas/Grace Lake Airport
+
+
+
+Resolute Airport
+
+
+
+Baranikovsky Airfield, Russia
+
+
+
+Bethel Airport
+
+
+
+Kenyam Airstrip, Indonesia
+
+
+
+Yellowknife Waterdrome, NT, Canada
+
+
+
+Kodiak Airport
+
+
+
+Lutsel K'e Airport
+
+
+
+Pom Pom Camp Airstrip, Botswana
+
+
+
+Kelowna Airport
+
+
+
+Bilogai/Sugapa Airport
+
+
+
+Jomsom Airport
+
+
+
+Ibiza Airport
+
+
+
+Cedar City Airport
+
+
+
+Borodyanka Airfield
+
+
+
+Urumqi Airport
+
+
+
+Bolshoe Gryzlovo Airport, Russia
+
+
+
+Bremen Airport
+
+
+
+Winnipeg International Airport
+
+
+
+Libby Airport, MT, United States of America
+
+
+
+Sanikiluaq Airport
+
+
+
+Heho Airport
+
+
+
+Almaty Airport
+
+
+
+Goma Airport
+
+
+
+Dillingham Municipal Airport
+
+
+
+Tash Kumyr Airstrip, Kyrgyzstan
+
+
+
+Douala Airport
+
+
+
+Francistown Airport
+
+
+
+Bear Mountain Lodge Airstrip, AK, United States of America
+
+
+
+Akureyri Airport
+
+
+
+Ivanhoe Lake, NT, Canada
+
+
+
+Viña del Mar Airport
+
+
+
+Sault Ste. Marie Airport
+
+
+
+Culebra Airport
+
+
+
+Kudat Airport
+
+
+
+Ciudad Constitución Airport
+
+
+
+Red Lake Airport
+
+
+
+Cozumel Airport
+
+
+
+Purari Airstrip, Papua New Guinea
+
+
+
+Saint Mary's Airport
+
+
+
+Luanda Airport
+
+
+
+Novo Progresso Airport
+
+
+
+Honolulu International Airport
+
+
+
+Aspen Airport
+
+
+
+Imbaimadai Airport
+
+
+
+Jumla Airport
+
+
+
+Bethel Airport
+
+
+
+Bratsk Airport
+
+
+
+Carmelo/Zagarzazú International Airport
+
+
+
+Birmingham Airport
+
+
+
+Magong Airport
+
+
+
+Bamako Airport
+
+
+
+Panyagor Airstrip, South Sudan
+
+
+
+La Centella, Venezuela
+
+
+
+Karisparu Airport
+
+
+
+Shatyrkul Mine, Kazakhstan
+
+
+
+Providenciales International Airport
+
+
+
+Prince George Airport
+
+
+
+Sevilla Airport
+
+
+
+Lobito Airport
+
+
+
+Klaipeda Airport
+
+
+
+Querétaro Intercontinental Airport
+
+
+
+Ketchikan Harbor Seaplane Base
+
+
+
+Stancuta Airstrip, Romania
+
+
+
+Dubnica Airport
+
+
+
+Dubnica Airport
+
+
+
+Wangerooge Airfield
+
+
+
+Brize Norton RAF Station
+
+
+
+Cape Town International Airport
+
+
+
+Angling Lake/Wapekeka Airport
+
+
+
+Tucson International Airport
+
+
+
+Orsk Airport
+
+
+
+Jomsom Airport
+
+
+
+Jessore Airport
+
+
+
+Rostov Airport
+
+
+
+Kiunga Airport
+
+
+
+Mary Airport
+
+
+
+Novopokrovskoye Airstrip, Russia
+
+
+
+Irkutsk Airport
+
+
+
+Rotterdam Airport
+
+
+
+Calgary/Springbank Airport
+
+
+
+Dunnellon/Marion County Airport, FL, United States of America
+
+
+
+Serpentine Airport
+
+
+
+Mutare Airfield
+
+
+
+Oksibil Airport
+
+
+
+Perryville Airport
+
+
+
+Eteringbang Airport
+
+
+
+Tsimmermanovka Airstrip, Russia
+
+
+
+Chernoye Airport, Russia
+
+
+
+Alamogordo Municipal Airport
+
+
+
+Shymkent Airport
+
+
+
+Luanda Airport
+
+
+
+Pucallpa Airport
+
+
+
+Udskoye Airstrip, Russia
+
+
+
+Nelkan Airport
+
+
+
+Friedrichshafen Airport
+
+
+
+El Yopal Airport
+
+
+
+Simikot Airport
+
+
+
+Nsumbula Airstrip, Democratic Republic of the Congo
+
+
+
+Dübendorf Air Base
+
+
+
+Chuuk/Weno International Airport
+
+
+
+Bathurst Harbour Airport
+
+
+
+Whatì/Lac La Martre Airport
+
+
+
+Ciudad Bolívar Airport
+
+
+
+Ketchikan Harbor Seaplane Base
+
+
+
+Mendi Airport
+
+
+
+Hakai Pass Seaplane Base
+
+
+
+Fakhrabad Airfield, Tajikistan
+
+
+
+Mayo Airport
+
+
+
+Gondar Airport
+
+
+
+Beni Airport
+
+
+
+Nursultan Nazarbayev International Airport
+
+
+
+George Airport
+
+
+
+Richmond RAAF Base
+
+
+
+Yeniseysk Airport
+
+
+
+Hays Municipal Airport
+
+
+
+Bardale Airstrip, Somalia
+
+
+
+Alice Springs Airport
+
+
+
+Bolshoye Boldino Airport
+
+
+
+Kyren Airport, Russia
+
+
+
+Wau Airport
+
+
+
+St. John's Airport
+
+
+
+Boise Air Terminal
+
+
+
+Ganzhou Airport
+
+
+
+Yuai Airstrip, South Sudan
+
+
+
+Cairo International Airport
+
+
+
+Tanay Airfield, Russia
+
+
+
+Rawalpindi
+
+
+
+Truckee Airport
+
+
+
+Norderney Airfield
+
+
+
+Kazachinskoye Airport
+
+
+
+Bilogai/Sugapa Airport
+
+
+
+Menzelinsk Airport
+
+
+
+Maban Airstrip
+
+
+
+Irkutsk Airport
+
+
+
+Edmonton International Airport
+
+
+
+Shabunda Airport
+
+
+
+Guangzhou Baiyun International Airport
+
+
+
+Burley Municipal Airport
+
+
+
+Uzhgorod Airport
+
+
+
+Perm Airport
+
+
+
+Jomsom Airport
+
+
+
+Oceanside Municipal Airport
+
+
+
+Nicosia Airport
+
+
+
+Raeford West Airport, NC, United States of America
+
+
+
+Piotrków Trybunalski Airport
+
+
+
+Renton Airport
+
+
+
+Bukoba Airport
+
+
+
+Renton Airport
+
+
+
+Leninabad Airport
+
+
+
+Karaganda Airport
+
+
+
+Enarotali Airport
+
+
+
+Kondinskoye Airport
+
+
+
+Basel/Mulhouse Airport
+
+
+
+Chita Airport
+
+
+
+Casey, QC, Canada
+
+
+
+Simferopol Airport
+
+
+
+Elko Airport
+
+
+
+Titograd Airport
+
+
+
+Jacareacanga Airport
+
+
+
+Magadan Airport
+
+
+
+Darvaza Airport, Turkmenistan
+
+
+
+Caracas Airport
+
+
+
+Ufa Airport
+
+
+
+Pago Pago International Airport
+
+
+
+Da Nang Airport
+
+
+
+Oruro Airport
+
+
+
+Atlanta Municipal Airport
+
+
+
+Frobisher Bay Airport
+
+
+
+Sovetsky Airport
+
+
+
+Mineralnye Vody Airport
+
+
+
+White River Airport
+
+
+
+Savannah International Airport
+
+
+
+Cairo International Airport
+
+
+
+Mariquita Airport
+
+
+
+Niamey Airport
+
+
+
+Porlamar Airport
+
+
+
+Kodiak Airport
+
+
+
+Bettles Airport
+
+
+
+Rea Point Airfield
+
+
+
+Beica Airport
+
+
+
+Johannesburg International Airport
+
+
+
+Kazachinskoye Airport
+
+
+
+Dushanbe Airport
+
+
+
+Oak Harbor Airport
+
+
+
+Lome Airport
+
+
+
+Florencia Airport
+
+
+
+Los Angeles International Airport
+
+
+
+Atlantic City International Airport
+
+
+
+Huntsville Airport
+
+
+
+Happy Valley Camp, AK, United States of America
+
+
+
+Baghdad International Airport
+
+
+
+San Carlos de Bariloche International Airport
+
+
+
+Jackson Municipal Airport
+
+
+
+Rockwood Municipal Airport
+
+
+
+Manila Airport
+
+
+
+Bagdarin Airport
+
+
+
+Gambell Airport
+
+
+
+Debre Markos Airport
+
+
+
+Fort Severn Airport
+
+
+
+Dease Lake Airport
+
+
+
+Novgorod Airport
+
+
+
+Cairns Airport
+
+
+
+Kharkov Airport
+
+
+
+Dubai Airport
+
+
+
+Mexico City International Airport
+
+
+
+Frunze Airport
+
+
+
+Yellowknife Airport
+
+
+
+Ashgabat Airport
+
+
+
+Ketchikan International Airport
+
+
+
+Cutral Airport
+
+
+
+Kota Kinabalu Airport
+
+
+
+Nizhneangarsk Airport
+
+
+
+Cheremshan Airstrip, Russia
+
+
+
+Dutch Harbor Naval Air Station
+
+
+
+Avalon Airport
+
+
+
+Timmins/Porcupine Lake Water Aerodrome, ON, Canada
+
+
+
+Santiago de Compostela Airport
+
+
+
+Kerch Airport
+
+
+
+Adler/Sochi Airport
+
+
+
+Köln/Bonn Airport
+
+
+
+Babine Lake, BC, Canada
+
+
+
+Zaporozhye Airport
+
+
+
+Tarapoto Airport
+
+
+
+Terrace Airport
+
+
+
+Sarajevo Airport
+
+
+
+Nome Airport
+
+
+
+Mineralnye Vody Airport
+
+
+
+Salluit Airport
+
+
+
+Sayun Airport
+
+
+
+Forish Airstrip, Uzbekistan
+
+
+
+Zhdanov Airport
+
+
+
+Reading Municipal Airport/Spaatz Field
+
+
+
+New Orleans International Airport
+
+
+
+Tilichiki
+
+
+
+Beirut International Airport
+
+
+
+Elefsis Air Base
+
+
+
+Kirovograd Airport
+
+
+
+Irkutsk Airport
+
+
+
+Jimma Airport
+
+
+
+Colorado Creek, AK, United States of America
+
+
+
+Bettles Airport
+
+
+
+Anchorage International Airport
+
+
+
+Keng Tung Airport
+
+
+
+Anchorage International Airport
+
+
+
+Nikolaev Airport
+
+
+
+Frankfurt International Airport
+
+
+
+Manila International Airport
+
+
+
+San Cristóbal de las Casas Airport
+
+
+
+Kotzebue Airport
+
+
+
+Kuala Lumpur Subang International Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Nanisivik Airport
+
+
+
+Pueblo Memorial Airport
+
+
+
+Tanunak, AK, United States of America
+
+
+
+San Vicente Airport
+
+
+
+Seattle/Tacoma International Airport
+
+
+
+Cranbrook Airport
+
+
+
+Kano International Airport
+
+
+
+Honolulu International Airport
+
+
+
+Tulsa International Airport
+
+
+
+Pensacola Regional Airport
+
+
+
+Memphis International Airport
+
+
+
+Winnipeg International Airport
+
+
+
+Manila Airport
+
+
+
+Bagan Airport
+
+
+
+Salisbury Airport
+
+
+
+Yablunivka Airstrip, Ukraine
+
+
+
+San Diego International Airport
+
+
+
+Simferopol Airport
+
+
+
+Um Barka Oil Field Airstrip, Egypt
+
+
+
+Anchorage International Airport
+
+
+
+Zyryanka Airport
+
+
+
+Karachi International Airport
+
+
+
+Samarkand Airport
+
+
+
+Grand Turk Island Airport
+
+
+
+Mawson Station, Antarctica
+
+
+
+Belgorod Airport
+
+
+
+Rodez Airport
+
+
+
+Salisbury Airport
+
+
+
+Auckland International Airport
+
+
+
+Santa Maria Airport
+
+
+
+Liepaya Airport
+
+
+
+Baykit Airport
+
+
+
+Bimini International Airport
+
+
+
+Honolulu International Airport
+
+
+
+Beirut International Airport
+
+
+
+Akron/Canton Regional Airport
+
+
+
+Kishinev Airport
+
+
+
+Krasnoyarsk Airport
+
+
+
+Frobisher Bay Airport
+
+
+
+Port Hardy Airport
+
+
+
+Bettles Airport
+
+
+
+Big Trout Airport
+
+
+
+Kaintiba Airport
+
+
+
+Vologda Airport
+
+
+
+Ushuaia Airport
+
+
+
+Karachi International Airport
+
+
+
+Christchurch International Airport
+
+
+
+Shishmaref Airport
+
+
+
+Puerto Esperanza Airport
+
+
+
+N'Gaoundéré Airport
+
+
+
+Changsha Datuopu Airport
+
+
+
+Yeniseysk Airport
+
+
+
+Varadero Airport
+
+
+
+New Orleans International Airport
+
+
+
+Jamba Airport
+
+
+
+Dushanbe Airport
+
+
+
+Seattle/Tacoma International Airport
+
+
+
+Guadalajara International Airport
+
+
+
+Dillingham Municipal Airport
+
+
+
+Jeddah International Airport
+
+
+
+Egilsstadir Airport
+
+
+
+Karachi International Airport
+
+
+
+Peshawar Airport
+
+
+
+Lazo Airfield, Russia
+
+
+
+Oaxaca Airport
+
+
+
+Nizhneangarsk Airport
+
+
+
+Anchorage International Airport
+
+
+
+Santa Barbara Municipal Airport
+
+
+
+King Salmon Airport
+
+
+
+King Cove Airport
+
+
+
+Hargeisa Airport
+
+
+
+Coclecito, Panama
+
+
+
+Villa O'Higgins Airport
+
+
+
+Zeya Airport
+
+
+
+Eindhoven Airport
+
+
+
+Noril'sk Airport
+
+
+
+Sicogon Island Airport
+
+
+
+Mehamn Airport
+
+
+
+Oberpfaffenhofen Airport
+
+
+
+Orlando International Airport
+
+
+
+Aden International Airport
+
+
+
+Dunakeszi Airport
+
+
+
+Tabatinga Internacional Airport
+
+
+
+Zamboanga Airport
+
+
+
+Loja Airport
+
+
+
+Porto Velho Airport
+
+
+
+Pueblo Memorial Airport
+
+
+
+Krasnovodsk Airport
+
+
+
+Toronto International Airport
+
+
+
+Portland International Airport
+
+
+
+Kabul Airport
+
+
+
+Barquisimeto Airport
+
+
+
+Sukhumi Airport
+
+
+
+Ambler Airport
+
+
+
+Leninakan Airport
+
+
+
+Toronto International Airport
+
+
+
+Conakry Airport
+
+
+
+Toowoomba Airport
+
+
+
+Smithers Airport
+
+
+
+Abu Dhabi International Airport
+
+
+
+Orchid Island Airport
+
+
+
+Araçatuba Airport
+
+
+
+Myitkyina Airport
+
+
+
+Lansdowne House Airport
+
+
+
+Enugu Airport
+
+
+
+Paulatuk Airport
+
+
+
+Izhevsk Airport
+
+
+
+Prosperine Airport
+
+
+
+San Borja Airport
+
+
+
+Tau Airport
+
+
+
+Liverpool International Airport
+
+
+
+Telefomin Airstrip
+
+
+
+Opole/Polska Nowa Wies Airport
+
+
+
+Fort Franklin Airport
+
+
+
+Goose Bay Airport
+
+
+
+Omsk Airport
+
+
+
+Zumba Airport
+
+
+
+Karachi International Airport
+
+
+
+Ivanovo Airport
+
+
+
+Tampa International Airport
+
+
+
+Dar es Salaam International Airport
+
+
+
+Irkutsk Airport
+
+
+
+Jinan Airport
+
+
+
+Cali Airport
+
+
+
+Millville Airport
+
+
+
+Mopti Airport
+
+
+
+Reno/Tahoe International Airport
+
+
+
+Indianapolis International Airport
+
+
+
+Ufa Airport
+
+
+
+Dallas/Fort Worth International Airport
+
+
+
+Gulkana Airport
+
+
+
+Farah Airport
+
+
+
+Jenkinsburg, GA, United States of America
+
+
+
+Poti Airport
+
+
+
+Juneau International Airport
+
+
+
+Chevak Airport
+
+
+
+Teterboro Airport
+
+
+
+Mirny Ice Station, Antarctica
+
+
+
+Bugulma Airport
+
+
+
+Lime Village Airport
+
+
+
+Goose Bay Airport
+
+
+
+Omsk Severny Airport
+
+
+
+Alexandria Airport
+
+
+
+Simferopol Airport
+
+
+
+Buffalo Municipal Airport
+
+
+
+Texarkana Municipal Airport
+
+
+
+Frankfurt International Airport
+
+
+
+Nizhnevartovsk Airport
+
+
+
+Maputo International Airport
+
+
+
+Peshawar Airport
+
+
+
+Saint Thomas Island Seaplane Base
+
+
+
+Pittsfield Airport
+
+
+
+Nadi International Airport
+
+
+
+Toronto Island Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Pickle Lake Airport
+
+
+
+Ilaga Airport
+
+
+
+Kabul Airport
+
+
+
+Mong Hsat Airport
+
+
+
+Lake Tahoe Airport
+
+
+
+Phuket International Airport
+
+
+
+Luxor Airport
+
+
+
+Cincinnati/Northern Kentucky Airport
+
+
+
+San Jose Municipal Airport
+
+
+
+Leeds/Bradford Airport
+
+
+
+Reno/Tahoe International Airport
+
+
+
+Santa Paula Airport
+
+
+
+Ross River Airport
+
+
+
+Homer Airport
+
+
+
+Christchurch International Airport
+
+
+
+Campbell River Airport
+
+
+
+San Francisco International Airport
+
+
+
+Monroe Municipal Airport
+
+
+
+Green Island Airport
+
+
+
+Tyumen Airport
+
+
+
+Düsseldorf Airport
+
+
+
+Surgut Airport
+
+
+
+Sharjah Airport
+
+
+
+Johannesburg International Airport
+
+
+
+Bagdarin Airport
+
+
+
+Honolulu International Airport
+
+
+
+Brønnøysund Airport
+
+
+
+Morristown Municipal Airport
+
+
+
+Hannover Airport
+
+
+
+Posadas Airport
+
+
+
+Putao Airport
+
+
+
+Basel/Mulhouse Airport
+
+
+
+Dubai Airport
+
+
+
+Chino Airport
+
+
+
+Reykjavík Domestic Airport
+
+
+
+Islamabad International Airport
+
+
+
+Irkutsk Airport
+
+
+
+Zhigansk Airport
+
+
+
+Salt Lake City International Airport
+
+
+
+Lázaro Cárdenas Airport
+
+
+
+Petersburg Municipal Airport
+
+
+
+Redding Airport
+
+
+
+Asmara International Airport
+
+
+
+Batagay Airport
+
+
+
+Linfen Air Base, China
+
+
+
+Pikangikum Airport
+
+
+
+Chapleau Airport
+
+
+
+Tripoli International Airport
+
+
+
+Cairo International Airport
+
+
+
+Klawock Airport
+
+
+
+Auckland International Airport
+
+
+
+Winnipeg International Airport
+
+
+
+Cozumel Airport
+
+
+
+Farmington Municipal Airport
+
+
+
+Boboc Air Base
+
+
+
+Tame Airport
+
+
+
+Zaranj Airport
+
+
+
+Bonaventure Airport
+
+
+
+Mogadishu International Airport
+
+
+
+Pevek Airport
+
+
+
+Christchurch International Airport
+
+
+
+Samos Airport
+
+
+
+Milford Sound Airport
+
+
+
+Puerto Ordaz Airport
+
+
+
+Islamabad International Airport
+
+
+
+Mayfield Graves County Airport, KY, United States of America
+
+
+
+Terrace Airport
+
+
+
+Roxboro/Person County Airport
+
+
+
+Destin Airport
+
+
+
+Adana Airport
+
+
+
+Leninakan Airport
+
+
+
+Molokai/Kaunakakai Airport
+
+
+
+Bardufoss Airport
+
+
+
+Sovetsky Airport
+
+
+
+Zhezhazgan Airport
+
+
+
+Jamba Airport
+
+
+
+Westerly State Airport
+
+
+
+Ufa Airport
+
+
+
+Montrose County Airport
+
+
+
+Albany Airport
+
+
+
+Roxas City Airport
+
+
+
+Moosonee Airport
+
+
+
+Mareeba Airport
+
+
+
+Surigao Airport
+
+
+
+Yellowknife Airport
+
+
+
+Cozumel Airport
+
+
+
+Las Cruces Municipal Airport
+
+
+
+Gander Airport
+
+
+
+Palmdale Airport
+
+
+
+Goose Bay Airport
+
+
+
+Taisha Airport
+
+
+
+Brasília International Airport
+
+
+
+Smithers Airport
+
+
+
+Nuku Hiva Airport
+
+
+
+Kermanshah Airport
+
+
+
+Chicoutimi St Honoré Airport
+
+
+
+Pucallpa Airport
+
+
+
+Birmingham Airport
+
+
+
+Sovetsky Airport
+
+
+
+Bamako Airport
+
+
+
+Wrangell Airport
+
+
+
+Palangkaraya Airport
+
+
+
+Marudi Airport
+
+
+
+Omsk Airport
+
+
+
+Sampit Airport
+
+
+
+Makhachkala Airport
+
+
+
+Vorkuta Airport
+
+
+
+Bugulma Airport
+
+
+
+Egelsbach Airfield
+
+
+
+Tiksi Airport
+
+
+
+Taitung Airport
+
+
+
+Goroka Airport
+
+
+
+Perris Valley Airport, CA, United States of America
+
+
+
+Cumuatillo Airstrip, Mexico
+
+
+
+Manitowoc/Newton Municipal Airport
+
+
+
+Omsk Airport
+
+
+
+Chevak Airport
+
+
+
+     icao iata                                name state  \
+0    ZSAM  XMN                      Xiamen Airport         
+1    UUBI  IWA                     Ivanovo Airport         
+2    GYGM  YGM                       Gimli Airport    MB   
+3    SPEE  xxx                 El Estrecho Airport         
+4    SPBL  BLP                  Bellavista Airport         
+..    ...  ...                                 ...   ...   
+833  xxxx  xxx               Perris Valley Airport    CA   
+834  xxxx  xxx                 Cumuatillo Airstrip         
+835  KMTW  MTW  Manitowoc/Newton Municipal Airport    WI   
+836  UNOO  OMS                        Omsk Airport         
+837  PAVA  VAK                      Chevak Airport    AK   
+
+                      country country_code        lat         lon  
+0                       China           CN  24.544001  118.127998  
+1                      Russia           RU  56.939400   40.940800  
+2                      Canada           CA  50.628101  -97.043297  
+3                        Peru           PE  -2.454060  -72.670601  
+4                        Peru           PE  -7.060560  -76.582199  
+..                        ...          ...        ...         ...  
+833  United States of America           US  33.864800 -117.256180  
+834                    Mexico           MX  20.151180 -102.623350  
+835  United States of America           US  44.128778  -87.680583  
+836                    Russia           RU  54.966999   73.310501  
+837  United States of America           US  61.540833 -165.600889  
+
+[838 rows x 8 columns]
+
+
+
+     accident_id  icao iata                                name state  \
+1029     ACC1003  ZSAM  XMN                      Xiamen Airport         
+1030     ACC1004  UUBI  IWA                     Ivanovo Airport         
+1031     ACC1005  GYGM  YGM                       Gimli Airport    MB   
+1032     ACC1006  SPEE  xxx                 El Estrecho Airport         
+1036     ACC1010  SPBL  BLP                  Bellavista Airport         
+...          ...   ...  ...                                 ...   ...   
+1010      ACC984  xxxx  xxx               Perris Valley Airport    CA   
+1012      ACC986  xxxx  xxx                 Cumuatillo Airstrip         
+1017      ACC991  KMTW  MTW  Manitowoc/Newton Municipal Airport    WI   
+1019      ACC993  UNOO  OMS                        Omsk Airport         
+1022      ACC996  PAVA  VAK                      Chevak Airport    AK   
+
+                       country country_code        lat         lon  
+1029                     China           CN  24.544001  118.127998  
+1030                    Russia           RU  56.939400   40.940800  
+1031                    Canada           CA  50.628101  -97.043297  
+1032                      Peru           PE  -2.454060  -72.670601  
+1036                      Peru           PE  -7.060560  -76.582199  
+...                        ...          ...        ...         ...  
+1010  United States of America           US  33.864800 -117.256180  
+1012                    Mexico           MX  20.151180 -102.623350  
+1017  United States of America           US  44.128778  -87.680583  
+1019                    Russia           RU  54.966999   73.310501  
+1022  United States of America           US  61.540833 -165.600889  
+
+[838 rows x 9 columns]
+
+
+
+Nanking Airport (NKG) (China)
+
+
+
+Nanking Airport
+
+
+
+3 km (1.9 mls) SE of Ivanovo Airport (IWA) (Russia)
+
+
+
+Ivanovo Airport
+
+
+
+Gimli Airport, MB (YGM) (Canada)
+
+
+
+Gimli Airport
+
+
+
+near San Antonio del Estrecho (Peru)
+
+
+
+San Antonio del Estrecho, Peru
+
+
+
+Bellavista Airport (BLP) (Peru)
+
+
+
+Bellavista Airport
+
+
+
+near Union Valley Reservoir, CA (United States)
+
+
+
+Union Valley Reservoir, CA, United States
+
+
+
+near Uruapan Airport (UPN) (Mexico)
+
+
+
+Uruapan Airport
+
+
+
+Elkridge, MD (United States)
+
+
+
+Elkridge, MD, United States
+
+
+
+40 km (25 mls) SW of Goma Airport (GOM) (Democratic Republic Congo)
+
+
+
+Goma Airport
+
+
+
+5,5 km (3.4 mls) NW of Sellafield (United Kingdom)
+
+
+
+Sellafield, United Kingdom
+
+
+
+Pozo Chuño Mountain, Contumazá district (Peru)
+
+
+
+Pozo Chuño Mountain, Contumazá district, Peru
+
+
+
+near Bronson Creek, BC (Canada)
+
+
+
+Bronson Creek, BC, Canada
+
+
+
+40 km (25 mls) NE of Batagay (Russia)
+
+
+
+Batagay, Russia
+
+
+
+near Luena (Angola)
+
+
+
+Luena, Angola
+
+
+
+22 km (13.8 mls) N off Cozumel Airport (CZM) (Mexico)
+
+
+
+Cozumel Airport
+
+
+
+Edmonton/Villeneuve Airport, AB (Canada)
+
+
+
+Edmonton/Villeneuve Airport, Air Base, Canada
+
+
+
+Köln/Bonn Airport (CGN) (Germany)
+
+
+
+Köln/Bonn Airport
+
+
+
+near Tokmass (Russia)
+
+
+
+Tokmass, Russia
+
+
+
+Long Loyang, Sarawak (Malaysia)
+
+
+
+Long Loyang, Sarawak, Malaysia
+
+
+
+Pátras (Greece)
+
+
+
+Pátras, Greece
+
+
+
+near Aldan Airport (ADH) (Russia)
+
+
+
+Aldan Airport
+
+
+
+near Khorog (Tajikistan)
+
+
+
+Khorog, Tajikistan
+
+
+
+32 km (20 mls) NE of Samarkand Airport (SKD) (Uzbekistan)
+
+
+
+Samarkand Airport
+
+
+
+5 km (3.1 mls) off Port Blair (India)
+
+
+
+Port Blair, India
+
+
+
+Front Royal, VA (United States)
+
+
+
+Front Royal, VA, United States
+
+
+
+2 km (1.3 mls) NW of Sandy Lake Airport, ON (ZSJ) (Canada)
+
+
+
+Sandy Lake Airport
+
+
+
+35 km (21.9 mls) E of Kerman (Iran)
+
+
+
+Kerman, Iran
+
+
+
+13 km (8.1 mls) SE of Tuktoyaktuk, NT (Canada)
+
+
+
+Tuktoyaktuk, NT, Canada
+
+
+
+Ampuriabrava Airport (LEAP) (Spain)
+
+
+
+Ampuriabrava Airport
+
+
+
+4,6 km (2.9 mls) ESE of Meadow Lake Airport, SK (YLJ) (Canada)
+
+
+
+Meadow Lake Airport
+
+
+
+4,5 km (2.8 mls) from Nalchik Airport (NAL) (Russia)
+
+
+
+Nalchik Airport
+
+
+
+15 km (9.4 mls) NE of Tamworth Airport, NSW (TMW) (Australia)
+
+
+
+Tamworth Airport
+
+
+
+Key West Harbor, FL (United States)
+
+
+
+Key West Harbor, FL, United States
+
+
+
+1 km (0.6 mls) SW of Spokane International Airport, WA (GEG) (United States)
+
+
+
+Spokane International Airport
+
+
+
+Tripoli International Airport (TIP) (Libya)
+
+
+
+Tripoli International Airport
+
+
+
+Weipa Airport, QLD (WEI) (Australia)
+
+
+
+Weipa Airport
+
+
+
+15 km (9.4 mls) NE of Hiroshima West Airport (HIW) (Japan)
+
+
+
+Hiroshima West Airport
+
+
+
+2 km (1.3 mls) E of Kigali Airport (KGL) (Rwanda)
+
+
+
+Kigali Airport
+
+
+
+near Jacareacanga, PA (Brazil)
+
+
+
+Jacareacanga, PA, Brazil
+
+
+
+12 km (7.5 mls) from Sasasama (Bolivia)
+
+
+
+Sasasama, Bolivia
+
+
+
+5,9 km (3.7 mls) NNW of Uruapan Airport (UPN) (Mexico)
+
+
+
+Uruapan Airport
+
+
+
+Tidjikja Airport (TIY) (Mauritania)
+
+
+
+Tidjikja Airport
+
+
+
+32 km (20 mls) W of Missoula, MT (United States)
+
+
+
+Missoula, MT, United States
+
+
+
+near Saborsko (Croatia)
+
+
+
+Saborsko, Croatia
+
+
+
+Fish Egg Inlet, BC (Canada)
+
+
+
+Fish Egg Inlet, BC, Canada
+
+
+
+29 km (18.1 mls) from Tarauacá, AC (Brazil)
+
+
+
+Tarauacá, AC, Brazil
+
+
+
+41 km (25.6 mls) NNW of Vanavara (Russia)
+
+
+
+Vanavara, Russia
+
+
+
+Chaybukha (Russia)
+
+
+
+Chaybukha, Russia
+
+
+
+Makhachkala Airport (MCX) (Russia)
+
+
+
+Makhachkala Airport
+
+
+
+Batagay (Russia)
+
+
+
+Batagay, Russia
+
+
+
+near Nabire (Indonesia)
+
+
+
+Nabire, Indonesia
+
+
+
+Melcor Ocampo (Mexico)
+
+
+
+Melcor Ocampo, Mexico
+
+
+
+Saposoa Airport (SQU) (Peru)
+
+
+
+Saposoa Airport
+
+
+
+Avenal, CA (United States)
+
+
+
+Avenal, CA, United States
+
+
+
+54 km (33.8 mls) ESE of Tabubil (Papua New Guinea)
+
+
+
+Tabubil, Papua New Guinea
+
+
+
+28 km (17.5 mls) E of Olsobip (Papua New Guinea)
+
+
+
+Olsobip, Papua New Guinea
+
+
+
+Vrede (South Africa)
+
+
+
+Vrede, South Africa
+
+
+
+Lourenço Marques Airport (MPM) (Mozambique)
+
+
+
+Lourenço Marques Airport
+
+
+
+Molo Strait (Indonesia)
+
+
+
+Molo Strait, Indonesia
+
+
+
+15 km (9.4 mls) NW off Masset Airport, BC (ZMT) (Canada)
+
+
+
+Masset Airport
+
+
+
+near Krasnoyarsk Airport (KJA) (Russia)
+
+
+
+Krasnoyarsk Airport
+
+
+
+near Cafunfo Airport (CFF) (Angola)
+
+
+
+Cafunfo Airport
+
+
+
+Reno, NV (United States)
+
+
+
+Reno, NV, United States
+
+
+
+2,5 km (1.6 mls) NNE of Zaporozhye Airport (OZH) (Ukraine)
+
+
+
+Zaporozhye Airport
+
+
+
+Sioux Falls, ON (Canada)
+
+
+
+Sioux Falls, ON, Canada
+
+
+
+1,3 km (0.8 mls) SSW of Sibay Airport, Bashkortostan (Russia)
+
+
+
+Sibay Airport, Bashkortostan, Russia
+
+
+
+16 km (10 mls) E of Palmerston North (New Zealand)
+
+
+
+Palmerston North, New Zealand
+
+
+
+22 km (13.8 mls) from Herpuchi (Russia)
+
+
+
+Herpuchi, Russia
+
+
+
+15 km (9.4 mls) E of Catumbela Airport (CBT) (Angola)
+
+
+
+Catumbela Airport
+
+
+
+8,3 km (5.2 mls) S of Tepic Airport (TPQ) (Mexico)
+
+
+
+Tepic Airport
+
+
+
+near Independence, NY (United States)
+
+
+
+Independence, NY, United States
+
+
+
+near Jalalabad Airport (JAA) (Afghanistan)
+
+
+
+Jalalabad Airport
+
+
+
+Tawau Airport (TWU) (Malaysia)
+
+
+
+Tawau Airport
+
+
+
+0,5 km (0.3 mls) ESE Tamworth Airport, NSW (TMW) (Australia)
+
+
+
+0
+
+
+
+13 km (8.1 mls) NW of Campbell River, BC (Canada)
+
+
+
+Campbell River, BC, Canada
+
+
+
+1 km (0.6 mls) from Ufa Airport (UFA) (Russia)
+
+
+
+Ufa Airport
+
+
+
+16 km (10 mls) from Piedras Negras Airport (PDS) (Mexico)
+
+
+
+Piedras Negras Airport
+
+
+
+Kaduna Airport (KAD) (Nigeria)
+
+
+
+Kaduna Airport
+
+
+
+1,7 km (1.1 mls) S of Douala Airport (DLA) (Cameroon)
+
+
+
+Douala Airport
+
+
+
+Begesin Airstrip (Papua New Guinea)
+
+
+
+Begesin Airstrip, Papua New Guinea
+
+
+
+0,4 km (0.3 mls) from Eagle River Airport, WI (EGV) (United States)
+
+
+
+Eagle River Airport
+
+
+
+Kuban (Russia)
+
+
+
+Kuban, Russia
+
+
+
+near Bagua (Peru)
+
+
+
+Bagua, Peru
+
+
+
+near Cabanatuan (Philippines)
+
+
+
+Cabanatuan, Philippines
+
+
+
+Palapala hills, Morogoro (Tanzania)
+
+
+
+Palapala hills, Morogoro, Tanzania
+
+
+
+55 km (34.4 mls) E of Terrace, BC (Canada)
+
+
+
+Terrace, BC, Canada
+
+
+
+near Umba (Papua New Guinea)
+
+
+
+Umba, Papua New Guinea
+
+
+
+1,5 km (0.9 mls) S of Lerwick/Tingwall Airport, Shetland Islands (LWK) (United Kingdom)
+
+
+
+Lerwick/Tingwall Airport
+
+
+
+near Changhai Airport (CNI) (China)
+
+
+
+Changhai Airport
+
+
+
+near Bouaflé (Cote d'Ivoire)
+
+
+
+Bouaflé, Cote d'Ivoire
+
+
+
+8 km (5 mls) NE of Mendi Airport (MDU) (Papua New Guinea)
+
+
+
+Mendi Airport
+
+
+
+Russian Mission, AK (RSH) (United States)
+
+
+
+Russian Mission
+
+
+
+Markham Bay, NU (Canada)
+
+
+
+Markham Bay, NU, Canada
+
+
+
+near Bronson Creek Airport, BC (YBM) (Canada)
+
+
+
+Bronson Creek Airport
+
+
+
+33 km (20.6 mls) S of Alliford Bay, BC (Canada)
+
+
+
+Alliford Bay, BC, Canada
+
+
+
+Bahía Tortugas Airfield (Mexico)
+
+
+
+Bahía Tortugas Airfield, Mexico
+
+
+
+5 km (3.1 mls) W of Kainantu (Papua New Guinea)
+
+
+
+Kainantu, Papua New Guinea
+
+
+
+SW of Manta Airport (MEC) (Ecuador)
+
+
+
+Manta Airport
+
+
+
+Most Pyssa (Russia)
+
+
+
+Most Pyssa, Russia
+
+
+
+1,6 km (1 mls) W of Bethel, AK (United States)
+
+
+
+Bethel, AK, United States
+
+
+
+Edwards AFB, CA (EDW) (United States)
+
+
+
+Edwards Air Force Base
+
+
+
+3,5 km (2.2 mls) W of Sparrevohn Airport, AK (SVW) (United States)
+
+
+
+Sparrevohn Airport
+
+
+
+0,7 km (0.4 mls) N of Yola Airport (YOL) (Nigeria)
+
+
+
+Yola Airport
+
+
+
+Carajás Airport, PA (CKS) (Brazil)
+
+
+
+Carajás Airport
+
+
+
+near Chisinau Airport (KIV) (Moldova)
+
+
+
+Chisinau Airport
+
+
+
+1 km (0.6 mls) E of Cherkessk (Russia)
+
+
+
+Cherkessk, Russia
+
+
+
+2,8 km (1.8 mls) ENE of Nunapitchuk Airport, AK (NUP) (United States)
+
+
+
+Nunapitchuk Airport
+
+
+
+5,2 km (3.3 mls) from Gyandzha Airport (KVD) (Azerbaijan)
+
+
+
+Gyandzha Airport
+
+
+
+near La Carbonera (Mexico)
+
+
+
+La Carbonera, Mexico
+
+
+
+near Irumu (Democratic Republic Congo)
+
+
+
+Irumu, Democratic Republic Congo
+
+
+
+near Tula Airport (TYA) (Russia)
+
+
+
+Tula Airport
+
+
+
+48 km (30 mls) S of Ranong (Thailand)
+
+
+
+Ranong, Thailand
+
+
+
+0,3 km (0.2 mls) NW of Dalton Municipal Airport, GA (DNN) (United States)
+
+
+
+Dalton Municipal Airport
+
+
+
+33 km (20.6 mls) SW of Montrose, CO (United States)
+
+
+
+Montrose, CO, United States
+
+
+
+near Roxas (Philippines)
+
+
+
+Roxas, Philippines
+
+
+
+Madison, MS (United States)
+
+
+
+Madison, MS, United States
+
+
+
+Little Grand Rapids, MB (Canada)
+
+
+
+Little Grand Rapids, MB, Canada
+
+
+
+13 km (8.1 mls) E of Sharjah Airport (SHJ) (United Arab Emirates)
+
+
+
+Sharjah Airport
+
+
+
+Thandwe Airport (SNW) (Myanmar)
+
+
+
+Thandwe Airport
+
+
+
+11 km (6.9 mls) NW off Hsinchu Airport (HSZ) (Taiwan)
+
+
+
+Hsinchu Airport
+
+
+
+15 km (9.4 mls) S of Kabul Airport (KBL) (Afghanistan)
+
+
+
+Kabul Airport
+
+
+
+near Piura Airport (PIU) (Peru)
+
+
+
+Piura Airport
+
+
+
+McGrath Airport, AK (MCG) (United States)
+
+
+
+McGrath Airport
+
+
+
+W of Erdenet (Mongolia)
+
+
+
+Erdenet, Mongolia
+
+
+
+4,5 km (2.8 mls) NW off Ra'sal-Khaymah (United Arab Emirates)
+
+
+
+Ra'sal-Khaymah, United Arab Emirates
+
+
+
+Cochin Airport (COK) (India)
+
+
+
+Cochin Airport
+
+
+
+3200 km (1988.4 mls) W of Paris (France)
+
+
+
+Paris, France
+
+
+
+Rwenzori mountains (Uganda)
+
+
+
+Rwenzori mountains, Uganda
+
+
+
+15,3 km (9.6 mls) N of Melilla Airport (MLN) (Morocco)
+
+
+
+Melilla Airport
+
+
+
+1 km (0.6 mls) from Canaima Airport (CAJ) (Venezuela)
+
+
+
+Canaima Airport
+
+
+
+near Quetzaltenango (Guatemala)
+
+
+
+Quetzaltenango, Guatemala
+
+
+
+9 km (5.6 mls) N of Victoria International Airport, BC (YYJ) (Canada)
+
+
+
+Victoria International Airport
+
+
+
+Ashburton (United Kingdom)
+
+
+
+Ashburton, United Kingdom
+
+
+
+20 km (12.5 mls) SE of Rawalpindi (Pakistan)
+
+
+
+Rawalpindi, Pakistan
+
+
+
+30 km (18.8 mls) S of Mena Intermountain Municipal Airport, AR) (United States)
+
+
+
+Mena Intermountain Municipal Airport, AR), United States
+
+
+
+Baie Comeau Airport, QC (YBC) (Canada)
+
+
+
+Baie Comeau Airport
+
+
+
+Mayne Island, BC (Canada)
+
+
+
+Mayne Island, BC, Canada
+
+
+
+near Coconut Island Airport, QLD (CNC) (Australia)
+
+
+
+Coconut Island Airport
+
+
+
+Jumla Airport (JUM) (Nepal)
+
+
+
+Jumla Airport
+
+
+
+near Kimbe (Papua New Guinea)
+
+
+
+Kimbe, Papua New Guinea
+
+
+
+38 km (23.8 mls) N of Chisinau Airport (KIV) (Moldova)
+
+
+
+Chisinau Airport
+
+
+
+29 km (18.1 mls) NE of Bishop Airport, CA (BIH) (United States)
+
+
+
+Bishop Airport
+
+
+
+Rui'an (China)
+
+
+
+Rui'an, China
+
+
+
+3,7 km (2.3 mls) from Davis Inlet Airport, NL (YDI) (Canada)
+
+
+
+Davis Inlet Airport
+
+
+
+Ol Kiombo (Kenya)
+
+
+
+Ol Kiombo, Kenya
+
+
+
+Little Rock National Airport, AR (LIT) (United States)
+
+
+
+Little Rock National Airport
+
+
+
+Long Haul Lake, MB (Canada)
+
+
+
+Long Haul Lake, MB, Canada
+
+
+
+Kasibu (Philippines)
+
+
+
+Kasibu, Philippines
+
+
+
+Haringvreter (Netherlands)
+
+
+
+Haringvreter, Netherlands
+
+
+
+Ennadai Lake Airport, NU (YEI) (Canada)
+
+
+
+Ennadai Lake Airport
+
+
+
+near Dnepropetrovsk (Ukraine)
+
+
+
+Dnepropetrovsk, Ukraine
+
+
+
+near Gualeguaychú, ER (Argentina)
+
+
+
+Gualeguaychú, ER, Argentina
+
+
+
+5,3 km (3.3 mls) SW of Kaunakakai, HI (United States)
+
+
+
+Kaunakakai, HI, United States
+
+
+
+2 km (1.3 mls) NE of Moanda Airport (MFF) (Gabon)
+
+
+
+Moanda Airport
+
+
+
+25 km from Wuhan (China)
+
+
+
+Wuhan, China
+
+
+
+90 km (56.3 mls) NE of Leninabad (Tajikistan)
+
+
+
+Leninabad, Tajikistan
+
+
+
+Jarayakhali Hill (Nepal)
+
+
+
+Jarayakhali Hill, Nepal
+
+
+
+Teslin Lake, BC (Canada)
+
+
+
+Teslin Lake, BC, Canada
+
+
+
+2 km (1.3 mls) N off Bahrain International Airport (BAH) (Bahrain)
+
+
+
+Bahrain International Airport
+
+
+
+65 km (40.6 mls) ESE of Burketown, QLD (Australia)
+
+
+
+Burketown, QLD, Australia
+
+
+
+5,5 km (3.4 mls) NE of Port Radium, NT (Canada)
+
+
+
+Port Radium, NT, Canada
+
+
+
+1,5 km (0.9 mls) NE of Córdoba (Spain)
+
+
+
+Córdoba, Spain
+
+
+
+69 km (43.1 mls) SW of Kenai, AK (United States)
+
+
+
+Kenai, AK, United States
+
+
+
+13 km (8.1 mls) S of Rangeley Municipal Airport, ME (United States)
+
+
+
+Rangeley Municipal Airport, ME, United States
+
+
+
+1,8 km (1.1 mls) NE of Blackbushe Airport (BBS) (United Kingdom)
+
+
+
+Blackbushe Airport
+
+
+
+9 km (5.6 mls) from Mahdia (Guyana)
+
+
+
+Mahdia, Guyana
+
+
+
+Eider Point, AK (United States)
+
+
+
+Eider Point, AK, United States
+
+
+
+near Anchorage, AK (United States)
+
+
+
+Anchorage, AK, United States
+
+
+
+Ciudad Bolívar (Venezuela)
+
+
+
+Ciudad Bolívar, Venezuela
+
+
+
+7,8 km (4.9 mls) from El Yopal Airport (EYP) (Colombia)
+
+
+
+El Yopal Airport
+
+
+
+0,7 km (0.4 mls) N of Aspen Airport, CO (ASE) (United States)
+
+
+
+Aspen Airport
+
+
+
+12 km (7.5 mls) from Roque Pérez, BA (Argentina)
+
+
+
+Roque Pérez, BA, Argentina
+
+
+
+4 km (2.5 mls) NW of Nagambie, VIC (Australia)
+
+
+
+Nagambie, VIC, Australia
+
+
+
+Metallurg, Volgograd region (Russia)
+
+
+
+Metallurg, Volgograd region, Russia
+
+
+
+1,5 km (0.9 mls) from Chkalovsky Airport (CKL) (Russia)
+
+
+
+Chkalovsky Airport
+
+
+
+8 km (5 mls) SW of Narsarsuaq (Greenland)
+
+
+
+Narsarsuaq, Greenland
+
+
+
+Mugogo (Democratic Republic Congo)
+
+
+
+Mugogo, Democratic Republic Congo
+
+
+
+0,3 km (0.2 mls) from Málaga Airport (AGP) (Spain)
+
+
+
+Málaga Airport
+
+
+
+3,8 km (2.4 mls) N of Shanksville, PA (United States)
+
+
+
+Shanksville, PA, United States
+
+
+
+1 km NW of Chichén Itzá Airport (CZA) (Mexico)
+
+
+
+Chichén Itzá Airport
+
+
+
+Dillingham Municipal Airport, AK (DLG) (United States)
+
+
+
+Dillingham Municipal Airport
+
+
+
+1 km (0.6 mls) from Shamattawa Airport, MB (ZTM) (Canada)
+
+
+
+Shamattawa Airport
+
+
+
+Pittsburgh International Airport, PA (PIT) (United States)
+
+
+
+Pittsburgh International Airport
+
+
+
+0,9 km (0.6 mls) W of Bessemer Airport, AL (United States)
+
+
+
+Bessemer Airport, AL, United States
+
+
+
+5,7 km (3.6 mls) N of Mount Gambier Airport, SA (MGB) (Australia)
+
+
+
+Mount Gambier Airport
+
+
+
+Geti (Democratic Republic Congo)
+
+
+
+Geti, Democratic Republic Congo
+
+
+
+off Bremerhaven Airport (BRV) (Germany)
+
+
+
+Bremerhaven Airport
+
+
+
+Birmingham International Airport (BHX) (United Kingdom)
+
+
+
+Birmingham International Airport
+
+
+
+near Placetas (Cuba)
+
+
+
+Placetas, Cuba
+
+
+
+22 km (13.8 mls) SSE of Calabar Airport (CBQ) (Nigeria)
+
+
+
+Calabar Airport
+
+
+
+50 km (31.3 mls) from Nabire (Indonesia)
+
+
+
+Nabire, Indonesia
+
+
+
+12,4 km (7.8 mls) NE of George (South Africa)
+
+
+
+George, South Africa
+
+
+
+10 km (6.3 mls) N of Surkhet Airport (SKH) (Nepal)
+
+
+
+Surkhet Airport
+
+
+
+5 km (3.1 mls) SE of Pokhara (Nepal)
+
+
+
+Pokhara, Nepal
+
+
+
+4,8 km (3 mls) SW of Ayan (Russia)
+
+
+
+Ayan, Russia
+
+
+
+15 km (9.4 mls) from Xichang (China)
+
+
+
+Xichang, China
+
+
+
+105 km (65.6 mls) N of Natashquan, QC (Canada)
+
+
+
+Natashquan, QC, Canada
+
+
+
+near TepTep (Papua New Guinea)
+
+
+
+TepTep, Papua New Guinea
+
+
+
+Lake Champlain, NY (United States)
+
+
+
+Lake Champlain, NY, United States
+
+
+
+2 km (1.3 mls) from Borki (Russia)
+
+
+
+Borki, Russia
+
+
+
+near El Paujil (Colombia)
+
+
+
+El Paujil, Colombia
+
+
+
+near Mulia (Indonesia)
+
+
+
+Mulia, Indonesia
+
+
+
+6,5 km (4.1 mls) W of Chetumal Airport (CTM) (Mexico)
+
+
+
+Chetumal Airport
+
+
+
+16 km (10 mls) N of Loma Alta, TX (United States)
+
+
+
+Loma Alta, TX, United States
+
+
+
+18 km (11.3 mls) NE of Surgut Airport (SGC) (Russia)
+
+
+
+Surgut Airport
+
+
+
+4,6 km (2.9 mls) S of Cranbrook, BC (Canada)
+
+
+
+Cranbrook, BC, Canada
+
+
+
+Sorocaba, SP (Brazil)
+
+
+
+Sorocaba, SP, Brazil
+
+
+
+10 km (6.3 mls) NW of Summer Beaver, ON (Canada)
+
+
+
+Summer Beaver, ON, Canada
+
+
+
+1,5 km N off Caniçal, Madeira Island (Portugal)
+
+
+
+Caniçal, Madeira Island, Portugal
+
+
+
+Del Rio International Airport, TX (DRT) (United States)
+
+
+
+Del Rio International Airport
+
+
+
+East Highlands, CA (United States)
+
+
+
+East Highlands, CA, United States
+
+
+
+10 km (6.3 mls) N off Paraparaumu (New Zealand)
+
+
+
+Paraparaumu, New Zealand
+
+
+
+Barangay Dinapnat, Divilacan town, Isabela (Philippines)
+
+
+
+Barangay Dinapnat, Divilacan town, Isabela, Philippines
+
+
+
+135 km (84.4 mls) NE of Mitú (Colombia)
+
+
+
+Mitú, Colombia
+
+
+
+Cotonou Airport (COO) (Benin)
+
+
+
+Cotonou Airport
+
+
+
+Tashkent Airport (TAS) (Uzbekistan)
+
+
+
+Tashkent Airport
+
+
+
+3 km (1.9 mls) NW off Pelee Island, ON (Canada)
+
+
+
+Pelee Island, ON, Canada
+
+
+
+3 km (1.9 mls) NW of Sharjah Airport (SHJ) (United Arab Emirates)
+
+
+
+Sharjah Airport
+
+
+
+10 km (6.3 mls) SSE of Mostar Airport (OMO) (Bosnia and Herzegovina)
+
+
+
+Mostar Airport
+
+
+
+Chimanta Mountains (Venezuela)
+
+
+
+Chimanta Mountains, Venezuela
+
+
+
+Jiech, Jonglei State (South Sudan)
+
+
+
+Jiech, Jonglei State, South Sudan
+
+
+
+near Tatal (Sudan)
+
+
+
+Tatal, Sudan
+
+
+
+off Libreville Airport (LBV) (Gabon)
+
+
+
+Libreville Airport
+
+
+
+1 km (0.6 mls) S of Cincinnati/Northern Kentucky Airport, KY (CVG) (United States)
+
+
+
+Cincinnati/Northern Kentucky Airport
+
+
+
+16 km (10 mls) N of Goma (Democratic Republic Congo)
+
+
+
+Goma, Democratic Republic of the Congo
+
+
+
+56 km (35 mls) W of McGrath, AK (United States)
+
+
+
+McGrath, AK, United States
+
+
+
+68 km (42.5 mls) from Heglig (Sudan)
+
+
+
+Heglig, Sudan
+
+
+
+Halifax International Airport, NS (YHZ) (Canada)
+
+
+
+Halifax International Airport
+
+
+
+9 km (5.6 mls) NE of Coron (Philippines)
+
+
+
+Coron, Philippines
+
+
+
+60 km (37.5 mls) NW of Inverness (United Kingdom)
+
+
+
+Inverness, United Kingdom
+
+
+
+near Tura (Russia)
+
+
+
+Tura, Russia
+
+
+
+Keene-Dillant-Hopkins Airport, NH (EEN) (United States)
+
+
+
+Keene-Dillant-Hopkins Airport
+
+
+
+6,5 km (4.1 mls) from Pueblo Memorial Airport, CO (PUB) (United States)
+
+
+
+Pueblo Memorial Airport
+
+
+
+near Wobagen Airstrip (Papua New Guinea)
+
+
+
+Wobagen Airstrip, Papua New Guinea
+
+
+
+near El Devanador, Tzitzio (Mexico)
+
+
+
+El Devanador, Tzitzio, Mexico
+
+
+
+27 km (16.9 mls) from La Paragua (Venezuela)
+
+
+
+La Paragua, Venezuela
+
+
+
+22 km (13.8 mls) of Chico, CA (United States)
+
+
+
+Chico, CA, United States
+
+
+
+13 km (8.1 mls) SW of Voroshilovgrad Airport (VSG) (Ukraine)
+
+
+
+Voroshilovgrad Airport
+
+
+
+10 km (6.3 mls) from Biega (Democratic Republic Congo)
+
+
+
+Biega, Democratic Republic of the Congo
+
+
+
+Ontario International Airport, CA (ONT) (United States)
+
+
+
+Ontario International Airport
+
+
+
+near Shovelnose Creek, BC (Canada)
+
+
+
+Shovelnose Creek, BC, Canada
+
+
+
+19 km (11.9 mls) NE of Ekimchan (Russia)
+
+
+
+Ekimchan, Russia
+
+
+
+Kaduna Airport (KAD) (Nigeria)
+
+
+
+Kaduna Airport
+
+
+
+Port Harcourt Airport (PHC) (Nigeria)
+
+
+
+Port Harcourt Airport
+
+
+
+0,5 km (0.3 mls) E of Truckee Airport, CA (TKF) (United States)
+
+
+
+Truckee Airport
+
+
+
+20 km (12.5 mls) SSE of Port Alberni, BC (Canada)
+
+
+
+Port Alberni, BC, Canada
+
+
+
+13 km (8.1 mls) SW of Butte, MT (United States)
+
+
+
+Butte, MT, United States
+
+
+
+0,5 km (0.3 mls) N of Cuenca-Mariscal Lamar Airport (CUE) (Ecuador)
+
+
+
+Cuenca-Mariscal Lamar Airport
+
+
+
+1,2 km (0.8 mls) N of Oak Glen, CA (United States)
+
+
+
+Oak Glen, CA, United States
+
+
+
+near Kozlovets (Bulgaria)
+
+
+
+Kozlovets, Bulgaria
+
+
+
+near Butte, MT (United States)
+
+
+
+Butte, MT, United States
+
+
+
+6 km (3.8 mls) SW off Adler/Sochi Airport (AER) (Russia)
+
+
+
+Adler/Sochi Airport
+
+
+
+1,5 km (0.9 mls) NW of La Ronge Airport, SK (YVC) (Canada)
+
+
+
+La Ronge Airport
+
+
+
+3 km (1.9 mls) off São Tomé Island Airport (TMS) (São Tomé and Príncipe)
+
+
+
+São Tomé Island Airport
+
+
+
+4 km (2.5 mls) from Taiynsha (Kazakhstan)
+
+
+
+Taiynsha, Kazakhstan
+
+
+
+0,5 km (0.3 mls) E of Jumla Airport (JUM) (Nepal)
+
+
+
+Jumla Airport
+
+
+
+2 km (1.3 mls) NE of Multan Airport (MUX) (Pakistan)
+
+
+
+Multan Airport
+
+
+
+Mashhad Airport (MHD) (Iran)
+
+
+
+Mashhad Airport
+
+
+
+Abuja International Airport (ABV) (Nigeria)
+
+
+
+Abuja International Airport
+
+
+
+Puncak Jaya (Indonesia)
+
+
+
+Puncak Jaya, Indonesia
+
+
+
+7 km (4.4 mls) N of Duarte, CA (United States)
+
+
+
+Duarte, CA, United States
+
+
+
+Sandy Bay Airport, SK (Canada)
+
+
+
+Sandy Bay Airport, SK, Canada
+
+
+
+2,5 km (1.6 mls) from Balad Air Base (Iraq)
+
+
+
+Balad Air Base, Iraq
+
+
+
+1,8 km (1.1 mls) SE of North Caicos Airport (NCA) (Turks and Caicos Islands)
+
+
+
+North Caicos Airport
+
+
+
+near Walikale (Democratic Republic Congo)
+
+
+
+Walikale, Democratic Republic Congo
+
+
+
+Shelter Cove, CA (United States)
+
+
+
+Shelter Cove, CA, United States
+
+
+
+Samara Airport (KUF) (Russia)
+
+
+
+Samara Airport
+
+
+
+near Kopinang (Guyana)
+
+
+
+Kopinang, Guyana
+
+
+
+near Walikale (Democratic Republic Congo)
+
+
+
+Walikale, Democratic Republic Congo
+
+
+
+near Pampa Hermosa (Peru)
+
+
+
+Pampa Hermosa, Peru
+
+
+
+32 km (20 mls) ENE of Manila International Airport (MNL) (Philippines)
+
+
+
+Manila International Airport
+
+
+
+near Connemara Airport (Ireland)
+
+
+
+Connemara Airport, Ireland
+
+
+
+3 km (1.9 mls) from Kongolo Airport (KOO) (Democratic Republic Congo)
+
+
+
+Kongolo Airport
+
+
+
+Entebbe Airport (EBB) (Uganda)
+
+
+
+Entebbe Airport
+
+
+
+1,2 km (0.8 mls) W of Chino Airport, CA (CNO) (United States)
+
+
+
+Chino Airport
+
+
+
+5 km (3.1 mls) N of Trbovlje (Slovenia)
+
+
+
+Trbovlje, Slovenia
+
+
+
+11 km (6.9 mls) S off Lihue, HI (United States)
+
+
+
+Lihue, HI, United States
+
+
+
+near Bailundo (Angola)
+
+
+
+Bailundo, Angola
+
+
+
+9,5 km (5.9 mls) SSW of Augusta State Airport, ME (AUG) (United States)
+
+
+
+Augusta State Airport
+
+
+
+35 km (21.9 mls) W of Juneau, AK (United States)
+
+
+
+Juneau, AK, United States
+
+
+
+3 km (1.9 mls) from Mwanza (HTMW) (Tanzania)
+
+
+
+Mwanza
+
+
+
+Chisinau Airport (KIV) (Moldova)
+
+
+
+Chisinau Airport
+
+
+
+11 km (6.9 mls) W of Chelyabinsk Airport (CEK) (Russia)
+
+
+
+Chelyabinsk Airport
+
+
+
+Owatonna Airport, MN (OWA) (United States)
+
+
+
+Owatonna Airport
+
+
+
+5 km (3.1 mls) from Bauru Airport, SP (BAU) (Brazil)
+
+
+
+Bauru Airport
+
+
+
+near Sena Madureira, AC (Brazil)
+
+
+
+Sena Madureira, AC, Brazil
+
+
+
+22 km (13.8 mls) SE of Al-Taqaddum Air Base (Iraq)
+
+
+
+Al-Taqaddum Air Base, Iraq
+
+
+
+Luxor Airport (LXR) (Egypt)
+
+
+
+Luxor Airport
+
+
+
+2,6 km (1.6 mls) from Kerch Airport (KHC) (Ukraine)
+
+
+
+Kerch Airport
+
+
+
+10 km (6.3 mls) S off Entebbe Airport (EBB) (Uganda)
+
+
+
+Entebbe Airport
+
+
+
+Barangay San Miguel, Baggao, Cagayan (Philippines)
+
+
+
+Barangay San Miguel, Baggao, Cagayan, Philippines
+
+
+
+Canaima Airport (CAJ) (Venezuela)
+
+
+
+Canaima Airport
+
+
+
+2,7 km (1.7 mls) N of Stockton, UT (United States)
+
+
+
+Stockton, UT, United States
+
+
+
+Oi (Nemyugyuntsy), Yakutia (Russia)
+
+
+
+Oi (Nemyugyuntsy), Yakutia, Russia
+
+
+
+19 km SSE of Wamena Airport (WMX) (Indonesia)
+
+
+
+Wamena Airport
+
+
+
+Koh Samui Airport (USM) (Thailand)
+
+
+
+Koh Samui Airport
+
+
+
+near Taiping Airport (TPG) (Malaysia)
+
+
+
+Taiping Airport
+
+
+
+Umgalala Airstrip (Sudan)
+
+
+
+Umgalala Airstrip, Sudan
+
+
+
+13 km (8.1 mls) NW of Saratov Airport (RTW) (Russia)
+
+
+
+Saratov Airport
+
+
+
+1,9 km (1.2 mls) SW of Mirny Airport (MJZ) (Russia)
+
+
+
+Mirny Airport
+
+
+
+Darwin Airport, NT (DRW) (Australia)
+
+
+
+Darwin Airport
+
+
+
+Salang Pass (Afghanistan)
+
+
+
+Salang Pass, Afghanistan
+
+
+
+Sarybulak, North Kazakhstan region (Kazakhstan)
+
+
+
+Sarybulak, North Kazakhstan region, Kazakhstan
+
+
+
+near Cumbum (India)
+
+
+
+Cumbum, India
+
+
+
+15 km (9.4 mls) SE of Lytton, BC (Canada)
+
+
+
+Lytton, BC, Canada
+
+
+
+near Bandundu Airport (FDU) (Democratic Republic Congo)
+
+
+
+Bandundu Airport
+
+
+
+near Iranian border (Pakistan)
+
+
+
+Iranian border, Pakistan
+
+
+
+near Demnate (Morocco)
+
+
+
+Demnate, Morocco
+
+
+
+Long Beach Municipal Airport, CA (LGB) (United States)
+
+
+
+Long Beach Municipal Airport
+
+
+
+Tianshan mountains (China)
+
+
+
+Tianshan mountains, China
+
+
+
+70 km (43.8 mls) NE of Mayo, YT (Canada)
+
+
+
+Mayo, YT, Canada
+
+
+
+3 km (1.9 mls) E of Saskatoon Airport, SK (YXE) (Canada)
+
+
+
+Saskatoon Airport
+
+
+
+Roswell International Air Center Airport, NM (ROW) (United States)
+
+
+
+Roswell International Air Center Airport
+
+
+
+20 km (12.5 mls) N of Prahuaniyeu, RN (Argentina)
+
+
+
+Prahuaniyeu, RN, Argentina
+
+
+
+Pukatawagan Airport, MB (XPK) (Canada)
+
+
+
+Pukatawagan Airport
+
+
+
+1,8 km (1.1 mls) E of Resolute Airport, NU (YRB) (Canada)
+
+
+
+Resolute Airport
+
+
+
+3,2 km (2 mls) WSW of Neschadinovskaya, Krasnodar region (Russia)
+
+
+
+Neschadinovskaya, Krasnodar region, Russia
+
+
+
+14 km (8.8 mls) N of Nightmute, AK (United States)
+
+
+
+Nightmute, AK, United States
+
+
+
+near Notnare Village, Yahukimo district, Irian Jaya (Indonesia)
+
+
+
+Notnare Village, Yahukimo district, Irian Jaya, Indonesia
+
+
+
+Yellowknife, NT (Canada)
+
+
+
+Yellowknife, NT, Canada
+
+
+
+near Heitman Lake, AK (United States)
+
+
+
+Heitman Lake, AK, United States
+
+
+
+Utsingi Point, Great Slave Lake, NT (Canada)
+
+
+
+Utsingi Point, Great Slave Lake, NT, Canada
+
+
+
+Xakanaka Airstrip (Botswana)
+
+
+
+Xakanaka Airstrip, Botswana
+
+
+
+0,7 km (0.4 mls) E of Vancouver International Airport, BC (YVR) (Canada)
+
+
+
+Vancouver International Airport
+
+
+
+near Bilogai/Sugapa Airport (ZGP) (Indonesia)
+
+
+
+Bilogai/Sugapa Airport
+
+
+
+5 km (3.1 mls) SW of Jomsom Airport (JMO) (Nepal)
+
+
+
+Jomsom Airport
+
+
+
+15 km W of Ibiza Airport (IBZ) (Spain)
+
+
+
+Ibiza Airport
+
+
+
+35 km W of Modena, Iron County, UT (United States)
+
+
+
+Modena, Iron County, UT, United States
+
+
+
+0,9 km (0.6 mls) from Borodyanka Airfield (Ukraine)
+
+
+
+Borodyanka Airfield, Ukraine
+
+
+
+Hotan Airport (HTN) (China)
+
+
+
+Hotan Airport
+
+
+
+Bolshoe Gryzlovo Airport (Russia)
+
+
+
+Bolshoe Gryzlovo Airport, Russia
+
+
+
+near Bremen Airport (BRE) (Germany)
+
+
+
+Bremen Airport
+
+
+
+2 km (1.3 mls) E of Snow Lake Airport, MB (Canada)
+
+
+
+Snow Lake Airport, MB, Canada
+
+
+
+9 km (5.6 mls) NNE of Libby Airport, MT (United States)
+
+
+
+Libby Airport, MT, United States
+
+
+
+Sanikiluaq Airport, NU (YSK) (Canada)
+
+
+
+Sanikiluaq Airport
+
+
+
+1 km S of Heho Airport (HEH) (Myanmar)
+
+
+
+Heho Airport
+
+
+
+1,6 km (1 mls) NE of Almaty Airport (ALA) (Kazakhstan)
+
+
+
+Almaty Airport
+
+
+
+Goma Airport (GOM) (Democratic Republic Congo)
+
+
+
+Goma Airport
+
+
+
+32 km (20 mls) NE of Dillingham Municipal Airport, AK (DLG) (United States)
+
+
+
+Dillingham Municipal Airport
+
+
+
+2,5 km (1.6 mls) NW of Jyl-Kol, Jalal-Abad region (Kyrgyzstan)
+
+
+
+Jyl-Kol, Jalal-Abad region, Kyrgyzstan
+
+
+
+1 km from N'Gaoundéré Airport (NGE) (Cameroon)
+
+
+
+N'Gaoundéré Airport
+
+
+
+4,6 km (2.9 mls) NW of Francistown Airport (FRW) (Botswana)
+
+
+
+Francistown Airport
+
+
+
+Soldotna Airport, AK (SXQ) (United States)
+
+
+
+Soldotna Airport
+
+
+
+4,4 km (2.8 mls) NW of Akureyri Airport (AEY) (Iceland)
+
+
+
+Akureyri Airport
+
+
+
+13 km (8.1 mls) SE of Ivanhoe Lake, NT (Canada)
+
+
+
+Ivanhoe Lake, NT, Canada
+
+
+
+1,9 km (1.2 mls) SE of Viña del Mar Airport (KNA) (Chile)
+
+
+
+Viña del Mar Airport
+
+
+
+Hudson Bay, ON (Canada)
+
+
+
+Hudson Bay, ON, Canada
+
+
+
+6,5 km (4.1 mls) W off Cayo Luis Peña (Puerto Rico)
+
+
+
+Cayo Luis Peña, Puerto Rico
+
+
+
+Kudat Airport (KUD) (Malaysia)
+
+
+
+Kudat Airport
+
+
+
+26 km (16.3 mls) W of Loreto Airport (LTO) (Mexico)
+
+
+
+Loreto Airport
+
+
+
+0,8 km S of Red Lake Airport, ON (YRL) (Canada)
+
+
+
+Red Lake Airport
+
+
+
+5 km (3.1 mls) NE off Fort Lauderdale International Airport, FL (FLL) (United States)
+
+
+
+Fort Lauderdale International Airport
+
+
+
+Kibeni (Papua New Guinea)
+
+
+
+Kibeni, Papua New Guinea
+
+
+
+1,6 km (1 mls) SE of Saint Mary's Airport, AK (KSM) (United States)
+
+
+
+Saint Mary's Airport
+
+
+
+Bwabwata National Park (Namibia)
+
+
+
+Bwabwata National Park, Namibia
+
+
+
+0,5 km (0.3 mls) W of Pikany Indian Airstrip, PA (Brazil)
+
+
+
+Pikany Indian Airstrip, PA, Brazil
+
+
+
+800 m N off Kalaupapa Airport, HI (LUP) (United States)
+
+
+
+Kalaupapa Airport
+
+
+
+Aspen-Pitkin County Airport, CO (ASE) (United States)
+
+
+
+Aspen-Pitkin County Airport
+
+
+
+4,3 km (2.7 mls) SSW of Olive Creek (Guyana)
+
+
+
+Olive Creek, Guyana
+
+
+
+7 km (4.4 mls) NW of Sandhikhark (Nepal)
+
+
+
+Sandhikhark, Nepal
+
+
+
+60 km SE of Bethel, AK (United States)
+
+
+
+Bethel, AK, United States
+
+
+
+1,2 km (0.8 mls) from Bratsk Airport (BTK) (Russia)
+
+
+
+Bratsk Airport
+
+
+
+10 km (6.3 mls) SW off Carmelo/Zagarzazú International Airport (Uruguay)
+
+
+
+Carmelo/Zagarzazú International Airport, Uruguay
+
+
+
+Huntsville International Airport, AL (HSV) (United States)
+
+
+
+Huntsville International Airport
+
+
+
+0,8 km (0.5 mls) NE of Magong Airport (MZG) (Taiwan)
+
+
+
+Magong Airport
+
+
+
+15 km (9.4 mls) S of Tamanrasset Airport (TMR) (Algeria)
+
+
+
+Tamanrasset Airport
+
+
+
+Panyagor Airstrip (South Sudan)
+
+
+
+Panyagor Airstrip, South Sudan
+
+
+
+150 km W of Ciudad Bolívar (Venezuela)
+
+
+
+Ciudad Bolívar, Venezuela
+
+
+
+within Guyana (Guyana)
+
+
+
+Guyana, Guyana
+
+
+
+20 km (12.5 mls) from Shatyrkul Mine (Kazakhstan)
+
+
+
+Shatyrkul Mine, Kazakhstan
+
+
+
+4,5 km (2.8 mls) W of Miami Executive Airport, FL (TMB) (United States)
+
+
+
+Miami Executive Airport
+
+
+
+11 km (6.9 mls) N of North Vancouver, BC (Canada)
+
+
+
+North Vancouver, BC, Canada
+
+
+
+4 km NE of Sevilla Airport (SVQ) (Spain)
+
+
+
+Sevilla Airport
+
+
+
+3 km (1.9 mls) NW off Lobito Airport (Angola)
+
+
+
+Lobito Airport, Angola
+
+
+
+116 km (72.5 mls) off Klaipeda (Lithuania)
+
+
+
+Klaipeda, Lithuania
+
+
+
+near Querétaro Airport (QRO) (Mexico)
+
+
+
+Querétaro Airport
+
+
+
+near Ella Lake, Misty Fjords National Monument, AK (United States)
+
+
+
+Ella Lake, Misty Fjords National Monument, AK, United States
+
+
+
+Stancuta (Romania)
+
+
+
+Stancuta, Romania
+
+
+
+Cervený Kamen (Slovakia)
+
+
+
+Cervený Kamen, Slovakia
+
+
+
+Cervený Kamen (Slovakia)
+
+
+
+Cervený Kamen, Slovakia
+
+
+
+Helgoland Airport (HGL) (Germany)
+
+
+
+Helgoland Airport
+
+
+
+near Chigwell, Essex (United Kingdom)
+
+
+
+Chigwell, Essex, United Kingdom
+
+
+
+33 km (20.6 mls) SW of Swellendam, Western Cape (South Africa)
+
+
+
+Swellendam, Western Cape, South Africa
+
+
+
+28 km (17.5 mls) NE of Pickle Lake Airport, ON (Canada)
+
+
+
+Pickle Lake Airport, ON, Canada
+
+
+
+1,9 km (1.2 mls) SW of Cedar Fort, UT (United States)
+
+
+
+Cedar Fort, UT, United States
+
+
+
+Gay, Orenburg Oblast (Russia)
+
+
+
+Gay, Orenburg Oblast, Russia
+
+
+
+Dana, Myagdi district (Nepal)
+
+
+
+Dana, Myagdi district, Nepal
+
+
+
+3 km (1.9 mls) W off Cox's Bazar Airport (CXB) (Bangladesh)
+
+
+
+Cox's Bazar Airport
+
+
+
+Rostov Airport (ROV) (Russia)
+
+
+
+Rostov Airport
+
+
+
+1,2 km (0.8 mls) W of Kiunga Airport (UNG) (Papua New Guinea)
+
+
+
+Kiunga Airport
+
+
+
+Dwyer Airport (DWR) (Afghanistan)
+
+
+
+Dwyer Airport
+
+
+
+2 km (1.3 mls) from Novopokrovskoye, Balashov district (Russia)
+
+
+
+Novopokrovskoye, Balashov district, Russia
+
+
+
+9 km (5.6 mls) ESE Rybnyi Uyan, Kachug region (Russia)
+
+
+
+9 km (5.6 mls) ESE Rybnyi Uyan, Kachug region, Russia
+
+
+
+Blackpool Airport (BLK) (United Kingdom)
+
+
+
+Blackpool Airport
+
+
+
+8,3 km (5.2 mls) NE of Kelowna Airport, BC (YLW) (Canada)
+
+
+
+Kelowna Airport
+
+
+
+Dunnellon/Marion County Airport, FL (United States)
+
+
+
+Dunnellon/Marion County Airport, FL, United States
+
+
+
+Swan River, Perth, WA (Australia)
+
+
+
+Swan River, Perth, WA, Australia
+
+
+
+23 km SE of Mutare Airport (UTA) (Zimbabwe)
+
+
+
+Mutare Airport
+
+
+
+13 km (8.1 mls) N of Oksibil Airport (OKL) (Indonesia)
+
+
+
+Oksibil Airport
+
+
+
+Chignik, AK (United States)
+
+
+
+Chignik, AK, United States
+
+
+
+0,25 km (0.2 mls) from Eteringbang Airport (Guyana)
+
+
+
+Eteringbang Airport, Guyana
+
+
+
+Okha (Russia)
+
+
+
+Okha, Russia
+
+
+
+Chernoye Airport (Russia)
+
+
+
+Chernoye Airport, Russia
+
+
+
+Socorro, NM (United States)
+
+
+
+Socorro, NM, United States
+
+
+
+28 km (17.5 mls) WNW of Almaty Airport (ALA) (Kazakhstan)
+
+
+
+Almaty Airport
+
+
+
+119 km (74.4 mls) SW of Dundo (Angola)
+
+
+
+Dundo, Angola
+
+
+
+near Nuevo Saposoa (Peru)
+
+
+
+Nuevo Saposoa, Peru
+
+
+
+Ekimchan, Amur region (Russia)
+
+
+
+Ekimchan, Amur region, Russia
+
+
+
+1,2 km (0.8 mls) SSW of Nelkan Airport (Russia)
+
+
+
+Nelkan Airport, Russia
+
+
+
+Sieberatsreute, Waldburg (Germany)
+
+
+
+Sieberatsreute, Waldburg, Germany
+
+
+
+near Las Palomas (Colombia)
+
+
+
+Las Palomas, Colombia
+
+
+
+Bahun Khark (Nepal)
+
+
+
+Bahun Khark, Nepal
+
+
+
+3 km (1.9 mls) E of Kamako Airstrip (Democratic Republic Congo)
+
+
+
+Kamako Airstrip, Democratic Republic of the Congo
+
+
+
+1,2 km (0.8 mls) SW of Piz Segnas (Switzerland)
+
+
+
+Piz Segnas, Switzerland
+
+
+
+0,5 km (0.3 mls) from Chuuk/Weno International Airport (TKK) (Micronesia)
+
+
+
+Chuuk/Weno International Airport
+
+
+
+101 km (63.1 mls) WSW of Hobart, TAS (Australia)
+
+
+
+Hobart, TAS, Australia
+
+
+
+39 km (24.4 mls) ESE of Whatì/Lac La Martre Airport, NT (YLE) (Canada)
+
+
+
+Whatì/Lac La Martre Airport
+
+
+
+near Canaima Airport (CAJ) (Venezuela)
+
+
+
+Canaima Airport
+
+
+
+15 km (9.4 mls) NE of Ketchikan, AK (United States)
+
+
+
+Ketchikan, AK, United States
+
+
+
+Mount Giluwe (Papua New Guinea)
+
+
+
+Mount Giluwe, Papua New Guinea
+
+
+
+Addenbroke Island, BC (Canada)
+
+
+
+Addenbroke Island, BC, Canada
+
+
+
+near Fakhrabad (Tajikistan)
+
+
+
+Fakhrabad, Tajikistan
+
+
+
+46 km (28.8 mls) ENE of Mayo Airport, YT (YMA) (Canada)
+
+
+
+Mayo Airport
+
+
+
+near Gondar (Ethiopia)
+
+
+
+Gondar, Ethiopia
+
+
+
+1 km (0.6 mls) S of Goma Airport (GOM) (Democratic Republic Congo)
+
+
+
+Goma Airport
+
+
+
+near Almaty Airport (ALA) (Kazakhstan)
+
+
+
+Almaty Airport
+
+
+
+5 km (3.1 mls) NW of Friemersheim (South Africa)
+
+
+
+Friemersheim, South Africa
+
+
+
+near Cooma, NSW (Australia)
+
+
+
+Cooma, NSW, Australia
+
+
+
+40 km (25 mls) NW of Yeniseisk (Russia)
+
+
+
+Yeniseisk, Russia
+
+
+
+NW of La Crosse, Rush County, KS (United States)
+
+
+
+La Crosse, Rush County, KS, United States
+
+
+
+near Bardale Airstrip (Somalia)
+
+
+
+Bardale Airstrip, Somalia
+
+
+
+Alice Springs Airport, NT (ASP) (Australia)
+
+
+
+Alice Springs Airport
+
+
+
+0,4 km (0.3 mls) SE of Kistenevo, Bolsheboldinsky district, Nizhny Novgorod region (Russia)
+
+
+
+Kistenevo, Bolsheboldinsky district, Nizhny Novgorod region, Russia
+
+
+
+30 km (18.8 mls) W of Tagarkhay, Buryatia region (Russia)
+
+
+
+Tagarkhay, Buryatia region, Russia
+
+
+
+4 km NW of Juba Airport (JUB) (South Sudan)
+
+
+
+Juba Airport
+
+
+
+160 km (100 mls) E off St. Johns, NL, (Canada)
+
+
+
+St. Johns, NL, Canada
+
+
+
+23 km (14.4 mls) SE of Pine Grove, OR (United States)
+
+
+
+Pine Grove, OR, United States
+
+
+
+Shanghu, Ji'an County (China)
+
+
+
+Shanghu, Ji'an County, China
+
+
+
+Pieri (South Sudan)
+
+
+
+Pieri, South Sudan
+
+
+
+Beni Suef (Egypt)
+
+
+
+Beni Suef, Egypt
+
+
+
+near Tanay Airfield (Russia)
+
+
+
+Tanay Airfield, Russia
+
+
+
+near Jalkot (Pakistan)
+
+
+
+Jalkot, Pakistan
+
+
+
+Truckee Airport, CA (TKF) (United States)
+
+
+
+Truckee Airport
+
+
+
+S off Norderney Airfield (NRD) (Germany)
+
+
+
+Norderney Airfield
+
+
+
+3 km (1.9 mls) N of Kazachinskoye Airport (Russia)
+
+
+
+Kazachinskoye Airport, Russia
+
+
+
+3,4 km (2.1 mls) from Bilogai/Sugapa Airport (ZGP) (Indonesia)
+
+
+
+Bilogai/Sugapa Airport
+
+
+
+1,7 km (1.1 mls) E of Menzelinsk Airport (Russia)
+
+
+
+Menzelinsk Airport, Russia
+
+
+
+2,5 km (1.6 mls) N of Juba Airport (JUB) (South Sudan)
+
+
+
+Juba Airport
+
+
+
+3 km (1.9 mls) SE of Irkutsk Airport (IKT) (Russia)
+
+
+
+Irkutsk Airport
+
+
+
+3 km SE of Edmonton International Airport, AB (YEG) (Canada)
+
+
+
+Edmonton International Airport
+
+
+
+14,8 km (9.3 mls) NW of Shabunda (Democratic Republic Congo)
+
+
+
+Shabunda, Democratic Republic of the Congo
+
+
+
+20 km (12.5 mls) SW of Wuzhou, Tengxian County (China)
+
+
+
+Wuzhou, Tengxian County, China
+
+
+
+0,7 km (0.4 mls) NE of Burley Municipal Airport, ID (BYI) (United States)
+
+
+
+Burley Municipal Airport
+
+
+
+Mykhailivka (Ukraine)
+
+
+
+Mykhailivka, Ukraine
+
+
+
+near Petukhovo, Bolshesosnovsky district (Russia)
+
+
+
+Petukhovo, Bolshesosnovsky district, Russia
+
+
+
+Sanosware (Nepal)
+
+
+
+Sanosware, Nepal
+
+
+
+0,5 km (0.3 mls) E of Oceanside Municipal Airport, CA (OCN) (United States)
+
+
+
+Oceanside Municipal Airport
+
+
+
+16 km NNE of Nicosia Airport (NIC) (Cyprus)
+
+
+
+Nicosia Airport
+
+
+
+Raleigh/Durham Airport, NC (RDU) (United States)
+
+
+
+Raleigh/Durham Airport
+
+
+
+2 km (1.3 mls) SSW of Piotrków Trybunalski-Bujny Airport (Poland)
+
+
+
+Piotrków Trybunalski-Bujny Airport, Poland
+
+
+
+3 km (1.9 mls) SW off Freeland, WA (United States)
+
+
+
+Freeland, WA, United States
+
+
+
+off Bukoba Airport (BKZ) (Tanzania)
+
+
+
+Bukoba Airport
+
+
+
+near Snohomish, WA (United States)
+
+
+
+Snohomish, WA, United States
+
+
+
+40 km (25 mls) from Ura-Tube (Tajikistan)
+
+
+
+Ura-Tube, Tajikistan
+
+
+
+Semipalatinsk Airport (PLX) (Kazakhstan)
+
+
+
+Semipalatinsk Airport
+
+
+
+45 km (28.1 mls) E of Nabire (Indonesia)
+
+
+
+Nabire, Indonesia
+
+
+
+57 km (35.6 mls) W of Kondinskoye (Russia)
+
+
+
+Kondinskoye, Russia
+
+
+
+15 km (9.4 mls) S of Basel/Mulhouse Airport (BSL) (Switzerland)
+
+
+
+Basel/Mulhouse Airport
+
+
+
+97 km (60.6 mls) W of Chita (Russia)
+
+
+
+Chita, Russia
+
+
+
+1,9 km (1.2 mls) SW of Casey Airport, QC (Canada)
+
+
+
+Casey Airport, QC, Canada
+
+
+
+near Kuybyshev Airport (KUF) (Russia)
+
+
+
+Kuybyshev Airport
+
+
+
+Eureka, NV (United States)
+
+
+
+Eureka, NV, United States
+
+
+
+35 km N of Titograd (Montenegro)
+
+
+
+Titograd, Montenegro
+
+
+
+Itaituba Airport, PA (ITB) (Brazil)
+
+
+
+Itaituba Airport
+
+
+
+13,7 km (8.6 mls) ENE of Magadan (Russia)
+
+
+
+Magadan, Russia
+
+
+
+Tashauz Airport (TAZ) (Turkmenistan)
+
+
+
+Tashauz Airport
+
+
+
+2 km (1.3 mls) E of Miami International Airport, FL (MIA) (United States)
+
+
+
+Miami International Airport
+
+
+
+1,75 km (1.1 mls) SW of Rostov Airport (ROV) (Russia)
+
+
+
+Rostov Airport
+
+
+
+1,2 km (0.8 mls) SW of Pago Pago International Airport (PPG) (American Samoa)
+
+
+
+Pago Pago International Airport
+
+
+
+Hue Airport (HUI) (Vietnam)
+
+
+
+Hue Airport
+
+
+
+8 km (5 mls) SW of San Francisco de Moxos (Bolivia)
+
+
+
+San Francisco de Moxos, Bolivia
+
+
+
+Baltimore/Washington International Airport, MD (BWI) (United States)
+
+
+
+Baltimore/Washington International Airport
+
+
+
+Newton Fiord, NU (Canada)
+
+
+
+Newton Fiord, NU, Canada
+
+
+
+0,5 km (0.3 mls) from Kirov Airport (KVX) (Russia)
+
+
+
+Kirov Airport
+
+
+
+Rostov Airport (ROV) (Russia)
+
+
+
+Rostov Airport
+
+
+
+near Winslow, AZ (United States)
+
+
+
+Winslow, AZ, United States
+
+
+
+near Kline, SC (United States)
+
+
+
+Kline, SC, United States
+
+
+
+near Cairo (Egypt)
+
+
+
+Cairo, Egypt
+
+
+
+0,5 km (0.3 mls) S of Mariquita Airport (MQU) (Colombia)
+
+
+
+Mariquita Airport
+
+
+
+Linoghin (Burkina Faso)
+
+
+
+Linoghin, Burkina Faso
+
+
+
+5 km (3.1 mls) SW of Porlamar Airport, Isla Margarita (Venezuela)
+
+
+
+Porlamar Airport, Isla Margarita, Venezuela
+
+
+
+320 km (198.8 mls) SE of Anchorage, AK (United States)
+
+
+
+Anchorage, AK, United States
+
+
+
+near Old Man's Camp, AK (United States)
+
+
+
+Old Man's Camp, AK, United States
+
+
+
+3 km (1.9 mls) S of Rea Point Airfield, NT (YOX) (Canada)
+
+
+
+Rea Point Airfield
+
+
+
+Soddu Airport (SXU) (Ethiopia)
+
+
+
+Soddu Airport
+
+
+
+Nairobi International Airport (NBO) (Kenya)
+
+
+
+Nairobi International Airport
+
+
+
+Irkutsk Airport (IKT) (Russia)
+
+
+
+Irkutsk Airport
+
+
+
+Bukhara Airport (BHK) (Uzbekistan)
+
+
+
+Bukhara Airport
+
+
+
+1 km N of Seattle/Tacoma International Airport, WA (SEA) (United States)
+
+
+
+Seattle/Tacoma International Airport
+
+
+
+Lome Airport (LFW) (Togo)
+
+
+
+Lome Airport
+
+
+
+near El Doncello (Colombia)
+
+
+
+El Doncello, Colombia
+
+
+
+Whittier, CA (United States)
+
+
+
+Whittier, CA, United States
+
+
+
+Egg Harbor, NJ (United States)
+
+
+
+Egg Harbor, NJ, United States
+
+
+
+Houston-Intercontinental Airport, TX (IAH) (United States)
+
+
+
+Houston-Intercontinental Airport
+
+
+
+2 km (1.3 mls) N of Fairbanks International Airport, AK (FAI) (United States)
+
+
+
+Fairbanks International Airport
+
+
+
+Tehran-Mehrabad Airport (THR) (Iran)
+
+
+
+Tehran-Mehrabad Airport
+
+
+
+35 km (21.9 mls) E of San Carlos de Bariloche International Airport, RN (BRC) (Argentina)
+
+
+
+San Carlos de Bariloche International Airport
+
+
+
+0,6 km (0.4 mls) NNE of Hilton Head Airport, SC (HHH) (United States)
+
+
+
+Hilton Head Airport
+
+
+
+near Rockwood, TN (United States)
+
+
+
+Rockwood, TN, United States
+
+
+
+near Manila (Philippines)
+
+
+
+Manila, Philippines
+
+
+
+28 km (17.5 mls) from Bagdarin (Russia)
+
+
+
+Bagdarin, Russia
+
+
+
+1 km (0.6 mls) E of Gambell Airport, AK (GAM) (United States)
+
+
+
+Gambell Airport
+
+
+
+near Mota (Ethiopia)
+
+
+
+Mota, Ethiopia
+
+
+
+Fort Severn Airport, ON (YER) (Canada)
+
+
+
+Fort Severn Airport
+
+
+
+Kluatantan region, BC (Canada)
+
+
+
+Kluatantan region, BC, Canada
+
+
+
+near Novgorod Airport (NVR) (Russia)
+
+
+
+Novgorod Airport
+
+
+
+3 km (1.9 mls) N of Cairns Airport, QLD (CNS) (Australia)
+
+
+
+Cairns Airport
+
+
+
+17 km (10.6 mls) W of Kharkov Airport (HRK) (Ukraine)
+
+
+
+Kharkov Airport
+
+
+
+37 km (23.1 mls) NW of Al Qaysumah (Saudi Arabia)
+
+
+
+Al Qaysumah, Saudi Arabia
+
+
+
+25 km (15.6 mls) N of Cozumel Airport (CZM) (Mexico)
+
+
+
+Cozumel Airport
+
+
+
+near Frunze Airport (FRU) (Kyrgyzstan)
+
+
+
+Frunze Airport
+
+
+
+Yellowknife Airport, NT (YZF) (Canada)
+
+
+
+Yellowknife Airport
+
+
+
+53 km (33.1 mls) NE of Ashgabat Airport (ASB) (Turkmenistan)
+
+
+
+Ashgabat Airport
+
+
+
+Ketchikan International Airport, AK (KTN) (United States)
+
+
+
+Ketchikan International Airport
+
+
+
+35 km (21.9 mls) N of Cutral-Có , NE (Argentina)
+
+
+
+Cutral-Có , NE, Argentina
+
+
+
+3 km (1.9 mls) off Kota Kinabalu Airport (BKI) (Malaysia)
+
+
+
+Kota Kinabalu Airport
+
+
+
+4 km (2.5 mls) from Nizhneangarsk Airport (Russia)
+
+
+
+Nizhneangarsk Airport, Russia
+
+
+
+Kazan (Russia)
+
+
+
+Kazan, Russia
+
+
+
+near Dutch Harbor, AK (United States)
+
+
+
+Dutch Harbor, AK, United States
+
+
+
+Avalon Airport, VIC (AVV) (Australia)
+
+
+
+Avalon Airport
+
+
+
+near Abitibi Canyon, Cochrane District, ON (Canada)
+
+
+
+Abitibi Canyon, Cochrane District, ON, Canada
+
+
+
+20 km N of Pontevedra (Spain)
+
+
+
+Pontevedra, Spain
+
+
+
+37 km (23.1 mls) S off Anapa  (Russia)
+
+
+
+Anapa, Russia
+
+
+
+37 km (23.1 mls) S off Anapa  (Russia)
+
+
+
+Anapa, Russia
+
+
+
+near Vrbovec (Croatia)
+
+
+
+Vrbovec, Croatia
+
+
+
+near Mosher Creek, BC (Canada)
+
+
+
+Mosher Creek, BC, Canada
+
+
+
+near Kazakovskoye (Ukraine)
+
+
+
+Kazakovskoye, Ukraine
+
+
+
+27 km (16.9 mls) N of Trujillo Airport (TRU) (Peru)
+
+
+
+Trujillo Airport
+
+
+
+3 km (1.9 mls) S of Terrace Airport, BC (YXT) (Canada)
+
+
+
+Terrace Airport
+
+
+
+30 km (18.8 mls) W of Sarajevo Airport (SJJ) (Bosnia and Herzegovina)
+
+
+
+Sarajevo Airport
+
+
+
+Anchorage International Airport, AK (ANC) (United States)
+
+
+
+Anchorage International Airport
+
+
+
+2 km (1.3 mls) S of Mineralnye Vody Airport (MRV) (Russia)
+
+
+
+Mineralnye Vody Airport
+
+
+
+near Salluit Airport, QC (YZG) (Canada)
+
+
+
+Salluit Airport
+
+
+
+off Aden International Airport (ADE) (Yemen)
+
+
+
+Aden International Airport
+
+
+
+12 km (7.5 mls) N of Forish (Uzbekistan)
+
+
+
+Forish, Uzbekistan
+
+
+
+1,5 km (0.9 mls) from Zhdanov Airport (MPW) (Ukraine)
+
+
+
+Zhdanov Airport
+
+
+
+10 km (6.3 mls) S of Reading Municipal Airport/Spaatz Field, PA (RDG) (United States)
+
+
+
+Reading Municipal Airport/Spaatz Field
+
+
+
+off Ruddock, LA (United States)
+
+
+
+Ruddock, LA, United States
+
+
+
+20 km (12.5 mls) SE of Ayanka Airstrip (Russia)
+
+
+
+Ayanka Airstrip, Russia
+
+
+
+Aramoun (Lebanon)
+
+
+
+Aramoun, Lebanon
+
+
+
+Korinth (Greece)
+
+
+
+Korinth, Greece
+
+
+
+1 km (0.6 mls) W off Sukhumi Airport (SUI) (Georgia)
+
+
+
+Sukhumi Airport
+
+
+
+0,5 km (0.3 mls) NNW of Vitim Airport (Russia)
+
+
+
+Vitim Airport, Russia
+
+
+
+Tubo Milkie (Ethiopia)
+
+
+
+Tubo Milkie, Ethiopia
+
+
+
+Ruby Airport, AK (RBY) (United States)
+
+
+
+Ruby Airport
+
+
+
+near Bettles, AK (United States)
+
+
+
+Bettles, AK, United States
+
+
+
+Mt Iliamna, AK (United States)
+
+
+
+Mt Iliamna, AK, United States
+
+
+
+Mt. Loi Hsam Hsao (Myanmar)
+
+
+
+Mt. Loi Hsam Hsao, Myanmar
+
+
+
+4 km (2.5 mls) NW of Yakutat Airport, AK (YAK) (United States)
+
+
+
+Yakutat Airport
+
+
+
+near Rostov Airport (ROV) (Russia)
+
+
+
+Rostov Airport
+
+
+
+Mogadishu International Airport (MGQ) (Somalia)
+
+
+
+Mogadishu International Airport
+
+
+
+near Manila International Airport (MNL) (Philippines)
+
+
+
+Manila International Airport
+
+
+
+near San Cristóbal de las Casas Airport (SZT) (Mexico)
+
+
+
+San Cristóbal de las Casas Airport
+
+
+
+within Alaska (United States)
+
+
+
+Alaska, United States
+
+
+
+near Tanjong Kupang (Malaysia)
+
+
+
+Tanjong Kupang, Malaysia
+
+
+
+5 km (3.1 mls) E of Kaysville, UT (United States)
+
+
+
+Kaysville, UT, United States
+
+
+
+3 km (1.9 mls) W of Nanisivik Airport, NU (YSR) (Canada)
+
+
+
+Nanisivik Airport
+
+
+
+Pueblo Memorial Airport, CO (PUB) (United States)
+
+
+
+Pueblo Memorial Airport
+
+
+
+near Toksook Bay, AK (United States)
+
+
+
+Toksook Bay, AK, United States
+
+
+
+24 km (15 mls) NW of San Vicente Airport (SVI) (Colombia)
+
+
+
+San Vicente Airport
+
+
+
+0,5 km (0.3 mls) N of Richland Airport, WA (RLD) (United States)
+
+
+
+Richland Airport
+
+
+
+Cranbrook Airport, BC (YXC) (Canada)
+
+
+
+Cranbrook Airport
+
+
+
+2 km (1.3 mls) SW of Kano International Airport (KAN) (Nigeria)
+
+
+
+Kano International Airport
+
+
+
+Los Angeles International Airport, CA (LAX) (United States)
+
+
+
+Los Angeles International Airport
+
+
+
+Flatwoods, LA (United States)
+
+
+
+Flatwoods, LA, United States
+
+
+
+Escambia Bay, FL (United States)
+
+
+
+Escambia Bay, FL, United States
+
+
+
+6 km (3.8 mls) W of Memphis International Airport, TN (MEM) (United States)
+
+
+
+Memphis International Airport
+
+
+
+Toronto-Pearson International Airport, ON (YYZ) (Canada)
+
+
+
+Toronto-Pearson International Airport
+
+
+
+over Simara Island (Philippines)
+
+
+
+over Simara Island, Philippines
+
+
+
+near Papun Airport (PPU) (Myanmar)
+
+
+
+Papun Airport
+
+
+
+Whamira Hills (Zimbabwe)
+
+
+
+Whamira Hills, Zimbabwe
+
+
+
+5 km (3.1 mls) SE of Yablunivka, Priluki district, Chernigov region (Ukraine)
+
+
+
+Yablunivka, Priluki district, Chernigov region, Ukraine
+
+
+
+5,6 km (3.5 mls) NE of San Diego International Airport, CA (SAN) (United States)
+
+
+
+San Diego International Airport
+
+
+
+24 km (15 mls) SE off Emelyanovka  (Ukraine)
+
+
+
+Emelyanovka, Ukraine
+
+
+
+18 km (11.2 mls) N of Alexandria (Egypt)
+
+
+
+Alexandria, Egypt
+
+
+
+Anchorage International Airport, AK (ANC) (United States)
+
+
+
+Anchorage International Airport
+
+
+
+Cherskiy Airport (CYX) (Russia)
+
+
+
+Cherskiy Airport
+
+
+
+Karachi (Pakistan)
+
+
+
+Karachi, Pakistan
+
+
+
+1,1 km (0.7 mls) from Samarkand Airport (SKD) (Uzbekistan)
+
+
+
+Samarkand Airport
+
+
+
+off Turks & Caicos (Turks and Caicos Islands)
+
+
+
+Turks & Caicos, Turks and Caicos Islands
+
+
+
+Molodezhnaya (Antarctica)
+
+
+
+Molodezhnaya, Antarctica
+
+
+
+near Belgorod Airport (EGO) (Russia)
+
+
+
+Belgorod Airport
+
+
+
+17,4 km (10.9 mls) SE of Rodez Airport (RDZ) (France)
+
+
+
+Rodez Airport
+
+
+
+near Kariba (Zimbabwe)
+
+
+
+Kariba, Zimbabwe
+
+
+
+1 km (0.6 mls) W off Auckland International Airport (AKL) (New Zealand)
+
+
+
+Auckland International Airport
+
+
+
+3,5 km (2.2 mls) NW off Los Angeles International Airport, CA (LAX) (United States)
+
+
+
+Los Angeles International Airport
+
+
+
+1,5 km (0.9 mls) NE of Liepaya Airport (LPX) (Latvia)
+
+
+
+Liepaya Airport
+
+
+
+1,7 km (1.1 mls) E of Baykit (BKT) (Russia)
+
+
+
+Baykit
+
+
+
+near Fort Lauderdale International Airport, FL (FLL) (United States)
+
+
+
+Fort Lauderdale International Airport
+
+
+
+off Honolulu, HI, (United States)
+
+
+
+Honolulu, HI, United States
+
+
+
+Beirut International Airport (BEY) (Lebanon)
+
+
+
+Beirut International Airport
+
+
+
+Akron/Canton Regional Airport, OH (CAK) (United States)
+
+
+
+Akron/Canton Regional Airport
+
+
+
+3,5 km (2.2 mls) SE of Kurilovka (Ukraine)
+
+
+
+Kurilovka, Ukraine
+
+
+
+18 km (11.3 mls) from Yeniseisk (Russia)
+
+
+
+Yeniseisk, Russia
+
+
+
+0,4 km (0.3 mls) E of Frobisher Bay Airport, NU (YFB) (Canada)
+
+
+
+Frobisher Bay Airport
+
+
+
+Blink Horn Point, BC (Canada)
+
+
+
+Blink Horn Point, BC, Canada
+
+
+
+Bettles Airport, AK (BTT) (United States)
+
+
+
+Bettles Airport
+
+
+
+Big Trout Lake, ON (Canada)
+
+
+
+Big Trout Lake, ON, Canada
+
+
+
+Huabango (Papua New Guinea)
+
+
+
+Huabango, Papua New Guinea
+
+
+
+Vologda Airport (VGD) (Russia)
+
+
+
+Vologda Airport
+
+
+
+25 km (15.6 mls) W of Puerto Williams, Navarino Island (Chile)
+
+
+
+Puerto Williams, Navarino Island, Chile
+
+
+
+48 km (30 mls) N of Taif (Saudi Arabia)
+
+
+
+Taif, Saudi Arabia
+
+
+
+Mount Erebus (Antarctica)
+
+
+
+Mount Erebus, Antarctica
+
+
+
+near Nome, AK (United States)
+
+
+
+Nome, AK, United States
+
+
+
+near Puerto Esperanza (Peru)
+
+
+
+Puerto Esperanza, Peru
+
+
+
+near Ngaoundéré Airport (NGE) (Cameroon)
+
+
+
+Ngaoundéré Airport
+
+
+
+Changsha Datuopu Airport (CSX) (China)
+
+
+
+Changsha Datuopu Airport
+
+
+
+Krasnoyarsk Airport (KJA) (Russia)
+
+
+
+Krasnoyarsk Airport
+
+
+
+0,5 km (0.3 mls) off Varadero (Cuba)
+
+
+
+Varadero, Cuba
+
+
+
+167 km (104.4 mls) W off Sarasota, FL, (United States)
+
+
+
+Sarasota, FL, United States
+
+
+
+near Matala (Angola)
+
+
+
+Matala, Angola
+
+
+
+44 km (27.5 mls) NW of Dushanbe (Tajikistan)
+
+
+
+Dushanbe, Tajikistan
+
+
+
+1,4 km (0.9 mls) SW of Columbus Municipal Airport, IN (CLU) (United States)
+
+
+
+Columbus Municipal Airport
+
+
+
+near Tepic Airport (TPQ) (Mexico)
+
+
+
+Tepic Airport
+
+
+
+near Togiak, AK (United States)
+
+
+
+Togiak, AK, United States
+
+
+
+Riyadh International Airport (RUH) (Saudi Arabia)
+
+
+
+Riyadh International Airport
+
+
+
+Mount Smjörfjöllum (Iceland)
+
+
+
+Mount Smjörfjöllum, Iceland
+
+
+
+over Qatar (Qatar)
+
+
+
+over Qatar, Qatar
+
+
+
+Kabul, Damascus (Syria)
+
+
+
+Kabul, Damascus, Syria
+
+
+
+near Lazo (Russia)
+
+
+
+Lazo, Russia
+
+
+
+Pinarete Mountain (Mexico)
+
+
+
+Pinarete Mountain, Mexico
+
+
+
+30 km (18.8 mls) NW of Ust'-Barguzin (Russia)
+
+
+
+Ust'-Barguzin, Russia
+
+
+
+Pilot Point Airport, AK (PIP) (United States)
+
+
+
+Pilot Point Airport
+
+
+
+nr Frazier Park, CA (United States)
+
+
+
+nr Frazier Park, CA, United States
+
+
+
+6 km (3.8 mls) S of Kenai Airport, AK (ENA) (United States)
+
+
+
+Kenai Airport
+
+
+
+near King Cove Airport, AK (KVC) (United States)
+
+
+
+King Cove Airport
+
+
+
+near Balad (Somalia)
+
+
+
+Balad, Somalia
+
+
+
+18 km (11.3 mls) S of Coclecito (Panama)
+
+
+
+Coclecito, Panama
+
+
+
+3 km (1.9 mls) from Cochrane Airport (LGR) (Chile)
+
+
+
+Cochrane Airport
+
+
+
+Zeya (Russia)
+
+
+
+Zeya, Russia
+
+
+
+2 km (1.3 mls) SSW of Moerdijk (Netherlands)
+
+
+
+Moerdijk, Netherlands
+
+
+
+Noril'sk Airport (NSK) (Russia)
+
+
+
+Noril'sk Airport
+
+
+
+Mt. Ipao (Philippines)
+
+
+
+Mt. Ipao, Philippines
+
+
+
+6 km (3.8 mls) SE off Gamvik (Norway)
+
+
+
+Gamvik, Norway
+
+
+
+near Igenhausen (Germany)
+
+
+
+Igenhausen, Germany
+
+
+
+19 km (11.9 mls) off Savannah, GA  (United States)
+
+
+
+Savannah, GA, United States
+
+
+
+2 km (1.3 mls) E off Aden International Airport (ADE) (Yemen)
+
+
+
+Aden International Airport
+
+
+
+Hármashatárhegy (Hungary)
+
+
+
+Hármashatárhegy, Hungary
+
+
+
+Tabatinga Internacional Airport, AM (TBT) (Brazil)
+
+
+
+Tabatinga Internacional Airport
+
+
+
+Jolo Airport (JOL) (Philippines)
+
+
+
+Jolo Airport
+
+
+
+near Valladolid (Ecuador)
+
+
+
+Valladolid, Ecuador
+
+
+
+5 km (3.1 mls) from Rio Branco Airport, AC (RBR) (Brazil)
+
+
+
+Rio Branco Airport
+
+
+
+32 km (20 mls) SSW of Pueblo Memorial Airport, CO (PUB) (United States)
+
+
+
+Pueblo Memorial Airport
+
+
+
+1 km (0.6 mls) from Rostov Airport (ROV) (Russia)
+
+
+
+Rostov Airport
+
+
+
+13 km (8.1 mls) NE of Toronto International Airport, ON (YYZ) (Canada)
+
+
+
+Toronto International Airport
+
+
+
+Portland International Airport, OR (PDX) (United States)
+
+
+
+Portland International Airport
+
+
+
+near Shashgow Ghazni (Afghanistan)
+
+
+
+Shashgow Ghazni, Afghanistan
+
+
+
+Barquisimeto Airport (BRM) (Venezuela)
+
+
+
+Barquisimeto Airport
+
+
+
+Poti Airport (Georgia)
+
+
+
+Poti Airport, Georgia
+
+
+
+Selawik, AK (United States)
+
+
+
+Selawik, AK, United States
+
+
+
+41 km (25.6 mls) NE of Leninakan Airport (LWN) (Armenia)
+
+
+
+Leninakan Airport
+
+
+
+Cincinnati/Northern Kentucky Airport, KY (CVG) (United States)
+
+
+
+Cincinnati/Northern Kentucky Airport
+
+
+
+near Labé (Guinea)
+
+
+
+Labé, Guinea
+
+
+
+3,5 km (2.2 mls) S of Adavale, QLD (Australia)
+
+
+
+Adavale, QLD, Australia
+
+
+
+near Smithers, BC (Canada)
+
+
+
+Smithers, BC, Canada
+
+
+
+Mino Jebel Ali (United Arab Emirates)
+
+
+
+Mino Jebel Ali, United Arab Emirates
+
+
+
+off Lanyu Island (Taiwan)
+
+
+
+Lanyu Island, Taiwan
+
+
+
+Araçatuba Airport, SP (ARU) (Brazil)
+
+
+
+Araçatuba Airport
+
+
+
+near Lonkin (Myanmar)
+
+
+
+Lonkin, Myanmar
+
+
+
+0,4 km (0.3 mls) from Lansdowne House Airport, ON (YLH) (Canada)
+
+
+
+Lansdowne House Airport
+
+
+
+3,3 km (2.1 mls) from Enugu Airport (ENU) (Nigeria)
+
+
+
+Enugu Airport
+
+
+
+Paulatuk Airport, NT (YPC) (Canada)
+
+
+
+Paulatuk Airport
+
+
+
+Izhevsk Airport (IJK) (Russia)
+
+
+
+Izhevsk Airport
+
+
+
+4 km (2.5 mls) NW of Prosperine Airport, QLD (PPP) (Australia)
+
+
+
+Prosperine Airport
+
+
+
+Cerro Pilón (Bolivia)
+
+
+
+Cerro Pilón, Bolivia
+
+
+
+Tau Airport (TAV) (American Samoa)
+
+
+
+Tau Airport
+
+
+
+Marchington (United Kingdom)
+
+
+
+Marchington, United Kingdom
+
+
+
+Mount Musaka (Papua New Guinea)
+
+
+
+Mount Musaka, Papua New Guinea
+
+
+
+Opole (Poland)
+
+
+
+Opole, Poland
+
+
+
+Fort Franklin, NT (Canada)
+
+
+
+Fort Franklin, NT, Canada
+
+
+
+46 km SE of Goose Bay Airport, NL (YYR) (Canada)
+
+
+
+Goose Bay Airport
+
+
+
+Omsk Airport (OMS) (Russia)
+
+
+
+Omsk Airport
+
+
+
+between Loja and Zumba (Ecuador)
+
+
+
+between Loja and Zumba, Ecuador
+
+
+
+Tehran-Mehrabad Airport (THR) (Iran)
+
+
+
+Tehran-Mehrabad Airport
+
+
+
+30 km (18.8 mls) SE of Kostroma Airport (KMW) (Russia)
+
+
+
+Kostroma Airport
+
+
+
+2,4 km (1.5 mls) NW of Jacksonville International Airport, FL (JAX) (United States)
+
+
+
+Jacksonville International Airport
+
+
+
+near Kerege (Tanzania)
+
+
+
+Kerege, Tanzania
+
+
+
+Krasnoyarsk Airport (KJA) (Russia)
+
+
+
+Krasnoyarsk Airport
+
+
+
+near Jinan Airport (TNA) (China)
+
+
+
+Jinan Airport
+
+
+
+16 km (10 mls) from Buga (Colombia)
+
+
+
+Buga, Colombia
+
+
+
+Cedarville, NJ (United States)
+
+
+
+Cedarville, NJ, United States
+
+
+
+3 km from Tombouctou Airport (TOM) (Mali)
+
+
+
+Tombouctou Airport
+
+
+
+Lewistown Municipal Airport, MT (LWT) (United States)
+
+
+
+Lewistown Municipal Airport
+
+
+
+Nashville Metropolitan Airport, TN (BNA) (United States)
+
+
+
+Nashville Metropolitan Airport
+
+
+
+near Uchkuduk (Uzbekistan)
+
+
+
+Uchkuduk, Uzbekistan
+
+
+
+Dallas/Fort Worth International Airport, TX (DFW) (United States)
+
+
+
+Dallas/Fort Worth International Airport
+
+
+
+12 km (7.5 mls) N of Gulkana, AK (United States)
+
+
+
+Gulkana, AK, United States
+
+
+
+18 km (11.3 mls) W of Kandahar (Afghanistan)
+
+
+
+Kandahar, Afghanistan
+
+
+
+near Jenkinsburg, GA (United States)
+
+
+
+Jenkinsburg, GA, United States
+
+
+
+47 km (29.4 mls) W of Kutaisi (Georgia)
+
+
+
+Kutaisi, Georgia
+
+
+
+45 km (28.1 mls) W of Juneau International Airport, AK (JNU) (United States)
+
+
+
+Juneau International Airport
+
+
+
+Bethel Airport, AK (BET) (United States)
+
+
+
+Bethel Airport
+
+
+
+7,2 km (4.5 mls) ESE of Teterboro Airport, NJ (TEB) (United States)
+
+
+
+Teterboro Airport
+
+
+
+Philippi Glacier (Antarctica)
+
+
+
+Philippi Glacier, Antarctica
+
+
+
+8 km (5 mls) N of Bugulma Airport (UUA) (Russia)
+
+
+
+Bugulma Airport
+
+
+
+Lime Village, AK (United States)
+
+
+
+Lime Village, AK, United States
+
+
+
+76 km (47.5 mls) N of Goose Bay, NL (Canada)
+
+
+
+Goose Bay, NL, Canada
+
+
+
+2,1 km (1.3 mls) from Omsk Severny Airport (Russia)
+
+
+
+Omsk Severny Airport, Russia
+
+
+
+near Cairo International Airport (CAI) (Egypt)
+
+
+
+Cairo International Airport
+
+
+
+Penza Airport (PEZ) (Russia)
+
+
+
+Penza Airport
+
+
+
+Buffalo Municipal Airport, WY (BYG) (United States)
+
+
+
+Buffalo Municipal Airport
+
+
+
+Texarkana Municipal Airport, AR (TXK) (United States)
+
+
+
+Texarkana Municipal Airport
+
+
+
+Karachi International Airport (KHI) (Pakistan)
+
+
+
+Karachi International Airport
+
+
+
+Ufa Airport (UFA) (Russia)
+
+
+
+Ufa Airport
+
+
+
+near Komatipoort (South Africa)
+
+
+
+Komatipoort, South Africa
+
+
+
+10 km (6.3 mls) S of Peshawar Airport (PEW) (Pakistan)
+
+
+
+Peshawar Airport
+
+
+
+off Christiansted, St Croix (U.S. Virgin Islands)
+
+
+
+Christiansted, St Croix, U.S. Virgin Islands
+
+
+
+Windsor, MA (United States)
+
+
+
+Windsor, MA, United States
+
+
+
+NE of Nadi International Airport (NAN) (Fiji)
+
+
+
+Nadi International Airport
+
+
+
+5,6 km (3.5 mls) SSE off Toronto Island Airport, ON (YTZ) (Canada)
+
+
+
+Toronto Island Airport
+
+
+
+Kearns, UT (United States)
+
+
+
+Kearns, UT, United States
+
+
+
+3 km (1.9 mls) W of Pickle Lake, ON (Canada)
+
+
+
+Pickle Lake, ON, Canada
+
+
+
+near Ilaga Airport (ILA) (Indonesia)
+
+
+
+Ilaga Airport
+
+
+
+near Khost (Afghanistan)
+
+
+
+Khost, Afghanistan
+
+
+
+24 km (15 mls) SE of Hopong (Myanmar)
+
+
+
+Hopong, Myanmar
+
+
+
+Crystal Bay, NV (United States)
+
+
+
+Crystal Bay, NV, United States
+
+
+
+15 km (9.4 mls) E off Phuket International Airport (HKT) (Thailand)
+
+
+
+Phuket International Airport
+
+
+
+Luxor Airport (LXR) (Egypt)
+
+
+
+Luxor Airport
+
+
+
+Memphis International Airport, TN (MEM) (United States)
+
+
+
+Memphis International Airport
+
+
+
+Rancho Murieta, CA (United States)
+
+
+
+Rancho Murieta, CA, United States
+
+
+
+3,4 km (2.1 mls) NNW of Leeds/Bradford Airport (LBA) (United Kingdom)
+
+
+
+Leeds/Bradford Airport
+
+
+
+near Fairfield, CA (United States)
+
+
+
+Fairfield, CA, United States
+
+
+
+Desert Center, CA (United States)
+
+
+
+Desert Center, CA, United States
+
+
+
+near Ross River Airport,YT (XRR) (Canada)
+
+
+
+Ross River Airport
+
+
+
+Homer Airport, AK (HOM) (United States)
+
+
+
+Homer Airport
+
+
+
+off Haumuri Bluffs (New Zealand)
+
+
+
+Haumuri Bluffs, New Zealand
+
+
+
+near Mount Waddington, BC (Canada)
+
+
+
+Mount Waddington, BC, Canada
+
+
+
+19 km SW of Paso Robles, CA (United States)
+
+
+
+Paso Robles, CA, United States
+
+
+
+16 km (10 mls) SW of Monroe Municipal Airport, LA (MLU) (United States)
+
+
+
+Monroe Municipal Airport
+
+
+
+near Green Island Airport (GNI) (Taiwan)
+
+
+
+Green Island Airport
+
+
+
+near Nizhnevartovsk Airport (NJC) (Russia)
+
+
+
+Nizhnevartovsk Airport
+
+
+
+2 km (1.3 mls) N of Kettwig (Germany)
+
+
+
+Kettwig, Germany
+
+
+
+Surgut Airport (SGC) (Russia)
+
+
+
+Surgut Airport
+
+
+
+Cairo International Airport (CAI) (Egypt)
+
+
+
+Cairo International Airport
+
+
+
+near Hennenman (South Africa)
+
+
+
+Hennenman, South Africa
+
+
+
+74 km (46.3 mls) NE of Bagdarin (Russia)
+
+
+
+Bagdarin, Russia
+
+
+
+near Maui, HI (United States)
+
+
+
+Maui, HI, United States
+
+
+
+8 km (5 mls) SW of Brønnøysund Airport (BNN) (Norway)
+
+
+
+Brønnøysund Airport
+
+
+
+West Paterson, NJ (United States)
+
+
+
+West Paterson, NJ, United States
+
+
+
+1 km (0.6 mls) W of Hannover Airport (HAJ) (Germany)
+
+
+
+Hannover Airport
+
+
+
+3 km (1.9 mls) S of Posadas Airport, MI (PSS) (Argentina)
+
+
+
+Posadas Airport
+
+
+
+14,5 km (9.1 mls) NW of Putao Airport (PBU) (Myanmar)
+
+
+
+Putao Airport
+
+
+
+Mulhouse-Habsheim Airport (France)
+
+
+
+Mulhouse-Habsheim Airport, France
+
+
+
+4 km (2.5 mls) SE off Qeshm Island (Iran)
+
+
+
+Qeshm Island, Iran
+
+
+
+near Riverside-March AFB, CA (RIV) (United States)
+
+
+
+Riverside-March Air Force Base
+
+
+
+Reykjavík Domestic Airport (RKV) (Iceland)
+
+
+
+Reykjavík Domestic Airport
+
+
+
+7 km (4.4 mls) N of Bahawalpur Airport (BHV) (Pakistan)
+
+
+
+Bahawalpur Airport
+
+
+
+21 km (13.1 mls) SE of Irkutsk Airport (IKT) (Russia)
+
+
+
+Irkutsk Airport
+
+
+
+near Kystatyam (Russia)
+
+
+
+Kystatyam, Russia
+
+
+
+Dallas/Fort Worth International Airport, TX (DFW) (United States)
+
+
+
+Dallas/Fort Worth International Airport
+
+
+
+15 km from Arteaga (Mexico)
+
+
+
+Arteaga, Mexico
+
+
+
+near Sitka, AK (United States)
+
+
+
+Sitka, AK, United States
+
+
+
+Jackson, WY (United States)
+
+
+
+Jackson, WY, United States
+
+
+
+10 km (6.3 mls) SW of Bahar Dar Airport (BJR) (Ethiopia)
+
+
+
+Bahar Dar Airport
+
+
+
+25 km (15.6 mls) NE of Batagay Airport (BQJ) (Russia)
+
+
+
+Batagay Airport
+
+
+
+2 km (1.3 mls) N of Linfen Air Base (China)
+
+
+
+Linfen Air Base, China
+
+
+
+2,4 km (1.5 mls) W off Pikangikum Airport, ON (YPM) (Canada)
+
+
+
+Pikangikum Airport
+
+
+
+2,4 km (1.5 mls) SW of Chapleau Airport, ON (YLD) (Canada)
+
+
+
+Chapleau Airport
+
+
+
+Hamada al Hamra (Libya)
+
+
+
+Hamada al Hamra, Libya
+
+
+
+Karm `Umran (Egypt)
+
+
+
+Karm `Umran, Egypt
+
+
+
+near Ketchikan, AK (United States)
+
+
+
+Ketchikan, AK, United States
+
+
+
+near Honolulu, HI, (United States)
+
+
+
+Honolulu, HI,, United States
+
+
+
+Dryden Municipal Airport, ON (YHD) (Canada)
+
+
+
+Dryden Municipal Airport
+
+
+
+3 km (1.9 mls) from Playa del Carmen Airport (PCM) (Mexico)
+
+
+
+Playa del Carmen Airport
+
+
+
+Azusa, CA (United States)
+
+
+
+Azusa, CA, United States
+
+
+
+near Boboc Air Base (Romania)
+
+
+
+Boboc Air Base, Romania
+
+
+
+Vereda el Salitre (Colombia)
+
+
+
+Vereda el Salitre, Colombia
+
+
+
+Zabol Airport (ACZ) (Iran)
+
+
+
+Zabol Airport
+
+
+
+48 km (30 mls) SE of St. Anne-des-Monts, QC (Canada)
+
+
+
+St. Anne-des-Monts, QC, Canada
+
+
+
+near Hargeisa (Somalia)
+
+
+
+Hargeisa, Somalia
+
+
+
+??Cape Kibera (Russia)
+
+
+
+??Cape Kibera, Russia
+
+
+
+Auckland International Airport (AKL) (New Zealand)
+
+
+
+Auckland International Airport
+
+
+
+25 km (15.6 mls) WNW of Samos Airport (SMI) (Greece)
+
+
+
+Samos Airport
+
+
+
+Upper Dart Valley (New Zealand)
+
+
+
+Upper Dart Valley, New Zealand
+
+
+
+E of Puerto Ordaz Airport (PZO) (Venezuela)
+
+
+
+Puerto Ordaz Airport
+
+
+
+Himalaya Mountains (Pakistan)
+
+
+
+Himalaya Mountains, Pakistan
+
+
+
+1,7 km (1.1 mls) NNE of Mayfield Graves County Airport, KY (United States)
+
+
+
+Mayfield Graves County Airport, KY, United States
+
+
+
+Terrace Airport, BC (YXT) (Canada)
+
+
+
+Terrace Airport
+
+
+
+4 km (2.5 mls) SW of Roxboro/Person County Airport, NC (TDF) (United States)
+
+
+
+Roxboro/Person County Airport
+
+
+
+Uncertain, TX (United States)
+
+
+
+Uncertain, TX, United States
+
+
+
+Hatay (Turkey)
+
+
+
+Hatay, Turkey
+
+
+
+near Leninakan Airport (LWN) (Armenia)
+
+
+
+Leninakan Airport
+
+
+
+near Hoolehua-Molokai Airport, HI (MKK) (United States)
+
+
+
+Hoolehua-Molokai Airport
+
+
+
+35 km (21.9 mls) ESE of Bardufoss Airport (BDU) (Norway)
+
+
+
+Bardufoss Airport
+
+
+
+0,7 km (0.4 mls) SE of Sovetsky Airport (OVS) (Russia)
+
+
+
+Sovetsky Airport
+
+
+
+7,6 km (4.8 mls) NW of Dzhambul Airport (DMB) (Kazakhstan)
+
+
+
+Dzhambul Airport
+
+
+
+near Jamba Airport (JMB) (Angola)
+
+
+
+Jamba Airport
+
+
+
+6,5 km (4.1 mls) NW off Block Island, RI (United States)
+
+
+
+Block Island, RI, United States
+
+
+
+3 km (1.9 mls) E of Pervouralsk (Russia)
+
+
+
+Pervouralsk, Russia
+
+
+
+17 km (10.6 mls) SW of Leadville, CO (United States)
+
+
+
+Leadville, CO, United States
+
+
+
+1,6 km (1 mls) SE of Burlington International Airport, VT (BTV) (United States)
+
+
+
+Burlington International Airport
+
+
+
+near Manila International Airport (MNL) (Philippines)
+
+
+
+Manila International Airport
+
+
+
+11 km (6.9 mls) ENE of Moosonee Airport, ON (YMO) (Canada)
+
+
+
+Moosonee Airport
+
+
+
+15 km (9.4 mls) S of Mareeba, QLD (Australia)
+
+
+
+Mareeba, QLD, Australia
+
+
+
+1 km (0.6 mls) S of Manila International Airport (MNL) (Philippines)
+
+
+
+Manila International Airport
+
+
+
+Thistle Lake, NT (Canada)
+
+
+
+Thistle Lake, NT, Canada
+
+
+
+0,5 km (0.3 mls) SE of Cozumel Airport (CZM) (Mexico)
+
+
+
+Cozumel Airport
+
+
+
+near Albuquerque, NM (United States)
+
+
+
+Albuquerque, NM, United States
+
+
+
+290 km (181.3 mls) SE off Newfoundland (Canada)
+
+
+
+Newfoundland, Canada
+
+
+
+Los Angeles International Airport, CA (LAX) (United States)
+
+
+
+Los Angeles International Airport
+
+
+
+137 km (85.6 mls) N of Goose Bay, NL (Canada)
+
+
+
+Goose Bay, NL, Canada
+
+
+
+34 km (21.3 mls) W of Taisha (Ecuador)
+
+
+
+Taisha, Ecuador
+
+
+
+8 km (5 mls) from Brasília International Airport, DF (BSB) (Brazil)
+
+
+
+Brasília International Airport
+
+
+
+Thutade Lake, BC (Canada)
+
+
+
+Thutade Lake, BC, Canada
+
+
+
+1 km (0.6 mls) WNW off Nuku Hiva Airport (NHV) (French Polynesia)
+
+
+
+Nuku Hiva Airport
+
+
+
+10 km (6.3 mls) S of Kermanshah Airport (KSH) (Iran)
+
+
+
+Kermanshah Airport
+
+
+
+18 km (11.3 mls) W of Chute des Passes, QC (Canada)
+
+
+
+Chute des Passes, QC, Canada
+
+
+
+near Bellavista Airport (BLP) (Peru)
+
+
+
+Bellavista Airport
+
+
+
+11 km (6.9 mls) SW of Birmingham Airport, AL (BHM) (United States)
+
+
+
+Birmingham Airport
+
+
+
+1 km (0.6 mls) from Uraj Airport (URJ) (Russia)
+
+
+
+Uraj Airport
+
+
+
+near Dori Airport (DOR) (Burkina Faso)
+
+
+
+Dori Airport
+
+
+
+33 km (20.6 mls) from Ketchikan, AK (United States)
+
+
+
+Ketchikan, AK, United States
+
+
+
+near Sampit Airport (SMQ) (Indonesia)
+
+
+
+Sampit Airport
+
+
+
+9 km (5.6 mls) from Long Seridan (Malaysia)
+
+
+
+Long Seridan, Malaysia
+
+
+
+4 km (2.5 mls) from Lensk Airport (Russia)
+
+
+
+Lensk Airport, Russia
+
+
+
+Tumbang Miri (Indonesia)
+
+
+
+Tumbang Miri, Indonesia
+
+
+
+23 km (14.4 mls) WNW of Makhachkala Airport (MCX) (Russia)
+
+
+
+Makhachkala Airport
+
+
+
+1,5 km (0.9 mls) from Amderma Airport (AMV) (Russia)
+
+
+
+Amderma Airport
+
+
+
+0,8 km (0.5 mls) N of Bugulma Airport (UUA) (Russia)
+
+
+
+Bugulma Airport
+
+
+
+Heidelberg-Handschuhsheim (Germany)
+
+
+
+Heidelberg-Handschuhsheim, Germany
+
+
+
+53 km (33.1 mls) W of Nizhneyansk (Russia)
+
+
+
+Nizhneyansk, Russia
+
+
+
+off Orchid Island Airport (KYD) (Taiwan)
+
+
+
+Orchid Island Airport
+
+
+
+Goroka Gap (Papua New Guinea)
+
+
+
+Goroka Gap, Papua New Guinea
+
+
+
+Perris Valley Airport, CA (United States)
+
+
+
+Perris Valley Airport, CA, United States
+
+
+
+Cumuatillo Airstrip (Mexico)
+
+
+
+Cumuatillo Airstrip, Mexico
+
+
+
+Sheboygan Falls, WI (United States)
+
+
+
+Sheboygan Falls, WI, United States
+
+
+
+Noril'sk Airport (NSK) (Russia)
+
+
+
+Noril'sk Airport
+
+
+
+Bethel Airport, AK (BET) (United States)
+
+
+
+Bethel Airport
+
+
+
+     icao iata                      name state        country country_code  \
+0    xxxx  NKG           Nanking Airport                China           CN   
+1    xxxx  IWA           Ivanovo Airport               Russia           RU   
+2    xxxx  YGM             Gimli Airport    MB         Canada           CA   
+3    xxxx  xxx  San Antonio del Estrecho                 Peru           PE   
+4    xxxx  BLP        Bellavista Airport                 Peru           PE   
+..    ...  ...                       ...   ...            ...          ...   
+833  xxxx  xxx     Perris Valley Airport    CA  United States           US   
+834  xxxx  xxx       Cumuatillo Airstrip               Mexico           MX   
+835  xxxx  xxx           Sheboygan Falls    WI  United States           US   
+836  xxxx  NSK          Noril'sk Airport               Russia           RU   
+837  xxxx  BET            Bethel Airport    AK  United States           US   
+
+           lat         lon  
+0    31.742001  118.862000  
+1    56.920317   40.963885  
+2    50.628101  -97.043297  
+3   -12.637830  -76.651430  
+4    -7.060560  -76.582199  
+..         ...         ...  
+833  33.864800 -117.256180  
+834  20.151180 -102.623350  
+835  43.728760  -87.811740  
+836  69.311096   87.332199  
+837  60.778556 -161.837167  
+
+[838 rows x 8 columns]
+
+
+
+     accident_id  icao iata                      name state        country  \
+1029     ACC1003  xxxx  NKG           Nanking Airport                China   
+1030     ACC1004  xxxx  IWA           Ivanovo Airport               Russia   
+1031     ACC1005  xxxx  YGM             Gimli Airport    MB         Canada   
+1032     ACC1006  xxxx  xxx  San Antonio del Estrecho                 Peru   
+1036     ACC1010  xxxx  BLP        Bellavista Airport                 Peru   
+...          ...   ...  ...                       ...   ...            ...   
+1010      ACC984  xxxx  xxx     Perris Valley Airport    CA  United States   
+1012      ACC986  xxxx  xxx       Cumuatillo Airstrip               Mexico   
+1017      ACC991  xxxx  xxx           Sheboygan Falls    WI  United States   
+1019      ACC993  xxxx  NSK          Noril'sk Airport               Russia   
+1022      ACC996  xxxx  BET            Bethel Airport    AK  United States   
+
+     country_code        lat         lon  
+1029           CN  31.742001  118.862000  
+1030           RU  56.920317   40.963885  
+1031           CA  50.628101  -97.043297  
+1032           PE -12.637830  -76.651430  
+1036           PE  -7.060560  -76.582199  
+...           ...        ...         ...  
+1010           US  33.864800 -117.256180  
+1012           MX  20.151180 -102.623350  
+1017           US  43.728760  -87.811740  
+1019           RU  69.311096   87.332199  
+1022           US  60.778556 -161.837167  
+
+[838 rows x 9 columns]
+

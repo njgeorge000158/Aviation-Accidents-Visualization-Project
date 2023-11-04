@@ -1,0 +1,9 @@
+,phase
+0,Approach (APR)
+1,En route (ENR)
+2,Initial climb (ICL)
+3,Landing (LDG)
+4,Maneuvering (MNV)
+5,Standing (STD)
+6,Takeoff (TOF)
+7,Unknown (UNK)

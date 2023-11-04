@@ -1,0 +1,375 @@
+
+Timepoint: 10/30/2023 15:42:09
+Program execution begins...
+
+
+
+
+    accident_id        date  year                       type  \
+0       ACC1003  1992-07-31  1992            Yakovlev YAK-42   
+1       ACC1004  1992-08-27  1992             Tupolev TU-134   
+2       ACC1005  1992-08-27  1992  de Havilland Canada DHC-4   
+3       ACC1006  1992-08-27  1992  de Havilland Canada DHC-6   
+4       ACC1010  1992-09-10  1992                Fokker F-27   
+..          ...         ...   ...                        ...   
+833      ACC984  1992-04-22  1992  de Havilland Canada DHC-6   
+834      ACC986  1992-05-02  1992                 Learjet 35   
+835      ACC991  1992-06-12  1992                 Learjet 25   
+836      ACC993  1992-06-22  1992              Antonov AN-12   
+837      ACC996  1992-07-13  1992         Shorts SC.7 Skyvan   
+
+                                             operator  fatalities  occupants  \
+0                        China General Aviation Corp.         107        126   
+1                                            Aeroflot          84         84   
+2                                     NewCal Aviation           3          3   
+3    Transportes Aéreos Nacionales de la Selva - TANS           8         21   
+4                                      Expresso Aéreo           1         43   
+..                                                ...         ...        ...   
+833                            Perris Valley Aviation          16         22   
+834                           Transamérica Táxi Aéreo           2          2   
+835                                 Jet Charter Group           2          2   
+836                           Krasnoyarskie Avialinii          10         12   
+837                         Arctic Circle Air Service           1          1   
+
+                    damage                phase  \
+0                Destroyed        Takeoff (TOF)   
+1                Destroyed       Approach (APR)   
+2                Destroyed  Initial climb (ICL)   
+3    Damaged beyond repair       En route (ENR)   
+4                Destroyed        Landing (LDG)   
+..                     ...                  ...   
+833              Destroyed  Initial climb (ICL)   
+834  Damaged beyond repair        Landing (LDG)   
+835              Destroyed        Takeoff (TOF)   
+836  Damaged beyond repair       Approach (APR)   
+837              Destroyed  Initial climb (ICL)   
+
+                               nature                    departure  \
+0        Domestic Scheduled Passenger  Nanjing Dajiaochang Airport   
+1        Domestic Scheduled Passenger              Donetsk Airport   
+2                                Test                Gimli Airport   
+3    Domestic Non Scheduled Passenger              Iquitos Airport   
+4        Domestic Scheduled Passenger             Tarapoto Airport   
+..                                ...                          ...   
+833                       Parachuting        Perris Valley Airport   
+834                    Illegal Flight                 Cali Airport   
+835                 Ferry/positioning   Sheboygan Memorial Airport   
+836                             Cargo               Igarka Airport   
+837                             Cargo               Bethel Airport   
+
+                            destination  \
+0                        Xiamen Airport   
+1                       Ivanovo Airport   
+2                         Gimli Airport   
+3                   El Estrecho Airport   
+4                    Bellavista Airport   
+..                                  ...   
+833               Perris Valley Airport   
+834                 Cumuatillo Airstrip   
+835  Manitowoc/Newton Municipal Airport   
+836                        Omsk Airport   
+837                      Chevak Airport   
+
+                                              location  \
+0                        Nanking Airport (NKG) (China)   
+1    3 km (1.9 mls) SE of Ivanovo Airport (IWA) (Ru...   
+2                     Gimli Airport, MB (YGM) (Canada)   
+3                 near San Antonio del Estrecho (Peru)   
+4                      Bellavista Airport (BLP) (Peru)   
+..                                                 ...   
+833  Perris Valley Airport, CA (United States of Am...   
+834                       Cumuatillo Airstrip (Mexico)   
+835     Sheboygan Falls, WI (United States of America)   
+836                    Noril'sk Airport (NSK) (Russia)   
+837  Bethel Airport, AK (BET) (United States of Ame...   
+
+                        place state        country country_code        lat  \
+0             Nanking Airport   NaN          China           CN  31.742001   
+1             Ivanovo Airport   NaN         Russia           RU  56.920317   
+2               Gimli Airport    MB         Canada           CA  50.628101   
+3    San Antonio del Estrecho   NaN           Peru           PE -12.637830   
+4          Bellavista Airport   NaN           Peru           PE  -7.060560   
+..                        ...   ...            ...          ...        ...   
+833     Perris Valley Airport    CA  United States           US  33.864800   
+834       Cumuatillo Airstrip   NaN         Mexico           MX  20.151180   
+835           Sheboygan Falls    WI  United States           US  43.728760   
+836          Noril'sk Airport   NaN         Russia           RU  69.311096   
+837            Bethel Airport    AK  United States           US  60.778556   
+
+            lon                                          narrative  
+0    118.862000  China General Aviation Corp. flight 7552, a Ya...  
+1     40.963885  The Tu-134 operated on a passenger flight from...  
+2    -97.043297  The aircraft had just taken off on an experime...  
+3    -76.651430  The float-equipped Twin Otter crashed into the...  
+4    -76.582199  The aircraft touched down short of runway 25 a...  
+..          ...                                                ...  
+833 -117.256180  A DHC-6 Twin Otter 200, N141PV, crashed during...  
+834 -102.623350  A Learjet 35A was destroyed when it crashed du...  
+835  -87.811740  Remained in ground effect after lifting off pr...  
+836   87.332199  Decision to land was made before having establ...  
+837 -161.837167  Inadequate cargo restraint caused balance prob...  
+
+[838 rows x 20 columns]
+
+
+
+     id_number              country country_code country_code3        capital  \
+0            0               Monaco           MC           MCO         Monaco   
+1            1               Norway           NO           NOR           Oslo   
+2            2            Greenland           GL           GRL           Nuuk   
+3            3              Finland           FI           FIN       Helsinki   
+4            4               Uganda           UG           UGA        Kampala   
+..         ...                  ...          ...           ...            ...   
+224        224                Aruba           AW           ABW     Oranjestad   
+225        225             Honduras           HN           HND    Tegucigalpa   
+226        226  Antigua and Barbuda           AG           ATG   Saint John's   
+227        227             Maldives           MV           MDV           Malé   
+228        228  Trinidad and Tobago           TT           TTO  Port of Spain   
+
+       region         subregion        lat        lon  
+0      Europe    Western Europe  43.732349   7.427683  
+1      Europe   Northern Europe  59.913330  10.738970  
+2    Americas  Northern America  64.175029 -51.735539  
+3      Europe   Northern Europe  60.167410  24.942577  
+4      Africa    Eastern Africa   0.317714  32.581354  
+..        ...               ...        ...        ...  
+224  Americas         Caribbean  12.526874 -70.035684  
+225  Americas   Central America  14.105686 -87.204676  
+226  Americas         Caribbean  47.561701 -52.715149  
+227      Asia     Southern Asia  16.370036  -2.290024  
+228  Americas         Caribbean  10.657268 -61.518017  
+
+[229 rows x 9 columns]
+
+
+
+     id_number                       type
+0            0                     ATR 42
+1            1                     ATR 72
+2            2        Aero Spacelines 377
+3            3                Airbus A300
+4            4                Airbus A320
+..         ...                        ...
+174        174  de Havilland Canada DHC-4
+175        175  de Havilland Canada DHC-5
+176        176  de Havilland Canada DHC-6
+177        177  de Havilland Canada DHC-7
+178        178  de Havilland Canada DHC-8
+
+[179 rows x 2 columns]
+
+
+
+     id_number                                    operator
+0            0                        A & H Aircraft Sales
+1            1                                 A. McVinish
+2            2                               ACE Air Cargo
+3            3                                ADC Airlines
+4            4                              AIRES Colombia
+..         ...                                         ...
+625        625                                   Zeus-Avia
+626        626  Zhong Fei General Aviation Company - CFGAC
+627        627                                    flydubai
+628        628                                     private
+629        629                 Água Limpa Transportes Ltda
+
+[630 rows x 2 columns]
+
+
+
+   id_number                 damage
+0          0  Damaged beyond repair
+1          1              Destroyed
+2          2                  Minor
+3          3                Missing
+4          4            Substantial
+5          5                Unknown
+
+
+
+   id_number                phase
+0          0       Approach (APR)
+1          1       En route (ENR)
+2          2  Initial climb (ICL)
+3          3        Landing (LDG)
+4          4    Maneuvering (MNV)
+5          5       Standing (STD)
+6          6        Takeoff (TOF)
+7          7        Unknown (UNK)
+
+
+
+    id_number                             nature
+0           0   Aerial Work (Calibration, Photo)
+1           1                       Agricultural
+2           2                          Ambulance
+3           3                              Cargo
+4           4                      Demonstration
+5           5   Domestic Non Scheduled Passenger
+6           6       Domestic Scheduled Passenger
+7           7                          Executive
+8           8                  Ferry/positioning
+9           9                      Fire fighting
+10         10                     Illegal Flight
+11         11      Int'l Non Scheduled Passenger
+12         12  International Scheduled Passenger
+13         13              Official state flight
+14         14                        Parachuting
+15         15                          Passenger
+16         16                            Private
+17         17                Scheduled Passenger
+18         18                    Survey/research
+19         19                               Test
+20         20                           Training
+21         21                            Unknown
+
+
+
+      id_number  icao iata                                name state  \
+0             0  ZSNJ  NKG         Nanjing Dajiaochang Airport   NaN   
+1             1  UKCC  DOK                     Donetsk Airport   NaN   
+2             2  GYGM  YGM                       Gimli Airport    MB   
+3             3  SPQT  IQT                     Iquitos Airport   NaN   
+4             4  SPST  TPP                    Tarapoto Airport   NaN   
+...         ...   ...  ...                                 ...   ...   
+1050        814  NTMD  NHV                   Nuku Hiva Airport   NaN   
+1051        815  OICC  KSH                  Kermanshah Airport   NaN   
+1052        827  UUYW  VKT                     Vorkuta Airport   NaN   
+1053        834  xxxx  xxx                 Cumuatillo Airstrip   NaN   
+1054        835  KMTW  MTW  Manitowoc/Newton Municipal Airport    WI   
+
+                       country country_code        lat         lon  
+0                        China           CN  31.742001  118.862000  
+1                      Ukraine           UA  48.073601   37.739700  
+2                       Canada           CA  50.628101  -97.043297  
+3                         Peru           PE  -3.784740  -73.308800  
+4                         Peru           PE  -6.508740  -76.373199  
+...                        ...          ...        ...         ...  
+1050          French Polynesia           PF  -8.795600 -140.229004  
+1051                      Iran           IR  34.345901   47.158100  
+1052                    Russia           RU  67.488602   63.993099  
+1053                    Mexico           MX  20.151180 -102.623350  
+1054  United States of America           US  44.128778  -87.680583  
+
+[1055 rows x 9 columns]
+
+
+
+    accident_id        date  year  icao iata                         name  \
+0       ACC1003  1992-07-31  1992  ZSNJ  NKG  Nanjing Dajiaochang Airport   
+1       ACC1004  1992-08-27  1992  UKCC  DOK              Donetsk Airport   
+2       ACC1005  1992-08-27  1992  GYGM  YGM                Gimli Airport   
+3       ACC1006  1992-08-27  1992  SPQT  IQT              Iquitos Airport   
+4       ACC1010  1992-09-10  1992  SPST  TPP             Tarapoto Airport   
+..          ...         ...   ...   ...  ...                          ...   
+833      ACC984  1992-04-22  1992  xxxx  xxx        Perris Valley Airport   
+834      ACC986  1992-05-02  1992  SKCL  CLO                 Cali Airport   
+835      ACC991  1992-06-12  1992  KSBM  SBM   Sheboygan Memorial Airport   
+836      ACC993  1992-06-22  1992  UOII  IAA               Igarka Airport   
+837      ACC996  1992-07-13  1992  PABE  BET               Bethel Airport   
+
+    state        country country_code        lat         lon  
+0     NaN          China           CN  31.742001  118.862000  
+1     NaN        Ukraine           UA  48.073601   37.739700  
+2      MB         Canada           CA  50.628101  -97.043297  
+3     NaN           Peru           PE  -3.784740  -73.308800  
+4     NaN           Peru           PE  -6.508740  -76.373199  
+..    ...            ...          ...        ...         ...  
+833    CA  United States           US  33.864800 -117.256180  
+834   NaN       Colombia           CO   3.543220  -76.381600  
+835    WI  United States           US  43.769778  -87.851722  
+836   NaN         Russia           RU  67.437202   86.621902  
+837    AK  United States           US  60.778556 -161.837167  
+
+[838 rows x 11 columns]
+
+
+
+    accident_id        date  year  icao iata  \
+0       ACC1003  1992-07-31  1992  ZSAM  XMN   
+1       ACC1004  1992-08-27  1992  UUBI  IWA   
+2       ACC1005  1992-08-27  1992  GYGM  YGM   
+3       ACC1006  1992-08-27  1992  SPEE  xxx   
+4       ACC1010  1992-09-10  1992  SPBL  BLP   
+..          ...         ...   ...   ...  ...   
+833      ACC984  1992-04-22  1992  xxxx  xxx   
+834      ACC986  1992-05-02  1992  xxxx  xxx   
+835      ACC991  1992-06-12  1992  KMTW  MTW   
+836      ACC993  1992-06-22  1992  UNOO  OMS   
+837      ACC996  1992-07-13  1992  PAVA  VAK   
+
+                                   name state        country country_code  \
+0                        Xiamen Airport   NaN          China           CN   
+1                       Ivanovo Airport   NaN         Russia           RU   
+2                         Gimli Airport    MB         Canada           CA   
+3                   El Estrecho Airport   NaN           Peru           PE   
+4                    Bellavista Airport   NaN           Peru           PE   
+..                                  ...   ...            ...          ...   
+833               Perris Valley Airport    CA  United States           US   
+834                 Cumuatillo Airstrip   NaN         Mexico           MX   
+835  Manitowoc/Newton Municipal Airport    WI  United States           US   
+836                        Omsk Airport   NaN         Russia           RU   
+837                      Chevak Airport    AK  United States           US   
+
+           lat         lon  
+0    24.544001  118.127998  
+1    56.939400   40.940800  
+2    50.628101  -97.043297  
+3    -2.454060  -72.670601  
+4    -7.060560  -76.582199  
+..         ...         ...  
+833  33.864800 -117.256180  
+834  20.151180 -102.623350  
+835  44.128778  -87.680583  
+836  54.966999   73.310501  
+837  61.540833 -165.600889  
+
+[838 rows x 11 columns]
+
+
+
+    accident_id  icao iata                      name state        country  \
+0       ACC1003  xxxx  NKG           Nanking Airport   NaN          China   
+1       ACC1004  xxxx  IWA           Ivanovo Airport   NaN         Russia   
+2       ACC1005  xxxx  YGM             Gimli Airport    MB         Canada   
+3       ACC1006  xxxx  xxx  San Antonio del Estrecho   NaN           Peru   
+4       ACC1010  xxxx  BLP        Bellavista Airport   NaN           Peru   
+..          ...   ...  ...                       ...   ...            ...   
+833      ACC984  xxxx  xxx     Perris Valley Airport    CA  United States   
+834      ACC986  xxxx  xxx       Cumuatillo Airstrip   NaN         Mexico   
+835      ACC991  xxxx  xxx           Sheboygan Falls    WI  United States   
+836      ACC993  xxxx  NSK          Noril'sk Airport   NaN         Russia   
+837      ACC996  xxxx  BET            Bethel Airport    AK  United States   
+
+    country_code        lat         lon  
+0             CN  31.742001  118.862000  
+1             RU  56.920317   40.963885  
+2             CA  50.628101  -97.043297  
+3             PE -12.637830  -76.651430  
+4             PE  -7.060560  -76.582199  
+..           ...        ...         ...  
+833           US  33.864800 -117.256180  
+834           MX  20.151180 -102.623350  
+835           US  43.728760  -87.811740  
+836           RU  69.311096   87.332199  
+837           US  60.778556 -161.837167  
+
+[838 rows x 9 columns]
+
+
+
+    accident_id                                          narrative
+0       ACC1003  China General Aviation Corp. flight 7552, a Ya...
+1       ACC1004  The Tu-134 operated on a passenger flight from...
+2       ACC1005  The aircraft had just taken off on an experime...
+3       ACC1006  The float-equipped Twin Otter crashed into the...
+4       ACC1010  The aircraft touched down short of runway 25 a...
+..          ...                                                ...
+833      ACC984  A DHC-6 Twin Otter 200, N141PV, crashed during...
+834      ACC986  A Learjet 35A was destroyed when it crashed du...
+835      ACC991  Remained in ground effect after lifting off pr...
+836      ACC993  Decision to land was made before having establ...
+837      ACC996  Inadequate cargo restraint caused balance prob...
+
+[838 rows x 2 columns]
+
