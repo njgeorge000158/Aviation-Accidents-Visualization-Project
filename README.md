@@ -1,4 +1,4 @@
-![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/ee5675d2-4286-4b11-b95e-dfa479b223ad)
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/1ca02e8d-bd3c-4e10-8361-819ab8cec8b0)
 
 # Aviation Accidents Visualization Project
 ----
