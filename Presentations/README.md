@@ -1,4 +1,4 @@
-This folder holds the presentation files for the Aviation Accidents Visualization Project: Aviation Accidents Presentation.pdf and Aviation Accidents Presentation.pptx.
+This folder holds the presentation files for the Aviation Accidents Visualization Project: AviationAccidentsPresentation.pdf and AviationAccidentsPresentation.pptx.
 
 ----
 
