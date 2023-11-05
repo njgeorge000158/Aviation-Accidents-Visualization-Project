@@ -31,7 +31,9 @@ To find the answer to our many questions, we obtained the requisite information 
 
 <img width="1889" alt="Screenshot 2023-11-04 at 12 41 22 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/85f1a2df-acea-45a4-bbf6-7c18114b8457">
 
-<img width="1888" alt="Screenshot 2023-11-04 at 11 36 57 AM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/f1a3ccb8-1c94-4605-b0e0-7d53dc440311">
+<img width="1884" alt="Screenshot 2023-11-04 at 7 19 27 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/052a9a69-86af-490b-8622-43240d899523">
+
+
 
 On a positive note, our analysis demonstarted reduced mortality from aviation accidents over the last fifty years. We summarized our findings in a series of visual aids.
 
