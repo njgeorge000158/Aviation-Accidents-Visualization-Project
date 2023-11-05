@@ -24,7 +24,7 @@
 
 
 CONSTANT_LOCAL_FILE_NAME \
-    = 'PyAviationAccidentsWebScrapeAndAPIConstants.py'
+    = 'PyAviationAccidentsConstants.py'
 
 
 # In[3]:

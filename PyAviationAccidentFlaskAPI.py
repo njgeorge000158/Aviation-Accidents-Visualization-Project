@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -32,14 +32,14 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
 
-# In[2]:
+# In[ ]:
 
 
 CONSTANT_LOCAL_FILE_NAME \
     = 'PyAviationAccidentFlaskAPI'
 
 
-# In[3]:
+# In[ ]:
 
 
 # This line of code generates the engine for the SQLite database.
@@ -47,12 +47,10 @@ engineSQLAlchemyEngineObject \
     = create_engine \
         (local_constant.SQLITE_DATABASE)
 
-
 # This line of code sets up an existing database schema for reflection 
 # into a new model.
 baseSQLAlchemyDeclarativeMetaObject \
     = automap_base()
-
 
 # This line of code reflects the database tables.
 baseSQLAlchemyDeclarativeMetaObject \
@@ -92,7 +90,7 @@ countryDeclarativeMetaObject \
 # between the python app and database (see below).
 
 
-# In[4]:
+# In[ ]:
 
 
 #################################################
@@ -105,7 +103,7 @@ appFlaskAppObject.json.sort_keys = False
 CORS(appFlaskAppObject)
 
 
-# In[5]:
+# In[ ]:
 
 
 #################################################
@@ -113,7 +111,7 @@ CORS(appFlaskAppObject)
 #################################################
 
 
-# In[6]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -147,7 +145,6 @@ def years():
         = Session \
             (engineSQLAlchemyEngineObject)
 
-    
     yearListOfSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
             .query \
@@ -160,11 +157,9 @@ def years():
             .distinct() \
             .all()
 
-    
     sessionSQLAlchemySessionObject \
         .close()
 
-    
     yearIntegerList \
         = list \
             (np.ravel \
@@ -173,13 +168,12 @@ def years():
     yearStringList \
         = [str(x) for x in yearIntegerList]
     
-    
     return \
         jsonify \
             (yearStringList)
 
 
-# In[7]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -214,7 +208,6 @@ def accident_id_list \
     sessionSQLAlchemySessionObject \
         = Session \
             (engineSQLAlchemyEngineObject)
-
     
     accidentIDListOfSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
@@ -232,11 +225,9 @@ def accident_id_list \
                     .date) \
                     .asc()) \
             .all()
-
     
     sessionSQLAlchemySessionObject \
         .close()
-
     
     accidentIDStringList \
         = list \
@@ -248,7 +239,7 @@ def accident_id_list \
             (accidentIDStringList)
 
 
-# In[8]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -283,7 +274,6 @@ def accident_by_id \
         = Session \
             (engineSQLAlchemyEngineObject)
 
-    
     accidentsSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
             .query \
@@ -306,11 +296,9 @@ def accident_by_id \
                 (accidentsSQLAlchemyDeclarativeMetaObject \
                      .accident_id == accidentIDString) \
             .first()
-
     
     sessionSQLAlchemySessionObject \
         .close()
-    
     
     accidentsDictionary \
         = {'type':'feature',
@@ -333,13 +321,12 @@ def accident_by_id \
                  'coordinates': [accidentsSQLAlchemyEngineRowObject['lat'], 
                                  accidentsSQLAlchemyEngineRowObject['lon']]}}
 
-    
     return \
         jsonify \
             (accidentsDictionary)
 
 
-# In[9]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -422,12 +409,10 @@ def categories \
         return \
             None
     
-    
     sessionSQLAlchemySessionObject \
         = Session \
             (engineSQLAlchemyEngineObject)
 
-    
     categoryListOfSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
             .query \
@@ -447,23 +432,20 @@ def categories \
             .distinct() \
             .all()
 
-    
     sessionSQLAlchemySessionObject \
         .close()
     
-        
     categoryStringList \
         = list \
             (np.ravel \
                 (categoryListOfSQLAlchemyEngineRowObject))
-    
     
     return \
         jsonify \
             (categoryStringList)
 
 
-# In[10]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -528,7 +510,6 @@ def accidents \
 
     defaultString = 'N/A'
     
-    
     if typeString.lower() == 'aircraft type':
         
         typesConditionalObject \
@@ -539,7 +520,6 @@ def accidents \
         typesConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.type == typeString
         
-    
     if operatorString.lower() == 'aircraft operator':
         
         operatorsConditionalObject \
@@ -550,7 +530,6 @@ def accidents \
         operatorsConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.operator == operatorString
         
-    
     if damageString.lower() == 'aircraft damage':
         
         damageConditionalObject \
@@ -560,7 +539,6 @@ def accidents \
         
         damageConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.damage == damageString
-        
     
     if phaseString.lower() == 'flight phase':
         
@@ -572,7 +550,6 @@ def accidents \
         phaseConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.phase == phaseString
         
-    
     if natureString.lower() == 'nature of flight':
         
         natureConditionalObject \
@@ -583,7 +560,6 @@ def accidents \
         natureConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.nature == natureString
         
-        
     if countryString.lower() == 'location (country)':
         
         countryConditionalObject \
@@ -593,12 +569,10 @@ def accidents \
         
         countryConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.country == countryString
-        
 
     sessionSQLAlchemySessionObject \
         = Session \
             (engineSQLAlchemyEngineObject)
-
     
     accidentsListOfSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
@@ -643,14 +617,11 @@ def accidents \
                 .asc()) \
         .all()
 
-    
     sessionSQLAlchemySessionObject \
         .close()
-    
         
     accidentsListOfDictionaries \
         = []
-    
     
     for accident_id, date, year, types, operator, fatalities, occupants, \
             damage, phase, nature, departure, destination, \
@@ -760,7 +731,6 @@ def accidents \
                 .append \
                     (lon)
         
-        
         accidentsListOfDictionaries \
             .append \
                 (accidentsDictionary \
@@ -769,14 +739,13 @@ def accidents \
     geoJSONDictionary \
         = {'type': 'FeatureCollection',
            'features': accidentsListOfDictionaries}
-        
 
     return \
         jsonify \
             (geoJSONDictionary)
 
 
-# In[11]:
+# In[ ]:
 
 
 #*******************************************************************************************
@@ -846,7 +815,6 @@ def airports \
 
     defaultString = 'N/A'
     
-    
     if typeString.lower() == 'aircraft type':
         
         typesConditionalObject \
@@ -857,7 +825,6 @@ def airports \
         typesConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.type == typeString
         
-    
     if operatorString.lower() == 'aircraft operator':
         
         operatorsConditionalObject \
@@ -867,7 +834,6 @@ def airports \
         
         operatorsConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.operator == operatorString
-        
     
     if damageString.lower() == 'aircraft damage':
         
@@ -878,7 +844,6 @@ def airports \
         
         damageConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.damage == damageString
-        
     
     if phaseString.lower() == 'flight phase':
         
@@ -889,7 +854,6 @@ def airports \
         
         phaseConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.phase == phaseString
-        
     
     if natureString.lower() == 'nature of flight':
         
@@ -899,8 +863,7 @@ def airports \
     else:
         
         natureConditionalObject \
-            = accidentsSQLAlchemyDeclarativeMetaObject.nature == natureString
-        
+            = accidentsSQLAlchemyDeclarativeMetaObject.nature == natureString 
         
     if countryString.lower() == 'location (country)':
         
@@ -912,11 +875,9 @@ def airports \
         countryConditionalObject \
             = accidentsSQLAlchemyDeclarativeMetaObject.country == countryString
     
-    
     sessionSQLAlchemySessionObject \
         = Session \
             (engineSQLAlchemyEngineObject)
-    
     
     accidentsListOfSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
@@ -946,10 +907,8 @@ def airports \
                 .asc()) \
         .all()
     
-    
     sessionSQLAlchemySessionObject \
         .close()
-    
     
     accidentIDStringList \
         = []
@@ -959,7 +918,6 @@ def airports \
         accidentIDStringList \
             .append \
                 (accident_id[0])    
-    
 
     if categoryString == 'departure':
         
@@ -976,11 +934,9 @@ def airports \
         return \
             None    
     
-    
     sessionSQLAlchemySessionObject \
         = Session \
             (engineSQLAlchemyEngineObject)
-    
     
     airportsListOfDictionaries \
         = []
@@ -1001,7 +957,6 @@ def airports \
                     (airportDeclarativeMetaObject \
                          .accident_id == accident_id) \
                 .first()
-        
         
         if len(airportsSQLAlchemyEngineRowObject) > 0:
             
@@ -1061,22 +1016,18 @@ def airports \
                         (airportsSQLAlchemyEngineRowObject \
                              ['lon'])
         
-        
             airportsListOfDictionaries \
                 .append \
                     (airportsDictionary \
                          .copy())
             
-        
     sessionSQLAlchemySessionObject \
         .close()
 
-    
     geoJSONDictionary \
         = {'type': 'FeatureCollection',
            'features': airportsListOfDictionaries}
 
-    
     return \
         jsonify \
             (geoJSONDictionary)

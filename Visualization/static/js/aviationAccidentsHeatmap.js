@@ -4,7 +4,7 @@
  *
  *  File Description:
  *      This Javascript file contains the function calls for the html file,
- *      indexAccidentVisualization.html. Here is a list of the functions
+ *      indexAccidentHeatmap.html. Here is a list of the functions
  *      and subroutines:
  *  
  *      FetchJsonDataFromURLFunction
