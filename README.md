@@ -31,7 +31,9 @@ To find the answer to our many questions, we obtained the requisite information 
 
 <img width="1889" alt="Screenshot 2023-11-04 at 12 41 22 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/85f1a2df-acea-45a4-bbf6-7c18114b8457">
 
-<img width="1884" alt="Screenshot 2023-11-04 at 7 19 27 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/052a9a69-86af-490b-8622-43240d899523">
+<img width="1883" alt="Screenshot 2023-11-04 at 7 23 56 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/4ad59393-f95e-4d44-9158-2a7edfb9ba3b">
+
+
 
 
 
