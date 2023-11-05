@@ -4,4 +4,4 @@ This folder includes the input and output CSV files for the Aviation Accidents V
 
 ## Copyright
 
-N. James George, Stephen Smith © 2023. All Rights Reserved.
+N. James George © 2023. All Rights Reserved.
