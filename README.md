@@ -37,9 +37,7 @@ On a positive note, our analysis demonstarted reduced mortality from aviation ac
 
 <img width="547" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/118c23b0-96c0-4f0c-a9c9-8441a1006139"><img width="670" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/35e26c20-ae8f-418a-965e-0b7edb8e5676">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/08c897da-ec90-4fb8-8113-1b634a1156f9">
-
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/eacad6d0-3f4f-48fb-9adb-4548efc12072">
+<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/08c897da-ec90-4fb8-8113-1b634a1156f9"><img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/eacad6d0-3f4f-48fb-9adb-4548efc12072">
 
 <img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/fe7c1ea0-ad64-4a09-946d-3f875f7eeb05">
 
