@@ -58,7 +58,7 @@ Although we could not accurately predict the locations of plane crashes only the
 ## **Authors and Acknowledgment:**
 
 ## Group 3 members:
-Arame diasse, Jackie ochuida, Nicholas George, Rajib maji, Stephen grantham, Theresa bravo, Vishnu pillai
+Arame Diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
 
 ## Copyright
 
