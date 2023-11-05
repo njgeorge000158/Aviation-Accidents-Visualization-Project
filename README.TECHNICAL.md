@@ -64,6 +64,10 @@ PyLogSubRoutines.py
 
 PySubroutines.py
 
+To start the Flask API, execute the following command in the source folder using Terminal in MacOS or its MS Windows equivalent:
+
+flask --app PyAviationAccidentFlaskAPI.py run
+
 If the folders, Resources, Logs, and Images are not present, the IPython notebook will create them.  The Resources folder holds CSV input and output files files; the Logs folder contains debug and log files from testing the IPython Notebooks; and the Images folder has the PNG image files of the IPython Notebooks' tables and plots. The HTML, CSS, Javascript, and webpage image files are arranged in the Visualization folder and requires the Flask API server to be running (flask --app PyAviationAccidentFlaskAPI.py run). The IPython notebook, PyAviationAccidentsLoad.ipynb, creates the SQLite file, AviationAccidentsDatabase.sqlite, in the Visualization folder. To begin visualization, run the index.html file in any browser. The SQL folder contains table creation scripts and Entity-Relationship Diagrams for the current and future database.
 
 To place a IPython notebook in Log Mode, Debug Mode, or Image Mode set the parameter for the appropriate subroutine in coding cell #2 to True. In Debug Mode, the IPython notebook displays the debug information and writes it to a debug file in the Logs folder; the same is true in Log Mode for log information sent to a log file. If the program is in Log Mode but NOT Debug Mode, it displays no debug information, but writes that information to the log file. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG files in the Images Folder.
@@ -374,7 +378,7 @@ Project3GroupCreateTableSchemata.sql, Project3GroupFutureCreateTableSchemata.sql
 
 ### **Authors and Acknowledgment:**
 
-Arame diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
+Arame Diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
 
 ----
 
