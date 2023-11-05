@@ -6,9 +6,9 @@
 
 ----
 
-If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebook already has the following dependencies installed: datetime, io, json, matplotlib, math, numpy, pandas, pathlib, random, re, requests, requests_html, scipy.
+If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebooks already have the following dependencies installed: datetime, io, json, matplotlib, math, numpy, pandas, pathlib, random, re, requests, requests_html, scipy.
 
-In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, BeautifulSoup, Splinter, airportsdata, countryinfo, country-converter, SQLite, SQLAlchemy, Flask, and CORS.
+In addition to those modules, the IPython notebooks need the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, BeautifulSoup, Splinter, airportsdata, countryinfo, country-converter, SQLite, SQLAlchemy, Flask, and CORS.
 
 Here are the requisite Terminal commands for the installation of these peripheral modules (SQLite is already installed on macOS):
 
