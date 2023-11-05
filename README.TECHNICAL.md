@@ -364,13 +364,13 @@ Project3GroupCreateTableSchemata.sql, Project3GroupFutureCreateTableSchemata.sql
 
 [Pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html)
 
+[Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript/)
+
 [Python Documentation](https://docs.python.org/3/contents.html)
 
 [SQLite documentation](https://www.sqlite.org/docs.html)
 
 [Splinter documentation](https://splinter.readthedocs.io/en/latest/)
-
-[Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript/)
 
 [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 
