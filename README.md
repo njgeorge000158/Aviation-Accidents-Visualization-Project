@@ -11,7 +11,7 @@ Are there possible outside factors affecting these trends?
 
 To find the answer to our many questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. Once the data was available, we created a suite of interactive toolkits.
 
-## Aviation Accident Visualization:
+## Aviation Accidents Visualization Toolkit:
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/811b062a-d574-4d0e-807e-388ffe3443f0)
 
@@ -19,7 +19,7 @@ To find the answer to our many questions, we obtained the requisite information 
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/d91573cd-9001-4250-b707-5c59084e43d4)
 
-## Aviation Accident Heatmap:
+## Aviation Accidents Heatmap Toolkit:
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/5acddd9f-f938-4ff6-9072-7a10d97685a9)
 
@@ -27,7 +27,7 @@ To find the answer to our many questions, we obtained the requisite information 
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/a7aa13af-9682-4d26-ae4f-0cfe29c80977)
 
-## Aviation Accident Dashboard:
+## Aviation Accidents Dashboard:
 
 <img width="1889" alt="Screenshot 2023-11-04 at 12 41 22 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/85f1a2df-acea-45a4-bbf6-7c18114b8457">
 
