@@ -389,7 +389,8 @@ function ReturnFatalitiesIntegerListFunction
              startYearInteger,
              endYearInteger,
              categoryString,
-             sortedCategoryStringList)
+             sortedCategoryStringList,
+             pieChartBooleanFlag = false)
 {
     var fatalitiesIntegerList
             = new Array(sortedCategoryStringList.length).fill(0);
@@ -402,10 +403,13 @@ function ReturnFatalitiesIntegerListFunction
                 && accidentsDictionaryList[j].properties.year >= startYearInteger
                 && accidentsDictionaryList[j].properties.year <= endYearInteger)
             {
-                fatalitiesIntegerList[i] += accidentsDictionaryList[j].properties.fatalities;
+                if (accidentsDictionaryList[j].properties.fatalities >= currentThresholdInteger)
+                {
+                    fatalitiesIntegerList[i] += accidentsDictionaryList[j].properties.fatalities;
+                }
             }
         }
-    }
+     }
 
     return fatalitiesIntegerList;
 } // This right brace ends the block for the function, 
@@ -1162,7 +1166,7 @@ function SetCurrentCategoryDictionarySubroutine
                  keyString,
                  sortedCategoryStringList);
 
-        for (i = 0; i < accidentsDictionaryList.length; i++)
+        for (i = 0; i < fatalitiesIntegerList.length; i++)
         {
             if (fatalitiesIntegerList[i] < currentThresholdInteger)
             {
@@ -1308,7 +1312,7 @@ function SetCurrentBubbleChartDictionarySubroutine
         }
     }
 
-    for (i = 0; i < accidentsDictionaryList.length; i++)
+    for (i = 0; i < fatalitiesIntegerList.length; i++)
     {
         if (fatalitiesIntegerList[i] < currentThresholdInteger)
         {
@@ -1394,9 +1398,10 @@ function SetCurrentPieChartDictionarySubroutine
                  startYearInteger,
                  endYearInteger,
                  'phase',
-                 sortedCategoryStringList);
-    
-    for (var i = 0; i < accidentsDictionaryList.length; i++)
+                 sortedCategoryStringList,
+                 true);
+
+    for (var i = 0; i < fatalitiesIntegerList.length; i++)
     {
         if (fatalitiesIntegerList[i] < currentThresholdInteger)
         {
@@ -1655,7 +1660,7 @@ function GeneratePieChartSubroutine()
                      hole: .4,
                      type: 'pie'
                  }];
- 
+                 
     let pieChartLayoutDictionary 
         = {
             title: '<b>Flight Phase vs. Fatalities</b>',
