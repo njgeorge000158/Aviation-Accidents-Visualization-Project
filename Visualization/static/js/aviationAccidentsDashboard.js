@@ -8,8 +8,8 @@
  *      and subroutines:
  *  
  *      FetchJsonDataFromURLFunction
- *      ReturnStartYearFunction
- *      ReturnEndYearFunction
+ *      ReturnStartYearStringFunction
+ *      ReturnEndYearStringFunction
  *      ReturnSortedCategoryStringListFunction
  *      ReturnFatalitiesIntegerListFunction
  * 
@@ -203,7 +203,7 @@ async function FetchJsonDataFromURLFunction
 
 /****************************************************************************
  *
- *  Function Name:  ReturnStartYearFunction
+ *  Function Name:  ReturnStartYearStringFunction
  *
  *  Function Description:  
  *      This function returns the start year for the visualization.
@@ -223,12 +223,14 @@ async function FetchJsonDataFromURLFunction
  *
  ****************************************************************************/
 
-function ReturnStartYearFunction() 
+function ReturnStartYearStringFunction() 
 {
     var startYearString;
 
     if (selectedDropdownMenuOptionsDictionary['startYear'] == 'Start Year')
     {
+        selectedDropdownMenuOptionsDictionary['startYear'] = '1970';
+
         startYearString = '1970';
     }
     else
@@ -238,12 +240,12 @@ function ReturnStartYearFunction()
 
     return startYearString;
 } // This right brace ends the block for the function, 
-// ReturnStartYearFunction.
+// ReturnStartYearStringFunction.
 
 
 /****************************************************************************
  *
- *  Function Name:  ReturnEndYearFunction
+ *  Function Name:  ReturnEndYearStringFunction
  *
  *  Function Description:  
  *      This function returns the end year for the visualization.
@@ -263,12 +265,14 @@ function ReturnStartYearFunction()
  *
  ****************************************************************************/
 
-function ReturnEndYearFunction() 
+function ReturnEndYearStringFunction() 
 {
     var endYearString;
 
     if (selectedDropdownMenuOptionsDictionary['endYear'] == 'End Year')
     {
+        selectedDropdownMenuOptionsDictionary['endYear'] = '2022';
+
         endYearString = '2022';
     }
     else
@@ -278,7 +282,7 @@ function ReturnEndYearFunction()
 
     return endYearString;
 } // This right brace ends the block for the function, 
-// ReturnEndYearFunction.
+// ReturnEndYearStringFunction.
 
 
 /****************************************************************************
@@ -403,7 +407,7 @@ function ReturnFatalitiesIntegerListFunction
                 && accidentsDictionaryList[j].properties.year >= startYearInteger
                 && accidentsDictionaryList[j].properties.year <= endYearInteger)
             {
-                if (accidentsDictionaryList[j].properties.fatalities >= currentThresholdInteger)
+                if (accidentsDictionaryList[j].properties.fatalities > currentThresholdInteger)
                 {
                     fatalitiesIntegerList[i] += accidentsDictionaryList[j].properties.fatalities;
                 }
@@ -480,10 +484,10 @@ function PopulateYearDropdownMenuSubroutine
 function PopulateAccidentIDDropdownMenuSubroutine()
 {
     var startYearString
-            = ReturnStartYearFunction();
+            = ReturnStartYearStringFunction();
 
     var endYearString
-            = ReturnEndYearFunction();
+            = ReturnEndYearStringFunction();
 
     routeURLString
         = 'http://127.0.0.1:5000/api/v1.0/accident_id_list/'
@@ -1140,10 +1144,10 @@ function SetCurrentCategoryDictionarySubroutine
              categoryDictionary)
 {
     var startYearInteger
-            = ReturnStartYearFunction();
+            = parseInt(ReturnStartYearStringFunction());
 
     var endYearInteger
-            = ReturnEndYearFunction();
+            = parseInt(ReturnEndYearStringFunction());
 
     var sortedCategoryStringList;
 
@@ -1220,31 +1224,11 @@ function SetCurrentBubbleChartDictionarySubroutine
             (accidentsDictionaryList,
              bubbleChartDictionary)
 {
-    var startYearInteger;
+    var startYearInteger
+            = parseInt(ReturnStartYearStringFunction());
 
-    var endYearInteger;
-
-    if (selectedDropdownMenuOptionsDictionary['startYear'] == 'Start Year')
-    {
-        selectedDropdownMenuOptionsDictionary['startYear'] = '1970';
-
-        startYearInteger = 1970;
-    }
-    else
-    {
-        startYearInteger = parseInt(selectedDropdownMenuOptionsDictionary['startYear']);
-    }
-
-    if (selectedDropdownMenuOptionsDictionary['endYear'] == 'End Year')
-    {
-        selectedDropdownMenuOptionsDictionary['endYear'] = '2022';
-
-        endYearInteger = 2022;
-    }
-    else
-    {
-        endYearInteger = parseInt(selectedDropdownMenuOptionsDictionary['endYear']);
-    }
+    var endYearInteger
+            = parseInt(ReturnEndYearStringFunction());
 
     var labelsStringList
             = [];
@@ -1380,10 +1364,10 @@ function SetCurrentPieChartDictionarySubroutine
              pieChartDictionary)
 {
     var startYearInteger
-            = ReturnStartYearFunction();
+            = parseInt(ReturnStartYearStringFunction());
 
     var endYearInteger
-            = ReturnEndYearFunction();
+            = parseInt(ReturnEndYearStringFunction());
 
     var sortedCategoryStringList
             = ReturnSortedCategoryStringListFunction
