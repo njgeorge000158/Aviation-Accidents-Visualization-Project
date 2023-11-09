@@ -10,7 +10,7 @@ Questions we considered:
 * Are there possible outside factors affecting these trends?
 
 To find the answers to our questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. The procurement of aviation accident information began with web scraping sources on the Internet.  Subsequently, an initial review of the information showed important details mixed together with irrelenant ones in various and inconsistent forms.  To compensate for this obstacle, we implemented algorithms to parse text for important specifics, verify or augment information using APIs and other sources, and standardize the data.  After placing the cleaned information in an SQLite database, a Flask API provides it to front-end applications in an efficent and effective manner. To accomplish our goal of interactive visualization, we employed certain technologies -- D3, JSON, JS, Plotly, Bootstrap, among others -- and aimed to create an informative representation of historical aviation accident data, which could allow stakeholders to uncover patterns, trends, and insight.
-
+----
 ## Landing Page:
 
 <img width="1106" alt="Screenshot 2023-11-09 at 1 06 18 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/a488b3da-c6d0-4d8f-812f-66da8491057a">
@@ -82,9 +82,13 @@ Also, Russia has consistently been the a location for high numbers of fatalities
 Ultimately, we could not accurately predict the locations of aircraft accidents only the likelihood based on past events and those parameters change from decade to decade, but we did observe some trends.  During the last few years, China Eastern Airlines has experienced the highest number fatalities. Currently, possible outside factors for these aviation fatalities include terrorism, political upheaval, and cultural practices. In any case, the next China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided! This project is a positive first step toward understanding aviation accidents, and, in the future, these fatalities should be compared with total flight data to render percentages as the metric for a clearer picture of the situation.
 
 ----
+
 ## **Authors and Acknowledgment:**
+
 **Group 3 members:** Arame Diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
+
 ----
+
 ## Copyright
 
 N. James George © 2023. All Rights Reserved.
