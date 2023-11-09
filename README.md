@@ -63,7 +63,7 @@ In any period, domestic scheduled passenger flights are most likely to have fata
 
 <img width="720" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/9d4720a7-4462-48b0-a4e8-32fc00491566">
 
-In the last decade or so, certain Chinese airports have had the largest proportion of accidents.
+In the last few years, certain Chinese departure and destination airports have had the largest proportion of accidents.
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/68cd9132-4722-4b22-82f0-64780efb5a87"><img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e7f957f4-c01c-4e06-ade3-e789a17c3a08">
 
