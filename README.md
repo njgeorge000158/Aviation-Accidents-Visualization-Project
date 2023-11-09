@@ -7,7 +7,7 @@ Air travel stands as an undeniable revolution in the transportation sector, deli
 Questions we considered:
 * Where are aviation accidents likely to occur?
 * In recent years, are there certain airlines that have more crashes than others?
-* Are there outside factors affecting these trends?
+* Are there possible outside factors affecting these trends?
 
 To find the answers to our many questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. The procurement of aviation accident information began with web scraping information sources on the Internet.  Subsequently, an initial review of the information showed important details mixed together with irrelenant ones in various and inconsistent forms.  To compensate for this obstacle, we implemented algorithms to parse text for important specifics, verify or augment information using APIs and other sources, and standardize the data.  After placing the cleaned information in an SQLite database, a Flask API provided the information to front-end applications in an efficent and effective manner. To accomplish our goal of interactive visualization, we employed certain technologies -- D3, JSON, JS, Plotly, Bootstrap, among others -- and aimed to create an informative representation of historical aviation accident data, which could allow stakeholders to uncover patterns, trends, and insight.
 
@@ -73,7 +73,7 @@ Also, Russia has consistently been the a location for high numbers of fatalities
 
 <img width="432" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/d1812e69-2394-4c4b-b528-629522cc16b8">
 
-Ultimately, we could not accurately predict the locations of aircraft accidents only the likelihood based on past events, but we did observe some trends.  During the last ten years, China Eastern Airlines has experienced the largest fatalities. Although the reasons for and concentrations of aviation accidents varied from decade to decade, currently, possible outside factors include terrorism, poor maintenance, and employee malfeasance, misfeasance, or nonfeasance. The next flight on China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided! This project is a positive first step toward understanding aviation accidents, and, in the future, these fatalities should be compared with total flight data to render percentages as the metric for a clearer picture of the situation.
+Ultimately, we could not accurately predict the locations of aircraft accidents only the likelihood based on past events, but we did observe some trends.  During the last ten years, China Eastern Airlines has experienced the largest fatalities. Although the reasons for and concentrations of aviation accidents varied from decade to decade, currently, possible outside factors include terrorism, political upheaval, and cultural practices. The next flight on China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided! This project is a positive first step toward understanding aviation accidents, and, in the future, these fatalities should be compared with total flight data to render percentages as the metric for a clearer picture of the situation.
 
 ----
 ## **Authors and Acknowledgment:**
