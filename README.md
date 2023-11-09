@@ -2,12 +2,12 @@
 
 # Aviation Accidents Visualization Project
 ----
-Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages: unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges, especially concerning the issue of safety. In this project, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators in a comprehensive analysis of aviation accident data collected over 50 years from 1970 to 2022. 
+Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages: unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges, especially concerning the issue of safety. In this project, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators in a comprehensive analysis of aviation accident data collected over 50 years (1970-2022). 
 
 Questions we considered:
-* Can we accurately predict where plane crashes are likely to occur?
-* Are there certain airlines that have more crashes than others?
-* Are there possible outside factors affecting these trends?
+* Where are aviation accidents likely to occur?
+* In recent years, are there certain airlines that have more crashes than others?
+* Are there outside factors affecting these trends?
 
 To find the answers to our many questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. The procurement of aviation accident information began with web scraping information sources on the Internet.  Subsequently, an initial review of the information showed important details mixed together with irrelenant ones in various and inconsistent forms.  To compensate for this obstacle, we implemented algorithms to parse text for important specifics, verify or augment information using APIs and other sources, and standardize the data.  After placing the cleaned information in an SQLite database, a Flask API provided the information to front-end applications in an efficent and effective manner. To accomplish our goal, we employed certain technologies -- D3, JSON, JS, Plotly, Bootstrap, among others -- and aimed to create an informative representation of historical aviation accident data, which could allow stakeholders to uncover patterns, trends, and insight.
 
