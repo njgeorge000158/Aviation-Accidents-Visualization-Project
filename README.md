@@ -27,7 +27,7 @@ To find the answers to our many questions, we obtained the requisite information
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/a7aa13af-9682-4d26-ae4f-0cfe29c80977)
 
-## Aviation Accidents Dashboard:
+## Aviation Accidents Worldwide Dashboard:
 
 <img width="1679" alt="Screenshot 2023-11-05 at 12 31 54 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/b7e7b9e4-fe96-4542-8ad0-e0901e00a27c">
 
