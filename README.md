@@ -33,9 +33,17 @@ To find the answers to our many questions, we obtained the requisite information
 
 <img width="1679" alt="Screenshot 2023-11-05 at 12 33 55 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e2d62e39-c49e-4403-a3b1-b50512384ae4">
 
-To best convey our findings, we summarized them in a series of visual aids. First, our analysis revealed a trend of reduced mortality from aviation accidents over the last fifty years. 
+To best convey our findings, we summarized them in a series of visual aids. First, our analysis revealed a downward trend in fatalities from aviation accidents over the last fifty years. 
 
 <img width="617" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/177588e2-cf44-4a1d-8b06-e48e3e4234dc">
+
+This downward trend also manifested itself in a lower average casualty rate per flight and lower and narrower casualty rate distributions.
+
+<img width="741" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c52b3b28-3b31-412e-9f4a-1a236af69550">
+
+<img width="741" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/8df7472d-6f0c-4cd7-9632-ea08fb3c48b9">
+
+
 
 <img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/08c897da-ec90-4fb8-8113-1b634a1156f9"><img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/eacad6d0-3f4f-48fb-9adb-4548efc12072">
 
