@@ -240,6 +240,10 @@ Project3GroupCreateTableSchemata.sql, Project3GroupFutureCreateTableSchemata.sql
 
   &emsp; |&rarr; [./Logs/20231030PyAviationAccidentsLoadLog.txt](./Logs/20231030PyAviationAccidentsLoadLog.txt)
 
+  &emsp; |&rarr; [./Logs/20231108PyAviationAccidentsAnalysisDebug.txt](./Logs/20231108PyAviationAccidentsAnalysisDebug.txt)
+
+  &emsp; |&rarr; [./Logs/20231108PyAviationAccidentsAnalysisLog.txt](./Logs/20231108PyAviationAccidentsAnalysisLog.txt)
+
   &emsp; |&rarr; [./Logs/README.md](./Logs/README.md)
 
 |&rarr; [./Presentation/](./Presentation/)
