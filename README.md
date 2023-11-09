@@ -89,7 +89,7 @@ Ultimately, we could not accurately predict the locations of aircraft accidents 
 
 ## **Authors and Acknowledgment:**
 
-**Group 3 members:** Arame Diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
+Arame Diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
 
 ----
 
