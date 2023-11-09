@@ -55,6 +55,14 @@ In the last two years, China Eastern Airlines has had a troubling number of fata
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/40821864-b1c8-4af3-ba87-73dc3aed0e54">
 
+The aircraft most prone to fatalities from aviation accidents during the last fifty years is the Tupolev TU-154, a Soviet era aircraft, followed by the Lockheed L-1011 and Boeing 727.  In the last twenty years or so the Boeing 737 has been the leader in this infamous category.
+
+<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/23a05db8-b849-430a-a957-604f2b61aa64">
+
+<img width="506" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/a99ffbe9-7e5e-4052-9b90-c22ca7ac582c">
+
+<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/09da2831-5195-486e-a471-1efbd0d942d3">
+
 
 
 
