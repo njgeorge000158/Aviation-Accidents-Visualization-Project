@@ -77,7 +77,7 @@ Also, Russia has consistently been the a location for high numbers of fatalities
 
 <img width="432" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/d1812e69-2394-4c4b-b528-629522cc16b8">
 
---
+----
 
 Ultimately, we could not accurately predict the locations of aircraft accidents only the likelihood based on past events and those parameters change from decade to decade, but we did observe some trends.  During the last few years, China Eastern Airlines has experienced the highest number fatalities. Currently, possible outside factors for these aviation fatalities include terrorism, political upheaval, and cultural practices. In any case, the next China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided! This project is a positive first step toward understanding aviation accidents, and, in the future, these fatalities should be compared with total flight data to render percentages as the metric for a clearer picture of the situation.
 
