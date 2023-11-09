@@ -63,11 +63,23 @@ The aircraft most prone to fatalities from aviation accidents during the last fi
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/09da2831-5195-486e-a471-1efbd0d942d3">
 
+In any period, domestic scheduled passenger flights are most likely to have fatalities from aviation accidents followed by international scheduled passenger flights.
 
+<img width="720" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/9d4720a7-4462-48b0-a4e8-32fc00491566">
 
+In the last decade or so, certain Chinese airports have had the largest proportion of accidents.
 
-Although we could not accurately predict the locations of plane crashes only the likelihood based on past events, we did observe some trends.  During the last ten years, China Eastern Airlines has experienced the largest fatalities. Although the reasons for and concentrations of aviation accidents varied from decade to decade, currently, possible outside factors include terrorism, poor maintenance, and employee malfeasance, misfeasance, or nonfeasance. But, one thing for certain, the next flight on China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided!
+<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/68cd9132-4722-4b22-82f0-64780efb5a87">
 
+![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/b17e370e-9243-460a-a1a2-9d12081104b5)
+
+Russia has consistently been the location for most fatalities while China has lately taken on that mantle.
+
+<img width="432" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c4949211-48c4-4547-b81b-040a596b9078">
+
+<img width="432" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/d1812e69-2394-4c4b-b528-629522cc16b8">
+
+Although we could not accurately predict the locations of plane crashes only the likelihood based on past events, we did observe some trends.  During the last ten years, China Eastern Airlines has experienced the largest fatalities. Although the reasons for and concentrations of aviation accidents varied from decade to decade, currently, possible outside factors include terrorism, poor maintenance, and employee malfeasance, misfeasance, or nonfeasance. The next flight on China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided!In the future, these numbers should be compared with total flight data to render percentages as the metric.
 
 ----
 ## **Authors and Acknowledgment:**
