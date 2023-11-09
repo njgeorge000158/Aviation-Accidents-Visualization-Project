@@ -33,7 +33,7 @@ To find the answers to our many questions, we obtained the requisite information
 
 <img width="1679" alt="Screenshot 2023-11-05 at 12 33 55 PM" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/e2d62e39-c49e-4403-a3b1-b50512384ae4">
 
-On a positive note, our analysis demonstarted reduced mortality from aviation accidents over the last fifty years. We summarized our findings in a series of visual aids.
+To best convey our findings, we summarized our them in a series of visual aids. First, our analysis demonstarted reduced mortality from aviation accidents over the last fifty years. 
 
 ![download](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/96cc92b2-8200-4ea6-a651-58167b787678)
 
