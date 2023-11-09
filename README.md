@@ -11,7 +11,7 @@ Questions we considered:
 
 To find the answers to our many questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. The procurement of aviation accident information began with web scraping information sources on the Internet.  Subsequently, an initial review of the information showed important details mixed together with irrelenant ones in various and inconsistent forms.  To compensate for this obstacle, we implemented algorithms to parse text for important specifics, verify or augment information using APIs and other sources, and standardize the data.  After placing the cleaned information in an SQLite database, a Flask API provided the information to front-end applications in an efficent and effective manner. To accomplish our goal of interactive visualization, we employed certain technologies -- D3, JSON, JS, Plotly, Bootstrap, among others -- and aimed to create an informative representation of historical aviation accident data, which could allow stakeholders to uncover patterns, trends, and insight.
 
-## Aviation Accidents Visualization Toolkit:
+## Aviation Accidents Worldwide Visualization Toolkit:
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/811b062a-d574-4d0e-807e-388ffe3443f0)
 
@@ -19,7 +19,7 @@ To find the answers to our many questions, we obtained the requisite information
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/d91573cd-9001-4250-b707-5c59084e43d4)
 
-## Aviation Accidents Heatmap Toolkit:
+## Aviation Accidents Worldwide Heatmap Toolkit:
 
 ![image](https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/5acddd9f-f938-4ff6-9072-7a10d97685a9)
 
