@@ -47,7 +47,7 @@ Overall and most recently, accidents occur when the aircraft is en route or appr
 
 <img width="623" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c304e4ad-a0b3-4dad-b50d-1521ff48f053">
 
-In the last fifty years, Aeroflot has been the airline with the highest fatalities although these primarily occurred in the 1970s and 1980s during the Soviet Union era.  
+In the last fifty years, Aeroflot has been the airline with the highest fatalities although these accidents primarily occurred in the 1970s and 1980s during the Soviet era.  
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/61ab3880-a4fb-448b-80f6-fc201ac90587">
 
