@@ -51,7 +51,7 @@ In the last fifty years, Aeroflot has been the airline with the highest fataliti
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/61ab3880-a4fb-448b-80f6-fc201ac90587"><img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/40821864-b1c8-4af3-ba87-73dc3aed0e54">
 
-The aircraft most prone to fatalities from aviation accidents during the last fifty years is the Tupolev TU-154, a Soviet era aircraft, followed by the Lockheed L-1011 and Boeing 727.  In the last twenty years or so the Boeing 737 has been the leader in this infamous category.
+The aircraft most prone to fatalities from aviation accidents is the Tupolev TU-154, a Soviet era aircraft, followed by the Lockheed L-1011 and Boeing 727.  In the last twenty years or so the Boeing 737 has been the leader in this infamous category.
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/23a05db8-b849-430a-a957-604f2b61aa64">
 
