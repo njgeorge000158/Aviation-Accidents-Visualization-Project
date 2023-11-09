@@ -1874,7 +1874,7 @@ def DisplayHVPlotFromDataFrame \
     
     
         log_subroutine \
-            .SaveHVPlotImageToPNGFile \
+            .SaveHVPlotImageToHTMLFile \
                 (hvPlotOverlayObject,
                  captionStringParameter)
 

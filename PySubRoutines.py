@@ -136,6 +136,9 @@ CONSTANT_LOCAL_FILE_NAME \
  #  String
  #          xLabelStringParameter
  #                          This parameter is the x-axis label.
+ #  Float List
+ #          figureSizeFloatList
+ #                          This parameter is the dimensions of the figure.
  #
  #
  #  Date                Description                                 Programmer
@@ -161,7 +164,9 @@ def DisplayPandasBarChartFromSeries \
          axisTickLabelRotationFloatParameter \
             = 80.0,
          xLabelStringParameter \
-            = None):
+            = None,
+         figureSizeFloatList \
+            = [9.708, 6.0]):
     
     try:
         
@@ -190,7 +195,8 @@ def DisplayPandasBarChartFromSeries \
                  legend \
                      = False,
                  figsize \
-                     = (9.708, 6))
+                     = (figureSizeFloatList[0], 
+                        figureSizeFloatList[1]))
         
         plt \
             .title \
@@ -709,6 +715,9 @@ def DisplayMatplotlibPieChartFromSeries \
  #          xTicksRotationFloat
  #                          This parameter sets the rotation angle for the x-ticks labels.
  #
+ #  Float List
+ #          figureSizeFloatList
+ #                          This parameter sets the figure size.
  #
  #  Date                Description                                 Programmer
  #  ---------------     ------------------------------------        ------------------
@@ -726,7 +735,9 @@ def DisplayMatplotlibBoxPlotFromSeriesList \
          verticalFlagBooleanParameter \
              = True,
          xTicksRotationFloat \
-            = 0.0):
+            = 0.0,
+         figureSizeFloatList \
+            = [9.708, 6.0]):
     
     try:
         
@@ -737,7 +748,8 @@ def DisplayMatplotlibBoxPlotFromSeriesList \
             = plt \
                 .subplots \
                     (figsize \
-                         = (9.708, 6))
+                         = (figureSizeFloatList[0], 
+                            figureSizeFloatList[1]))
 
         ax \
             .boxplot \
@@ -3853,6 +3865,9 @@ def DisplayPlotFromDataFrame \
  #          legendYCoordinateFloat
  #                          This parameter is the legend's y-coordinate from the
  #                          lower left corner of the chart.
+ #  Integer List
+ #          yLimitIntegerList
+ #                          This parameter is the plot's y-axis limits.
  #
  #
  #  Date                Description                                 Programmer
@@ -3874,7 +3889,9 @@ def DisplayMultiLineGraphFromDataFrame \
      legendXCoordinateFloat \
         = 0.0,
      legendYCoordinateFloat \
-        = 0.0):
+        = 0.0,
+     yLimitIntegerList \
+        = []):
     
     try:
     
@@ -3952,6 +3969,13 @@ def DisplayMultiLineGraphFromDataFrame \
             .yticks \
                 (fontsize \
                      = 14)
+        
+        if len(yLimitIntegerList) > 0:
+            
+            plt \
+                .ylim \
+                    (yLimitIntegerList[0], 
+                     yLimitIntegerList[1])
         
         log_subroutine \
             .SavePlotImage \

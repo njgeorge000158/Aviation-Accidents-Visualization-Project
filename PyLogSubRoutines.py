@@ -42,9 +42,10 @@ import PyLogConstants as log_constant
 import PyLogFunctions as log_function
 
 import aspose.words as aw
-from bokeh.io import export_svgs
+from bokeh.io import export_svg
 import holoviews as hv
 import matplotlib.pyplot as plt
+import hvplot.pandas
 
 import os
 import copy
@@ -697,7 +698,7 @@ def SavePlotImage \
 
 #*******************************************************************************************
  #
- #  Subroutine Name:  SaveHVPlotImageToPNGFile
+ #  Subroutine Name:  SaveHVPlotImageToHTMLFile
  #
  #  Subroutine Description:
  #      This subroutine sets the value for the global program designation String.
@@ -723,7 +724,7 @@ def SavePlotImage \
  #
  #******************************************************************************************/
 
-def SaveHVPlotImageToPNGFile \
+def SaveHVPlotImageToHTMLFile \
         (hvPlotOverlayParameter,
          captionStringParameter \
             = ''):
@@ -744,46 +745,16 @@ def SaveHVPlotImageToPNGFile \
                      height \
                          = 550)
         
-            plotBokehFigureStateObject \
-                = hv \
-                    .renderer \
-                        ('bokeh') \
-                    .get_plot \
-                        (hvPlotOverlay) \
-                    .state
-        
-            plotBokehFigureStateObject \
-                .output_backend \
-                    = 'svg'
-        
-        
-            svgFilePathStringVariable \
+            htmlFilePathStringVariable \
                 = log_function \
                     .ReturnImageFilePathString \
                         (captionStringParameter,
-                            'svg')           
+                            'html')
             
-            export_svgs \
-                (plotBokehFigureStateObject, 
-                 filename \
-                     = svgFilePathStringVariable)
-
-            
-            pngFilePathStringVariable \
-                = log_function \
-                    .ReturnImageFilePathString \
-                        (captionStringParameter,
-                            'png')
-            
-            ConvertSVGFileToPNG \
-                (svgFilePathStringVariable,
-                 pngFilePathStringVariable,
-                 captionStringParameter)
-     
-            
-            os \
-                .remove \
-                    (svgFilePathStringVariable)
+            hvplot \
+                .save \
+                    (hvPlotOverlay, 
+                     htmlFilePathStringVariable)
     
     except:
         

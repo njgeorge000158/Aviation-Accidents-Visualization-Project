@@ -1,0 +1,2896 @@
+
+Timepoint: 11/08/2023 19:23:37
+Program execution begins...
+
+
+
+
+    accident_id        date  year                       type  \
+0       ACC1003  1992-07-31  1992            Yakovlev YAK-42   
+1       ACC1004  1992-08-27  1992             Tupolev TU-134   
+3       ACC1006  1992-08-27  1992  de Havilland Canada DHC-6   
+4       ACC1010  1992-09-10  1992                Fokker F-27   
+8       ACC1017  1992-12-13  1992                Fokker F-27   
+..          ...         ...   ...                        ...   
+828      ACC968  1991-11-26  1991              Antonov AN-24   
+829      ACC971  1991-12-22  1991               Douglas DC-3   
+832      ACC983  1992-04-14  1992            Embraer EMB-110   
+833      ACC984  1992-04-22  1992  de Havilland Canada DHC-6   
+836      ACC993  1992-06-22  1992              Antonov AN-12   
+
+                                             operator  fatalities  occupants  \
+0                        China General Aviation Corp.         107        126   
+1                                            Aeroflot          84         84   
+3    Transportes Aéreos Nacionales de la Selva - TANS           8         21   
+4                                      Expresso Aéreo           1         43   
+8                           Scibe Airlift Cargo Zaire          37         37   
+..                                                ...         ...        ...   
+828                                Tatarstan Airlines          41         41   
+829                                     Classic Wings          28         32   
+832                                            Talair          11         15   
+833                            Perris Valley Aviation          16         22   
+836                           Krasnoyarskie Avialinii          10         12   
+
+                    damage                phase  \
+0                Destroyed        Takeoff (TOF)   
+1                Destroyed       Approach (APR)   
+3    Damaged beyond repair       En route (ENR)   
+4                Destroyed        Landing (LDG)   
+8    Damaged beyond repair       En route (ENR)   
+..                     ...                  ...   
+828  Damaged beyond repair       Approach (APR)   
+829  Damaged beyond repair       En route (ENR)   
+832  Damaged beyond repair       En route (ENR)   
+833              Destroyed  Initial climb (ICL)   
+836  Damaged beyond repair       Approach (APR)   
+
+                               nature                    departure  \
+0        Domestic Scheduled Passenger  Nanjing Dajiaochang Airport   
+1        Domestic Scheduled Passenger              Donetsk Airport   
+3    Domestic Non Scheduled Passenger              Iquitos Airport   
+4        Domestic Scheduled Passenger             Tarapoto Airport   
+8        Domestic Scheduled Passenger                Kindu Airport   
+..                                ...                          ...   
+828  Domestic Non Scheduled Passenger       Nizhnevartovsk Airport   
+829  Domestic Non Scheduled Passenger           Egelsbach Airfield   
+832      Domestic Scheduled Passenger               Madang Airport   
+833                       Parachuting        Perris Valley Airport   
+836                             Cargo               Igarka Airport   
+
+               destination                                           location  \
+0           Xiamen Airport                      Nanking Airport (NKG) (China)   
+1          Ivanovo Airport  3 km (1.9 mls) SE of Ivanovo Airport (IWA) (Ru...   
+3      El Estrecho Airport               near San Antonio del Estrecho (Peru)   
+4       Bellavista Airport                    Bellavista Airport (BLP) (Peru)   
+8             Goma Airport  40 km (25 mls) SW of Goma Airport (GOM) (Congo...   
+..                     ...                                                ...   
+828        Bugulma Airport  0,8 km (0.5 mls) N of Bugulma Airport (UUA) (R...   
+829     Egelsbach Airfield                Heidelberg-Handschuhsheim (Germany)   
+832         Goroka Airport                      Goroka Gap (Papua New Guinea)   
+833  Perris Valley Airport  Perris Valley Airport, CA (United States of Am...   
+836           Omsk Airport                    Noril'sk Airport (NSK) (Russia)   
+
+                         place state                           country  \
+0              Nanking Airport   NaN                             China   
+1              Ivanovo Airport   NaN                            Russia   
+3     San Antonio del Estrecho   NaN                              Peru   
+4           Bellavista Airport   NaN                              Peru   
+8                 Goma Airport   NaN  Democratic Republic of the Congo   
+..                         ...   ...                               ...   
+828            Bugulma Airport   NaN                            Russia   
+829  Heidelberg-Handschuhsheim   NaN                           Germany   
+832                 Goroka Gap   NaN                  Papua New Guinea   
+833      Perris Valley Airport    CA                     United States   
+836           Noril'sk Airport   NaN                            Russia   
+
+    country_code        lat         lon  \
+0             CN  31.742001  118.862000   
+1             RU  56.920317   40.963885   
+3             PE -12.637830  -76.651430   
+4             PE  -7.060560  -76.582199   
+8             CD  -1.925159   28.987811   
+..           ...        ...         ...   
+828           RU  54.647194   52.801701   
+829           DE  49.427740    8.686110   
+832           PG  -9.455080  147.203810   
+833           US  33.864800 -117.256180   
+836           RU  69.311096   87.332199   
+
+                                             narrative  
+0    China General Aviation Corp. flight 7552, a Ya...  
+1    The Tu-134 operated on a passenger flight from...  
+3    The float-equipped Twin Otter crashed into the...  
+4    The aircraft touched down short of runway 25 a...  
+8    The Fokker F-27 Friendship struck a high groun...  
+..                                                 ...  
+828  While approaching Bugulma, the aircraft yawed ...  
+829  Struck a tree-covered hill, Hoher Nistler, in ...  
+832  The Embraer Bandeirante impacted mountainous t...  
+833  A DHC-6 Twin Otter 200, N141PV, crashed during...  
+836  Decision to land was made before having establ...  
+
+[339 rows x 20 columns]
+
+
+
+    accident_id        date  year  icao iata                         name  \
+0       ACC1003  1992-07-31  1992  ZSNJ  NKG  Nanjing Dajiaochang Airport   
+1       ACC1004  1992-08-27  1992  UKCC  DOK              Donetsk Airport   
+2       ACC1005  1992-08-27  1992  GYGM  YGM                Gimli Airport   
+3       ACC1006  1992-08-27  1992  SPQT  IQT              Iquitos Airport   
+4       ACC1010  1992-09-10  1992  SPST  TPP             Tarapoto Airport   
+..          ...         ...   ...   ...  ...                          ...   
+833      ACC984  1992-04-22  1992  xxxx  xxx        Perris Valley Airport   
+834      ACC986  1992-05-02  1992  SKCL  CLO                 Cali Airport   
+835      ACC991  1992-06-12  1992  KSBM  SBM   Sheboygan Memorial Airport   
+836      ACC993  1992-06-22  1992  UOII  IAA               Igarka Airport   
+837      ACC996  1992-07-13  1992  PABE  BET               Bethel Airport   
+
+    state        country country_code        lat         lon  
+0     NaN          China           CN  31.742001  118.862000  
+1     NaN        Ukraine           UA  48.073601   37.739700  
+2      MB         Canada           CA  50.628101  -97.043297  
+3     NaN           Peru           PE  -3.784740  -73.308800  
+4     NaN           Peru           PE  -6.508740  -76.373199  
+..    ...            ...          ...        ...         ...  
+833    CA  United States           US  33.864800 -117.256180  
+834   NaN       Colombia           CO   3.543220  -76.381600  
+835    WI  United States           US  43.769778  -87.851722  
+836   NaN         Russia           RU  67.437202   86.621902  
+837    AK  United States           US  60.778556 -161.837167  
+
+[838 rows x 11 columns]
+
+
+
+    accident_id        date  year  icao iata                         name  \
+0       ACC1003  1992-07-31  1992  ZSNJ  NKG  Nanjing Dajiaochang Airport   
+1       ACC1004  1992-08-27  1992  UKCC  DOK              Donetsk Airport   
+2       ACC1005  1992-08-27  1992  GYGM  YGM                Gimli Airport   
+3       ACC1006  1992-08-27  1992  SPQT  IQT              Iquitos Airport   
+4       ACC1010  1992-09-10  1992  SPST  TPP             Tarapoto Airport   
+..          ...         ...   ...   ...  ...                          ...   
+833      ACC984  1992-04-22  1992  xxxx  xxx        Perris Valley Airport   
+834      ACC986  1992-05-02  1992  SKCL  CLO                 Cali Airport   
+835      ACC991  1992-06-12  1992  KSBM  SBM   Sheboygan Memorial Airport   
+836      ACC993  1992-06-22  1992  UOII  IAA               Igarka Airport   
+837      ACC996  1992-07-13  1992  PABE  BET               Bethel Airport   
+
+    state        country country_code        lat         lon  
+0     NaN          China           CN  31.742001  118.862000  
+1     NaN        Ukraine           UA  48.073601   37.739700  
+2      MB         Canada           CA  50.628101  -97.043297  
+3     NaN           Peru           PE  -3.784740  -73.308800  
+4     NaN           Peru           PE  -6.508740  -76.373199  
+..    ...            ...          ...        ...         ...  
+833    CA  United States           US  33.864800 -117.256180  
+834   NaN       Colombia           CO   3.543220  -76.381600  
+835    WI  United States           US  43.769778  -87.851722  
+836   NaN         Russia           RU  67.437202   86.621902  
+837    AK  United States           US  60.778556 -161.837167  
+
+[838 rows x 11 columns]
+
+
+
+year
+1970    336
+1971    371
+1972    243
+1973    432
+1974    306
+1975    144
+1976    335
+1977    312
+1978    325
+1979    613
+1980    392
+1981    248
+1982    146
+1983    305
+1984    389
+1985    523
+1986    121
+1987    249
+1988    628
+1989    237
+1990     82
+1991    257
+1992    274
+1993    124
+1994    182
+1995    219
+1996     36
+1997    168
+1998    177
+1999    105
+2000    210
+2001    114
+2002     50
+2003    156
+2004     99
+2005    137
+2006    299
+2007     67
+2008     13
+2009     24
+2010     64
+2011     42
+2012     23
+2013     70
+2014     66
+2015      7
+2016     98
+2017      1
+2018     21
+2019     34
+2021     20
+2022    173
+Name: fatalities, dtype: int64
+
+
+
+year
+1970     557
+1971     393
+1972     294
+1973     528
+1974     494
+1975     271
+1976     402
+1977     465
+1978     791
+1979     637
+1980     732
+1981     490
+1982     230
+1983     437
+1984     636
+1985     556
+1986     250
+1987     277
+1988    1058
+1989     709
+1990     143
+1991     295
+1992     360
+1993     144
+1994     244
+1995     470
+1996      47
+1997     244
+1998     280
+1999     246
+2000     210
+2001     175
+2002      50
+2003     204
+2004     113
+2005     150
+2006     437
+2007     127
+2008      13
+2009     106
+2010      65
+2011      49
+2012     215
+2013      84
+2014      76
+2015      38
+2016     108
+2017      14
+2018      67
+2019     131
+2021      38
+2022     197
+Name: occupants, dtype: int64
+
+
+
+year
+1970     60.3
+1971     94.4
+1972     82.7
+1973     81.8
+1974     61.9
+1975     53.1
+1976     83.3
+1977     67.1
+1978     41.1
+1979     96.2
+1980     53.6
+1981     50.6
+1982     63.5
+1983     69.8
+1984     61.2
+1985     94.1
+1986     48.4
+1987     89.9
+1988     59.4
+1989     33.4
+1990     57.3
+1991     87.1
+1992     76.1
+1993     86.1
+1994     74.6
+1995     46.6
+1996     76.6
+1997     68.9
+1998     63.2
+1999     42.7
+2000    100.0
+2001     65.1
+2002    100.0
+2003     76.5
+2004     87.6
+2005     91.3
+2006     68.4
+2007     52.8
+2008    100.0
+2009     22.6
+2010     98.5
+2011     85.7
+2012     10.7
+2013     83.3
+2014     86.8
+2015     18.4
+2016     90.7
+2017      7.1
+2018     31.3
+2019     26.0
+2021     52.6
+2022     87.8
+dtype: float64
+
+
+
+     year  fatalities  occupants  casualty_rate
+0    1992         107        126      84.920635
+1    1992          84         84     100.000000
+3    1992           8         21      38.095238
+4    1992           1         43       2.325581
+8    1992          37         37     100.000000
+..    ...         ...        ...            ...
+828  1991          41         41     100.000000
+829  1991          28         32      87.500000
+832  1992          11         15      73.333333
+833  1992          16         22      72.727273
+836  1992          10         12      83.333333
+
+[339 rows x 4 columns]
+
+
+
+[10     100.000000
+12     100.000000
+22      86.792453
+63      20.000000
+83     100.000000
+96      72.727273
+104    100.000000
+114      2.272727
+122     25.925926
+126    100.000000
+133    100.000000
+140      0.877193
+150    100.000000
+155    100.000000
+Name: casualty_rate, dtype: float64, 204    100.000000
+237    100.000000
+260    100.000000
+265     70.833333
+279    100.000000
+285    100.000000
+288     54.545455
+298    100.000000
+303     67.741935
+Name: casualty_rate, dtype: float64, 326    100.000000
+361    100.000000
+373     88.000000
+380     61.538462
+410    100.000000
+417    100.000000
+423    100.000000
+428     14.285714
+431      3.125000
+441    100.000000
+Name: casualty_rate, dtype: float64, 454    100.000000
+457    100.000000
+463    100.000000
+464    100.000000
+465    100.000000
+467     74.482759
+468    100.000000
+470      3.278689
+472    100.000000
+Name: casualty_rate, dtype: float64, 478     96.039604
+484      2.631579
+489     78.333333
+490    100.000000
+493     94.117647
+494      8.333333
+495     37.579618
+496    100.000000
+497     36.842105
+Name: casualty_rate, dtype: float64, 500    100.0000
+501    100.0000
+503     31.2500
+506    100.0000
+509      1.5625
+510    100.0000
+511     31.2500
+516    100.0000
+517     38.0000
+Name: casualty_rate, dtype: float64, 518    100.000000
+523      2.000000
+524    100.000000
+525    100.000000
+532    100.000000
+533    100.000000
+534    100.000000
+535      5.263158
+537    100.000000
+Name: casualty_rate, dtype: float64, 538    100.000000
+541     78.571429
+543    100.000000
+545     28.571429
+552     97.500000
+556    100.000000
+557    100.000000
+559      9.090909
+560      4.210526
+562    100.000000
+564    100.000000
+Name: casualty_rate, dtype: float64, 569    100.000000
+570    100.000000
+571     85.714286
+572    100.000000
+573      1.000000
+575      5.172414
+577      1.869159
+578      1.190476
+579    100.000000
+580     67.857143
+582    100.000000
+583    100.000000
+584    100.000000
+Name: casualty_rate, dtype: float64, 590     21.428571
+593    100.000000
+597     33.333333
+602    100.000000
+603     68.750000
+611    100.000000
+612    100.000000
+614    100.000000
+Name: casualty_rate, dtype: float64, 616    100.000000
+617      3.773585
+620    100.000000
+621    100.000000
+623    100.000000
+625    100.000000
+627      0.687285
+Name: casualty_rate, dtype: float64, 628      0.694444
+629    100.000000
+630    100.000000
+631    100.000000
+636    100.000000
+639      8.823529
+640    100.000000
+641     59.281437
+Name: casualty_rate, dtype: float64, 642      9.375000
+643    100.000000
+646     46.938776
+648    100.000000
+649      3.333333
+650    100.000000
+653    100.000000
+Name: casualty_rate, dtype: float64, 655      2.439024
+656    100.000000
+657     46.000000
+660    100.000000
+661     50.000000
+662    100.000000
+663    100.000000
+665    100.000000
+667     46.666667
+668     64.285714
+670     73.611111
+671     16.666667
+Name: casualty_rate, dtype: float64, 672      7.547170
+674    100.000000
+675      7.142857
+676     78.571429
+677     81.818182
+678     42.307692
+681     97.206704
+682    100.000000
+683      1.242236
+684    100.000000
+685    100.000000
+687     99.099099
+Name: casualty_rate, dtype: float64, 688     92.682927
+689    100.000000
+691     98.076923
+694    100.000000
+695     82.208589
+697    100.000000
+698    100.000000
+699    100.000000
+Name: casualty_rate, dtype: float64, 704    100.000000
+708     88.461538
+709      1.694915
+714     77.272727
+715     24.074074
+716      6.666667
+718     78.571429
+Name: casualty_rate, dtype: float64, 722     23.333333
+723     96.363636
+724    100.000000
+726    100.000000
+734     85.714286
+737    100.000000
+Name: casualty_rate, dtype: float64, 739     90.909091
+740     87.096774
+741    100.000000
+742     39.215686
+744    100.000000
+745    100.000000
+746      1.052632
+747    100.000000
+750    100.000000
+752      2.205882
+753    100.000000
+756    100.000000
+759     12.962963
+760    100.000000
+763     33.653846
+765     91.666667
+768    100.000000
+Name: casualty_rate, dtype: float64, 771      2.535211
+772     34.782609
+773     31.578947
+776     27.272727
+777     15.384615
+779    100.000000
+782    100.000000
+785    100.000000
+791    100.000000
+792    100.000000
+794     80.000000
+795      8.333333
+Name: casualty_rate, dtype: float64, 798     38.028169
+801     29.166667
+803    100.000000
+804    100.000000
+808    100.000000
+Name: casualty_rate, dtype: float64, 809    100.000000
+811    100.000000
+814     45.454545
+817    100.000000
+818     86.666667
+819      7.692308
+823     70.000000
+824    100.000000
+825    100.000000
+826    100.000000
+827     90.909091
+828    100.000000
+829     87.500000
+Name: casualty_rate, dtype: float64, 0       84.920635
+1      100.000000
+3       38.095238
+4        2.325581
+8      100.000000
+832     73.333333
+833     72.727273
+836     83.333333
+Name: casualty_rate, dtype: float64, 18      5.882353
+20    100.000000
+21     95.348837
+26    100.000000
+Name: casualty_rate, dtype: float64, 30    100.000000
+37    100.000000
+41     86.021505
+46    100.000000
+47     40.000000
+49     36.842105
+52     19.354839
+55    100.000000
+Name: casualty_rate, dtype: float64, 58    100.000000
+60     15.789474
+66     19.047619
+67     92.857143
+68     90.566038
+71      6.521739
+72     64.150943
+75     53.846154
+76     81.818182
+77      7.971014
+78     93.421053
+79     16.666667
+Name: casualty_rate, dtype: float64, 88     16.666667
+90    100.000000
+98     93.333333
+Name: casualty_rate, dtype: float64, 102     31.250000
+103      1.923077
+105    100.000000
+109    100.000000
+116     23.529412
+117     98.837209
+Name: casualty_rate, dtype: float64, 118     35.555556
+119    100.000000
+120    100.000000
+121     38.181818
+123    100.000000
+127     36.363636
+128    100.000000
+129      3.703704
+130     61.111111
+Name: casualty_rate, dtype: float64, 138     41.666667
+139    100.000000
+142    100.000000
+145      7.586207
+147    100.000000
+Name: casualty_rate, dtype: float64, 154    100.0
+156    100.0
+158    100.0
+Name: casualty_rate, dtype: float64, 168    100.000000
+170    100.000000
+172      8.333333
+176     36.363636
+177      8.510638
+178    100.000000
+179    100.000000
+Name: casualty_rate, dtype: float64, 188    100.0
+193    100.0
+194    100.0
+Name: casualty_rate, dtype: float64, 199    44.000000
+201    25.000000
+214    86.503067
+Name: casualty_rate, dtype: float64, 215    100.000000
+217     93.478261
+222     63.333333
+Name: casualty_rate, dtype: float64, 233     15.384615
+238    100.000000
+243     98.181818
+Name: casualty_rate, dtype: float64, 247     35.714286
+251    100.000000
+256    100.000000
+257     18.918919
+258     91.428571
+259    100.000000
+Name: casualty_rate, dtype: float64, 262    97.142857
+266    10.526316
+269    65.000000
+272    93.333333
+Name: casualty_rate, dtype: float64, 277    100.0
+Name: casualty_rate, dtype: float64, 289    100.000000
+291      8.333333
+295      1.388889
+299    100.000000
+Name: casualty_rate, dtype: float64, 301    100.000000
+305     95.238095
+Name: casualty_rate, dtype: float64, 313    100.000000
+315     80.000000
+322     66.666667
+Name: casualty_rate, dtype: float64, 325    71.428571
+328    22.727273
+329     1.980198
+335     1.408451
+Name: casualty_rate, dtype: float64, 336    100.0
+348     12.5
+349    100.0
+354    100.0
+Name: casualty_rate, dtype: float64, 359    100.000000
+364     82.758621
+Name: casualty_rate, dtype: float64, 378    21.052632
+379    15.789474
+Name: casualty_rate, dtype: float64, 386    100.000000
+388    100.000000
+389    100.000000
+395      9.090909
+Name: casualty_rate, dtype: float64, 406    7.142857
+Name: casualty_rate, dtype: float64, 413    100.00000
+414      2.12766
+Name: casualty_rate, dtype: float64, 418     9.090909
+424    95.454545
+425    12.244898
+Name: casualty_rate, dtype: float64, 444    25.000000
+446    72.727273
+Name: casualty_rate, dtype: float64, 451    100.000000
+455    100.000000
+461     44.186047
+Name: casualty_rate, dtype: float64]
+
+
+
+phase
+Approach (APR)         3564
+En route (ENR)         4587
+Initial climb (ICL)     640
+Landing (LDG)           629
+Maneuvering (MNV)        12
+Takeoff (TOF)           635
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                                 778
+Air Mali                                  47
+Air New Zealand                          257
+Air Rhodesia                              97
+Alaska Airlines                          111
+Cruzeiro do Sul                           32
+EgyptAir                                  37
+Hughes Airwest                            49
+Iberia                                   104
+Inex-Adria Aviopromet                    113
+Invicta International Airways            108
+Jugoslovenski Aerotransport - JAT         41
+Linea Aeropostal Venezolana - LAV         82
+Lineas Aéreas del Estado - LADE           52
+Lufthansa                                 59
+Malaysia Airlines                        100
+Middle East Airlines - MEA                81
+Pacific Western Airlines                  42
+Pakistan International Airlines - PIA    156
+Pan Am                                    97
+Panarctic Oils                            32
+Philippine Air Lines                      36
+Southwest Air                            135
+Yacimientos Petroliferos Fiscales         34
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                                        701
+Aerolineas Condor                                44
+Air Mali                                         51
+Bakhtar Afghan Airlines                         105
+Burma Airways                                    45
+CAAC                                             38
+Delta Air Lines                                 134
+Ethiopian Airlines                               35
+Gulf Air                                        112
+Iran Air                                        290
+Nigeria Airways                                  53
+Olympic Aviation                                 34
+Pakistan International Airlines - PIA            54
+República de Moçambique                          34
+Saudi Arabian Airlines                          301
+Shanxi Airlines                                  44
+Somali Airlines                                  50
+Southwest Air                                    43
+TABA - Transportes Aéreos da Bacia Amazônica     44
+Thai Airways                                     83
+Widerøes Flyveselskap                            36
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                              84
+Air Mauritanie                        80
+Ariana Afghan Airlines                45
+Cameroon Airlines                     71
+China General Aviation Corp.         107
+Força Aérea Popular de Angola         48
+Malaysia Airlines                     34
+Paukn Air                             38
+Scibe Airlift Cargo Zaire             37
+Southwest Air                         61
+Stavropolskaya Aktsionernaya Avia     50
+Tajikistan Airlines                  167
+Tatarstan Airlines                    41
+Yugavia                               51
+Name: fatalities, dtype: int64
+
+
+
+operator
+ADC Airlines                                 96
+Aeriantur-M Airlines                         34
+Armavia                                     113
+Gulf Air                                    143
+Kish Air                                     43
+Pakistan International Airlines - PIA        45
+Sosoliso Airlines                           108
+Union des Transports Africains de Guinée    141
+United Airlines                              44
+Uzbekistan Airways                           37
+Wuhan Airlines                               42
+Name: fatalities, dtype: int64
+
+
+
+operator
+Linhas Aéreas de Moçambique - LAM    33
+Pamir Airways                        44
+TransAsia Airways                    48
+flydubai                             62
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroservice                 4
+China Eastern Airlines    132
+DOSAAF                     16
+Precision Air              19
+Tara Air                   22
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                                    484
+Air New Zealand                             257
+Alaska Airlines                             111
+Armavia                                     113
+China Eastern Airlines                      132
+China General Aviation Corp.                107
+Delta Air Lines                             134
+Gulf Air                                    255
+Iberia                                      104
+Inex-Adria Aviopromet                       113
+Invicta International Airways               108
+Iran Air                                    290
+Pakistan International Airlines - PIA       156
+Saudi Arabian Airlines                      301
+Sosoliso Airlines                           108
+Southwest Air                               135
+Union des Transports Africains de Guinée    141
+Name: fatalities, dtype: int64
+
+
+
+type
+Antonov AN-10               65
+Antonov AN-24              182
+Avia 14                     39
+Avro 748                    34
+Boeing 707                 253
+Boeing 720                  81
+Boeing 727                 246
+Boeing 737                 142
+Boeing 747                  59
+Douglas DC-3                66
+Fokker F-27                 52
+Hawker Siddeley HS-748      36
+Ilyushin IL-18             332
+Lockheed L-188              32
+McDonnell Douglas DC-10    257
+McDonnell Douglas DC-9     162
+Sud Aviation SE-210        145
+Tupolev TU-104              81
+Tupolev TU-124              37
+Tupolev TU-134              94
+Vickers 748                 59
+Vickers 749                 48
+Vickers 782                 38
+Vickers Vanguard           108
+Yakovlev YAK-40             32
+Name: fatalities, dtype: int64
+
+
+
+type
+Airbus A300                  290
+Antonov AN-24                159
+Antonov AN-26                105
+Boeing 737                   230
+British Aerospace BAE-146     43
+Fairchild FH-227              44
+Fokker F-27                  149
+Fokker F-28                   53
+Ilyushin IL-14                92
+Lockheed L-1011              435
+Shorts 330                    34
+Tupolev TU-134                34
+Tupolev TU-154               583
+de Havilland Canada DHC-4     44
+de Havilland Canada DHC-7     36
+Name: fatalities, dtype: int64
+
+
+
+type
+Antonov AN-24                 91
+Boeing 727                    45
+Boeing 737                    71
+British Aerospace BAE-146     38
+CASA C-212                    48
+Fokker 50                     34
+Fokker F-27                   37
+Fokker F-28                   80
+Tupolev TU-134                84
+Tupolev TU-154               146
+Yakovlev YAK-40              133
+Yakovlev YAK-42              107
+Name: fatalities, dtype: int64
+
+
+
+operator
+ADC Airlines                                 96
+Aeriantur-M Airlines                         34
+Armavia                                     113
+Gulf Air                                    143
+Kish Air                                     43
+Pakistan International Airlines - PIA        45
+Sosoliso Airlines                           108
+Union des Transports Africains de Guinée    141
+United Airlines                              44
+Uzbekistan Airways                           37
+Wuhan Airlines                               42
+Name: fatalities, dtype: int64
+
+
+
+type
+ATR 72             48
+Antonov AN-24      44
+Boeing 737         62
+Embraer ERJ 190    33
+Name: fatalities, dtype: int64
+
+
+
+type
+ATR 42                        19
+Boeing 737                   132
+Let L-410                     20
+de Havilland Canada DHC-6     22
+Name: fatalities, dtype: int64
+
+
+
+type
+Airbus A300                290
+Airbus A320                256
+Boeing 707                 156
+Boeing 727                 387
+Boeing 737                 244
+Lockheed L-1011            435
+McDonnell Douglas DC-10    257
+McDonnell Douglas DC-9     221
+Sud Aviation SE-210        104
+Tupolev TU-154             484
+Vickers Vanguard           108
+Yakovlev YAK-42            107
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger      323
+Domestic Scheduled Passenger         1659
+Int'l Non Scheduled Passenger         268
+International Scheduled Passenger     430
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger      127
+Domestic Scheduled Passenger         1768
+International Scheduled Passenger     402
+Official state flight                  34
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger     216
+Domestic Scheduled Passenger         492
+Int'l Non Scheduled Passenger        135
+International Scheduled Passenger     71
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Scheduled Passenger         372
+Int'l Non Scheduled Passenger         34
+International Scheduled Passenger    440
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Scheduled Passenger         92
+International Scheduled Passenger    95
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Scheduled Passenger    177
+Parachuting                      16
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger      257
+Domestic Scheduled Passenger         1616
+Int'l Non Scheduled Passenger         221
+International Scheduled Passenger     955
+Name: fatalities, dtype: int64
+
+
+
+departure
+Auckland International Airport       354
+Bamako Airport                        47
+Beirut International Airport          81
+Bristol Airport                      108
+Cairo International Airport           37
+Calgary International Airport         42
+Canaima Airport                       34
+Cauayan Airport                       36
+Chokurdah Airport                     34
+Cumaná Airport                        48
+Donetsk Airport                       52
+Dushanbe Airport                      79
+Edmonton International Airport        32
+El Palomar Airport                    52
+Irkutsk Airport                       81
+Jeddah International Airport         156
+Kariba Airport                        97
+Kazan Airport                         39
+Kuybyshev Airport                     65
+Los Angeles International Airport    184
+Nairobi International Airport         59
+Nukus Airport                         77
+Penang International Airport         100
+Rincón de Los Sauces Airport          34
+Rostov Airport                        37
+Semipalatinsk Airport                 32
+Sena Madureira Airport                32
+Skopje Airport                        41
+Split Airport                        113
+Tashkent Airport                      92
+Ufa Airport                           57
+Valencia Airport                     104
+Vitim                                 39
+Voronezh Airport                      94
+Yakutat Airport                      111
+Name: fatalities, dtype: int64
+
+
+
+departure
+Bahar Dar Airport                         35
+Bandar Abbas Airport                     290
+Cheboksary Airport                        38
+Eirunepé Airport                          44
+Fort Lauderdale International Airport    134
+Gilgit Airport                            54
+Hat Yai Airport                           83
+Heho Airport                              45
+Kandahar Airport                         105
+Karachi International Airport            112
+Karshi Airport                           200
+Krasnodar Airport                        174
+Krasnoyarsk Airport                      209
+Lagos/Ikeja International Airport         53
+Linfen Air Base                           44
+Los Angeles International Airport         43
+Mbala Airport                             34
+Mogadishu International Airport           50
+Namsos Airport                            36
+Nanjing Dajiaochang Airport               38
+Perm Airport                              32
+Riyadh International Airport             301
+Severomuysk                               48
+Thessaloniki International Airport        34
+Tombouctou Airport                        51
+Zumba Airport                             44
+Name: fatalities, dtype: int64
+
+
+
+departure
+Chengdu Airport                 61
+Cotonou Airport                 71
+Donetsk Airport                 84
+Dushanbe Airport                85
+Elista Airport                  51
+Kandahar Airport                45
+Khorog Airport                  82
+Kindu Airport                   37
+Kota Kinabalu Airport           34
+Málaga Airport                  38
+Nanjing Dajiaochang Airport    107
+Nizhnevartovsk Airport          41
+Nouakchott Airport              80
+Ondjiva Airport                 48
+Stavropol Airport               50
+Name: fatalities, dtype: int64
+
+
+
+departure
+Abuja International Airport     204
+Adana Airport                    34
+Cairo International Airport     143
+Cotonou Airport                 141
+Enshi Airport                    42
+Kish Island Airport              43
+Multan Airport                   45
+Newark International Airport     44
+Termez Airport                   37
+Yerevan Airport                 113
+Name: fatalities, dtype: int64
+
+
+
+departure
+Dubai Airport                      62
+Kaohsiung International Airport    48
+Kunduz Airport                     44
+Maputo International Airport       33
+Name: fatalities, dtype: int64
+
+
+
+departure
+Dar es Salaam International Airport         19
+Irkutsk Airport                              4
+Kunming Changshui International Airport    132
+Menzelinsk Airport                          16
+Pokhara Airport                             22
+Name: fatalities, dtype: int64
+
+
+
+departure
+Abuja International Airport                108
+Auckland International Airport             257
+Bandar Abbas Airport                       290
+Bristol Airport                            108
+Cairo International Airport                143
+Cotonou Airport                            141
+Fort Lauderdale International Airport      134
+Jeddah International Airport               156
+Karachi International Airport              112
+Karshi Airport                             200
+Krasnodar Airport                          174
+Krasnoyarsk Airport                        110
+Kunming Changshui International Airport    132
+Los Angeles International Airport          135
+Nanjing Dajiaochang Airport                107
+Riyadh International Airport               301
+Split Airport                              113
+Valencia Airport                           104
+Yakutat Airport                            111
+Yerevan Airport                            113
+Name: fatalities, dtype: int64
+
+
+
+destination
+Adler/Sochi Airport                               52
+Basel/Mulhouse Airport                           108
+Batagay Airport                                   34
+Chita Airport                                     81
+Christchurch International Airport               257
+Ciudad Bolívar Airport                            34
+Cranbrook Airport                                 42
+Cutral Airport                                    34
+Dubai Airport                                     81
+Ibiza Airport                                    104
+Irkutsk Airport                                   39
+Johannesburg International Airport                59
+Juneau International Airport                     111
+Karachi International Airport                    156
+Karaganda Airport                                 32
+Kishinev Airport                                  94
+Kuala Lumpur Subang International Airport        100
+Köln/Bonn Airport                                113
+Leninabad Airport                                 79
+Manila Airport                                    36
+Mineralnye Vody Airport                           77
+Niamey Airport                                    47
+Nicosia Airport                                   37
+Pago Pago International Airport                   97
+Perm Airport                                      39
+Porlamar Airport                                  48
+Rea Point Airfield                                32
+Rio Branco Airport                                32
+Salisbury Airport                                 97
+Salt Lake City International Airport              49
+Samarkand Airport                                 92
+San Carlos de Bariloche International Airport     52
+San Diego International Airport                  135
+Saratov Airport                                   57
+Titograd Airport                                  41
+Vilnius Airport                                   37
+Voroshilovgrad Airport                            65
+Name: fatalities, dtype: int64
+
+
+
+destination
+Abu Dhabi International Airport            112
+Asmara International Airport                35
+Brønnøysund Airport                         36
+Bugulma Airport                             38
+Dallas/Fort Worth International Airport    134
+Dubai Airport                              290
+Enugu Airport                               53
+Farah Airport                               52
+Hargeisa Airport                            50
+Irkutsk Airport                            110
+Islamabad International Airport             54
+Jeddah International Airport               301
+Jinan Airport                               38
+Kabul Airport                               53
+Linfen Air Base                             44
+Loja Airport                                44
+Maputo International Airport                34
+Mong Hsat Airport                           45
+Mopti Airport                               51
+Nizhneangarsk Airport                       48
+Noril'sk Airport                            99
+Omsk Airport                               174
+Phuket International Airport                83
+Samos Airport                               34
+San Francisco International Airport         43
+Sovetsky Airport                            32
+Tabatinga Internacional Airport             44
+Ufa Airport                                200
+Name: fatalities, dtype: int64
+
+
+
+destination
+Bugulma Airport               41
+Catumbela Airport             48
+Douala Airport                71
+Dushanbe Airport              82
+Goma Airport                  37
+Ivanovo Airport               84
+Kabul Airport                 45
+Makhachkala Airport           51
+Melilla Airport               38
+Sharjah Airport               85
+Tawau Airport                 34
+Tidjikja Airport              80
+Trabzon Airport               50
+Wenzhou Yongqiang Airport     61
+Xiamen Airport               107
+Name: fatalities, dtype: int64
+
+
+
+destination
+Adler/Sochi Airport                    113
+Bahrain International Airport          143
+Balad Air Base                          34
+Kufrah Airport                         141
+Lahore Airport                          45
+Port Harcourt Airport                  108
+San Francisco International Airport     44
+Sharjah Airport                         43
+Sokoto Airport                          96
+Tashkent Airport                        37
+Wuhan Tianhe International Airport      42
+Name: fatalities, dtype: int64
+
+
+
+destination
+Kabul Airport     44
+Luanda Airport    33
+Magong Airport    48
+Rostov Airport    62
+Name: fatalities, dtype: int64
+
+
+
+destination
+Bukoba Airport                             19
+Guangzhou Baiyun International Airport    132
+Jomsom Airport                             22
+Kazachinskoye Airport                       4
+Menzelinsk Airport                         16
+Name: fatalities, dtype: int64
+
+
+
+destination
+Abu Dhabi International Airport            112
+Adler/Sochi Airport                        113
+Bahrain International Airport              143
+Basel/Mulhouse Airport                     108
+Christchurch International Airport         257
+Dallas/Fort Worth International Airport    134
+Dubai Airport                              290
+Guangzhou Baiyun International Airport     132
+Ibiza Airport                              104
+Irkutsk Airport                            110
+Jeddah International Airport               301
+Juneau International Airport               111
+Karachi International Airport              156
+Kufrah Airport                             141
+Köln/Bonn Airport                          113
+Omsk Airport                               174
+Port Harcourt Airport                      108
+San Diego International Airport            135
+Ufa Airport                                200
+Xiamen Airport                             107
+Name: fatalities, dtype: int64
+
+
+
+country
+American Samoa     97
+Antarctica        257
+Argentina          86
+Brazil             32
+Burkina Faso       47
+Canada             74
+Croatia           113
+Cyprus             37
+Kazakhstan         32
+Kenya              59
+Malaysia          100
+Montenegro         41
+Philippines        36
+Russia            379
+Saudi Arabia      237
+Spain             104
+Switzerland       108
+Tajikistan         79
+Ukraine           196
+United States     295
+Uzbekistan         92
+Venezuela          82
+Zimbabwe           97
+Name: fatalities, dtype: int64
+
+
+
+country
+Afghanistan             105
+Brazil                   44
+China                    82
+Ecuador                  44
+Ethiopia                 35
+Greece                   34
+Iran                    290
+Mali                     51
+Myanmar                  45
+Nigeria                  53
+Norway                   36
+Pakistan                 54
+Russia                  501
+Saudi Arabia            301
+Somalia                  50
+South Africa             34
+Thailand                 83
+United Arab Emirates    112
+United States           177
+Uzbekistan              200
+Name: fatalities, dtype: int64
+
+
+
+country
+Afghanistan                          45
+Angola                               48
+Cameroon                             71
+China                               168
+Democratic Republic of the Congo     37
+Malaysia                             34
+Mauritania                           80
+Morocco                              38
+Russia                              226
+Tajikistan                           82
+United Arab Emirates                 85
+Name: fatalities, dtype: int64
+
+
+
+country
+Bahrain                 143
+Benin                   141
+China                    42
+Iraq                     34
+Nigeria                 204
+Pakistan                 45
+Russia                  113
+United Arab Emirates     43
+United States            44
+Uzbekistan               37
+Name: fatalities, dtype: int64
+
+
+
+country
+Afghanistan    44
+Namibia        33
+Russia         62
+Taiwan         48
+Name: fatalities, dtype: int64
+
+
+
+country
+China       132
+Nepal        22
+Russia       20
+Tanzania     19
+Name: fatalities, dtype: int64
+
+
+
+country
+Antarctica              257
+Bahrain                 143
+Benin                   141
+China                   239
+Croatia                 113
+Iran                    290
+Nigeria                 108
+Russia                  397
+Saudi Arabia            457
+Spain                   104
+Switzerland             108
+United Arab Emirates    112
+United States           380
+Uzbekistan              200
+Name: fatalities, dtype: int64
+
+
+Timepoint: 11/08/2023 19:24:34
+Program execution begins...
+
+
+
+
+    accident_id        date  year                       type  \
+0       ACC1003  1992-07-31  1992            Yakovlev YAK-42   
+1       ACC1004  1992-08-27  1992             Tupolev TU-134   
+3       ACC1006  1992-08-27  1992  de Havilland Canada DHC-6   
+4       ACC1010  1992-09-10  1992                Fokker F-27   
+8       ACC1017  1992-12-13  1992                Fokker F-27   
+..          ...         ...   ...                        ...   
+828      ACC968  1991-11-26  1991              Antonov AN-24   
+829      ACC971  1991-12-22  1991               Douglas DC-3   
+832      ACC983  1992-04-14  1992            Embraer EMB-110   
+833      ACC984  1992-04-22  1992  de Havilland Canada DHC-6   
+836      ACC993  1992-06-22  1992              Antonov AN-12   
+
+                                             operator  fatalities  occupants  \
+0                        China General Aviation Corp.         107        126   
+1                                            Aeroflot          84         84   
+3    Transportes Aéreos Nacionales de la Selva - TANS           8         21   
+4                                      Expresso Aéreo           1         43   
+8                           Scibe Airlift Cargo Zaire          37         37   
+..                                                ...         ...        ...   
+828                                Tatarstan Airlines          41         41   
+829                                     Classic Wings          28         32   
+832                                            Talair          11         15   
+833                            Perris Valley Aviation          16         22   
+836                           Krasnoyarskie Avialinii          10         12   
+
+                    damage                phase  \
+0                Destroyed        Takeoff (TOF)   
+1                Destroyed       Approach (APR)   
+3    Damaged beyond repair       En route (ENR)   
+4                Destroyed        Landing (LDG)   
+8    Damaged beyond repair       En route (ENR)   
+..                     ...                  ...   
+828  Damaged beyond repair       Approach (APR)   
+829  Damaged beyond repair       En route (ENR)   
+832  Damaged beyond repair       En route (ENR)   
+833              Destroyed  Initial climb (ICL)   
+836  Damaged beyond repair       Approach (APR)   
+
+                               nature                    departure  \
+0        Domestic Scheduled Passenger  Nanjing Dajiaochang Airport   
+1        Domestic Scheduled Passenger              Donetsk Airport   
+3    Domestic Non Scheduled Passenger              Iquitos Airport   
+4        Domestic Scheduled Passenger             Tarapoto Airport   
+8        Domestic Scheduled Passenger                Kindu Airport   
+..                                ...                          ...   
+828  Domestic Non Scheduled Passenger       Nizhnevartovsk Airport   
+829  Domestic Non Scheduled Passenger           Egelsbach Airfield   
+832      Domestic Scheduled Passenger               Madang Airport   
+833                       Parachuting        Perris Valley Airport   
+836                             Cargo               Igarka Airport   
+
+               destination                                           location  \
+0           Xiamen Airport                      Nanking Airport (NKG) (China)   
+1          Ivanovo Airport  3 km (1.9 mls) SE of Ivanovo Airport (IWA) (Ru...   
+3      El Estrecho Airport               near San Antonio del Estrecho (Peru)   
+4       Bellavista Airport                    Bellavista Airport (BLP) (Peru)   
+8             Goma Airport  40 km (25 mls) SW of Goma Airport (GOM) (Congo...   
+..                     ...                                                ...   
+828        Bugulma Airport  0,8 km (0.5 mls) N of Bugulma Airport (UUA) (R...   
+829     Egelsbach Airfield                Heidelberg-Handschuhsheim (Germany)   
+832         Goroka Airport                      Goroka Gap (Papua New Guinea)   
+833  Perris Valley Airport  Perris Valley Airport, CA (United States of Am...   
+836           Omsk Airport                    Noril'sk Airport (NSK) (Russia)   
+
+                         place state                           country  \
+0              Nanking Airport   NaN                             China   
+1              Ivanovo Airport   NaN                            Russia   
+3     San Antonio del Estrecho   NaN                              Peru   
+4           Bellavista Airport   NaN                              Peru   
+8                 Goma Airport   NaN  Democratic Republic of the Congo   
+..                         ...   ...                               ...   
+828            Bugulma Airport   NaN                            Russia   
+829  Heidelberg-Handschuhsheim   NaN                           Germany   
+832                 Goroka Gap   NaN                  Papua New Guinea   
+833      Perris Valley Airport    CA                     United States   
+836           Noril'sk Airport   NaN                            Russia   
+
+    country_code        lat         lon  \
+0             CN  31.742001  118.862000   
+1             RU  56.920317   40.963885   
+3             PE -12.637830  -76.651430   
+4             PE  -7.060560  -76.582199   
+8             CD  -1.925159   28.987811   
+..           ...        ...         ...   
+828           RU  54.647194   52.801701   
+829           DE  49.427740    8.686110   
+832           PG  -9.455080  147.203810   
+833           US  33.864800 -117.256180   
+836           RU  69.311096   87.332199   
+
+                                             narrative  
+0    China General Aviation Corp. flight 7552, a Ya...  
+1    The Tu-134 operated on a passenger flight from...  
+3    The float-equipped Twin Otter crashed into the...  
+4    The aircraft touched down short of runway 25 a...  
+8    The Fokker F-27 Friendship struck a high groun...  
+..                                                 ...  
+828  While approaching Bugulma, the aircraft yawed ...  
+829  Struck a tree-covered hill, Hoher Nistler, in ...  
+832  The Embraer Bandeirante impacted mountainous t...  
+833  A DHC-6 Twin Otter 200, N141PV, crashed during...  
+836  Decision to land was made before having establ...  
+
+[339 rows x 20 columns]
+
+
+
+    accident_id        date  year  icao iata                         name  \
+0       ACC1003  1992-07-31  1992  ZSNJ  NKG  Nanjing Dajiaochang Airport   
+1       ACC1004  1992-08-27  1992  UKCC  DOK              Donetsk Airport   
+2       ACC1005  1992-08-27  1992  GYGM  YGM                Gimli Airport   
+3       ACC1006  1992-08-27  1992  SPQT  IQT              Iquitos Airport   
+4       ACC1010  1992-09-10  1992  SPST  TPP             Tarapoto Airport   
+..          ...         ...   ...   ...  ...                          ...   
+833      ACC984  1992-04-22  1992  xxxx  xxx        Perris Valley Airport   
+834      ACC986  1992-05-02  1992  SKCL  CLO                 Cali Airport   
+835      ACC991  1992-06-12  1992  KSBM  SBM   Sheboygan Memorial Airport   
+836      ACC993  1992-06-22  1992  UOII  IAA               Igarka Airport   
+837      ACC996  1992-07-13  1992  PABE  BET               Bethel Airport   
+
+    state        country country_code        lat         lon  
+0     NaN          China           CN  31.742001  118.862000  
+1     NaN        Ukraine           UA  48.073601   37.739700  
+2      MB         Canada           CA  50.628101  -97.043297  
+3     NaN           Peru           PE  -3.784740  -73.308800  
+4     NaN           Peru           PE  -6.508740  -76.373199  
+..    ...            ...          ...        ...         ...  
+833    CA  United States           US  33.864800 -117.256180  
+834   NaN       Colombia           CO   3.543220  -76.381600  
+835    WI  United States           US  43.769778  -87.851722  
+836   NaN         Russia           RU  67.437202   86.621902  
+837    AK  United States           US  60.778556 -161.837167  
+
+[838 rows x 11 columns]
+
+
+
+    accident_id        date  year  icao iata                         name  \
+0       ACC1003  1992-07-31  1992  ZSNJ  NKG  Nanjing Dajiaochang Airport   
+1       ACC1004  1992-08-27  1992  UKCC  DOK              Donetsk Airport   
+2       ACC1005  1992-08-27  1992  GYGM  YGM                Gimli Airport   
+3       ACC1006  1992-08-27  1992  SPQT  IQT              Iquitos Airport   
+4       ACC1010  1992-09-10  1992  SPST  TPP             Tarapoto Airport   
+..          ...         ...   ...   ...  ...                          ...   
+833      ACC984  1992-04-22  1992  xxxx  xxx        Perris Valley Airport   
+834      ACC986  1992-05-02  1992  SKCL  CLO                 Cali Airport   
+835      ACC991  1992-06-12  1992  KSBM  SBM   Sheboygan Memorial Airport   
+836      ACC993  1992-06-22  1992  UOII  IAA               Igarka Airport   
+837      ACC996  1992-07-13  1992  PABE  BET               Bethel Airport   
+
+    state        country country_code        lat         lon  
+0     NaN          China           CN  31.742001  118.862000  
+1     NaN        Ukraine           UA  48.073601   37.739700  
+2      MB         Canada           CA  50.628101  -97.043297  
+3     NaN           Peru           PE  -3.784740  -73.308800  
+4     NaN           Peru           PE  -6.508740  -76.373199  
+..    ...            ...          ...        ...         ...  
+833    CA  United States           US  33.864800 -117.256180  
+834   NaN       Colombia           CO   3.543220  -76.381600  
+835    WI  United States           US  43.769778  -87.851722  
+836   NaN         Russia           RU  67.437202   86.621902  
+837    AK  United States           US  60.778556 -161.837167  
+
+[838 rows x 11 columns]
+
+
+
+year
+1970    336
+1971    371
+1972    243
+1973    432
+1974    306
+1975    144
+1976    335
+1977    312
+1978    325
+1979    613
+1980    392
+1981    248
+1982    146
+1983    305
+1984    389
+1985    523
+1986    121
+1987    249
+1988    628
+1989    237
+1990     82
+1991    257
+1992    274
+1993    124
+1994    182
+1995    219
+1996     36
+1997    168
+1998    177
+1999    105
+2000    210
+2001    114
+2002     50
+2003    156
+2004     99
+2005    137
+2006    299
+2007     67
+2008     13
+2009     24
+2010     64
+2011     42
+2012     23
+2013     70
+2014     66
+2015      7
+2016     98
+2017      1
+2018     21
+2019     34
+2021     20
+2022    173
+Name: fatalities, dtype: int64
+
+
+
+year
+1970     557
+1971     393
+1972     294
+1973     528
+1974     494
+1975     271
+1976     402
+1977     465
+1978     791
+1979     637
+1980     732
+1981     490
+1982     230
+1983     437
+1984     636
+1985     556
+1986     250
+1987     277
+1988    1058
+1989     709
+1990     143
+1991     295
+1992     360
+1993     144
+1994     244
+1995     470
+1996      47
+1997     244
+1998     280
+1999     246
+2000     210
+2001     175
+2002      50
+2003     204
+2004     113
+2005     150
+2006     437
+2007     127
+2008      13
+2009     106
+2010      65
+2011      49
+2012     215
+2013      84
+2014      76
+2015      38
+2016     108
+2017      14
+2018      67
+2019     131
+2021      38
+2022     197
+Name: occupants, dtype: int64
+
+
+
+year
+1970     60.3
+1971     94.4
+1972     82.7
+1973     81.8
+1974     61.9
+1975     53.1
+1976     83.3
+1977     67.1
+1978     41.1
+1979     96.2
+1980     53.6
+1981     50.6
+1982     63.5
+1983     69.8
+1984     61.2
+1985     94.1
+1986     48.4
+1987     89.9
+1988     59.4
+1989     33.4
+1990     57.3
+1991     87.1
+1992     76.1
+1993     86.1
+1994     74.6
+1995     46.6
+1996     76.6
+1997     68.9
+1998     63.2
+1999     42.7
+2000    100.0
+2001     65.1
+2002    100.0
+2003     76.5
+2004     87.6
+2005     91.3
+2006     68.4
+2007     52.8
+2008    100.0
+2009     22.6
+2010     98.5
+2011     85.7
+2012     10.7
+2013     83.3
+2014     86.8
+2015     18.4
+2016     90.7
+2017      7.1
+2018     31.3
+2019     26.0
+2021     52.6
+2022     87.8
+dtype: float64
+
+
+
+     year  fatalities  occupants  casualty_rate
+0    1992         107        126      84.920635
+1    1992          84         84     100.000000
+3    1992           8         21      38.095238
+4    1992           1         43       2.325581
+8    1992          37         37     100.000000
+..    ...         ...        ...            ...
+828  1991          41         41     100.000000
+829  1991          28         32      87.500000
+832  1992          11         15      73.333333
+833  1992          16         22      72.727273
+836  1992          10         12      83.333333
+
+[339 rows x 4 columns]
+
+
+
+[10     100.000000
+12     100.000000
+22      86.792453
+63      20.000000
+83     100.000000
+96      72.727273
+104    100.000000
+114      2.272727
+122     25.925926
+126    100.000000
+133    100.000000
+140      0.877193
+150    100.000000
+155    100.000000
+Name: casualty_rate, dtype: float64, 204    100.000000
+237    100.000000
+260    100.000000
+265     70.833333
+279    100.000000
+285    100.000000
+288     54.545455
+298    100.000000
+303     67.741935
+Name: casualty_rate, dtype: float64, 326    100.000000
+361    100.000000
+373     88.000000
+380     61.538462
+410    100.000000
+417    100.000000
+423    100.000000
+428     14.285714
+431      3.125000
+441    100.000000
+Name: casualty_rate, dtype: float64, 454    100.000000
+457    100.000000
+463    100.000000
+464    100.000000
+465    100.000000
+467     74.482759
+468    100.000000
+470      3.278689
+472    100.000000
+Name: casualty_rate, dtype: float64, 478     96.039604
+484      2.631579
+489     78.333333
+490    100.000000
+493     94.117647
+494      8.333333
+495     37.579618
+496    100.000000
+497     36.842105
+Name: casualty_rate, dtype: float64, 500    100.0000
+501    100.0000
+503     31.2500
+506    100.0000
+509      1.5625
+510    100.0000
+511     31.2500
+516    100.0000
+517     38.0000
+Name: casualty_rate, dtype: float64, 518    100.000000
+523      2.000000
+524    100.000000
+525    100.000000
+532    100.000000
+533    100.000000
+534    100.000000
+535      5.263158
+537    100.000000
+Name: casualty_rate, dtype: float64, 538    100.000000
+541     78.571429
+543    100.000000
+545     28.571429
+552     97.500000
+556    100.000000
+557    100.000000
+559      9.090909
+560      4.210526
+562    100.000000
+564    100.000000
+Name: casualty_rate, dtype: float64, 569    100.000000
+570    100.000000
+571     85.714286
+572    100.000000
+573      1.000000
+575      5.172414
+577      1.869159
+578      1.190476
+579    100.000000
+580     67.857143
+582    100.000000
+583    100.000000
+584    100.000000
+Name: casualty_rate, dtype: float64, 590     21.428571
+593    100.000000
+597     33.333333
+602    100.000000
+603     68.750000
+611    100.000000
+612    100.000000
+614    100.000000
+Name: casualty_rate, dtype: float64, 616    100.000000
+617      3.773585
+620    100.000000
+621    100.000000
+623    100.000000
+625    100.000000
+627      0.687285
+Name: casualty_rate, dtype: float64, 628      0.694444
+629    100.000000
+630    100.000000
+631    100.000000
+636    100.000000
+639      8.823529
+640    100.000000
+641     59.281437
+Name: casualty_rate, dtype: float64, 642      9.375000
+643    100.000000
+646     46.938776
+648    100.000000
+649      3.333333
+650    100.000000
+653    100.000000
+Name: casualty_rate, dtype: float64, 655      2.439024
+656    100.000000
+657     46.000000
+660    100.000000
+661     50.000000
+662    100.000000
+663    100.000000
+665    100.000000
+667     46.666667
+668     64.285714
+670     73.611111
+671     16.666667
+Name: casualty_rate, dtype: float64, 672      7.547170
+674    100.000000
+675      7.142857
+676     78.571429
+677     81.818182
+678     42.307692
+681     97.206704
+682    100.000000
+683      1.242236
+684    100.000000
+685    100.000000
+687     99.099099
+Name: casualty_rate, dtype: float64, 688     92.682927
+689    100.000000
+691     98.076923
+694    100.000000
+695     82.208589
+697    100.000000
+698    100.000000
+699    100.000000
+Name: casualty_rate, dtype: float64, 704    100.000000
+708     88.461538
+709      1.694915
+714     77.272727
+715     24.074074
+716      6.666667
+718     78.571429
+Name: casualty_rate, dtype: float64, 722     23.333333
+723     96.363636
+724    100.000000
+726    100.000000
+734     85.714286
+737    100.000000
+Name: casualty_rate, dtype: float64, 739     90.909091
+740     87.096774
+741    100.000000
+742     39.215686
+744    100.000000
+745    100.000000
+746      1.052632
+747    100.000000
+750    100.000000
+752      2.205882
+753    100.000000
+756    100.000000
+759     12.962963
+760    100.000000
+763     33.653846
+765     91.666667
+768    100.000000
+Name: casualty_rate, dtype: float64, 771      2.535211
+772     34.782609
+773     31.578947
+776     27.272727
+777     15.384615
+779    100.000000
+782    100.000000
+785    100.000000
+791    100.000000
+792    100.000000
+794     80.000000
+795      8.333333
+Name: casualty_rate, dtype: float64, 798     38.028169
+801     29.166667
+803    100.000000
+804    100.000000
+808    100.000000
+Name: casualty_rate, dtype: float64, 809    100.000000
+811    100.000000
+814     45.454545
+817    100.000000
+818     86.666667
+819      7.692308
+823     70.000000
+824    100.000000
+825    100.000000
+826    100.000000
+827     90.909091
+828    100.000000
+829     87.500000
+Name: casualty_rate, dtype: float64, 0       84.920635
+1      100.000000
+3       38.095238
+4        2.325581
+8      100.000000
+832     73.333333
+833     72.727273
+836     83.333333
+Name: casualty_rate, dtype: float64, 18      5.882353
+20    100.000000
+21     95.348837
+26    100.000000
+Name: casualty_rate, dtype: float64, 30    100.000000
+37    100.000000
+41     86.021505
+46    100.000000
+47     40.000000
+49     36.842105
+52     19.354839
+55    100.000000
+Name: casualty_rate, dtype: float64, 58    100.000000
+60     15.789474
+66     19.047619
+67     92.857143
+68     90.566038
+71      6.521739
+72     64.150943
+75     53.846154
+76     81.818182
+77      7.971014
+78     93.421053
+79     16.666667
+Name: casualty_rate, dtype: float64, 88     16.666667
+90    100.000000
+98     93.333333
+Name: casualty_rate, dtype: float64, 102     31.250000
+103      1.923077
+105    100.000000
+109    100.000000
+116     23.529412
+117     98.837209
+Name: casualty_rate, dtype: float64, 118     35.555556
+119    100.000000
+120    100.000000
+121     38.181818
+123    100.000000
+127     36.363636
+128    100.000000
+129      3.703704
+130     61.111111
+Name: casualty_rate, dtype: float64, 138     41.666667
+139    100.000000
+142    100.000000
+145      7.586207
+147    100.000000
+Name: casualty_rate, dtype: float64, 154    100.0
+156    100.0
+158    100.0
+Name: casualty_rate, dtype: float64, 168    100.000000
+170    100.000000
+172      8.333333
+176     36.363636
+177      8.510638
+178    100.000000
+179    100.000000
+Name: casualty_rate, dtype: float64, 188    100.0
+193    100.0
+194    100.0
+Name: casualty_rate, dtype: float64, 199    44.000000
+201    25.000000
+214    86.503067
+Name: casualty_rate, dtype: float64, 215    100.000000
+217     93.478261
+222     63.333333
+Name: casualty_rate, dtype: float64, 233     15.384615
+238    100.000000
+243     98.181818
+Name: casualty_rate, dtype: float64, 247     35.714286
+251    100.000000
+256    100.000000
+257     18.918919
+258     91.428571
+259    100.000000
+Name: casualty_rate, dtype: float64, 262    97.142857
+266    10.526316
+269    65.000000
+272    93.333333
+Name: casualty_rate, dtype: float64, 277    100.0
+Name: casualty_rate, dtype: float64, 289    100.000000
+291      8.333333
+295      1.388889
+299    100.000000
+Name: casualty_rate, dtype: float64, 301    100.000000
+305     95.238095
+Name: casualty_rate, dtype: float64, 313    100.000000
+315     80.000000
+322     66.666667
+Name: casualty_rate, dtype: float64, 325    71.428571
+328    22.727273
+329     1.980198
+335     1.408451
+Name: casualty_rate, dtype: float64, 336    100.0
+348     12.5
+349    100.0
+354    100.0
+Name: casualty_rate, dtype: float64, 359    100.000000
+364     82.758621
+Name: casualty_rate, dtype: float64, 378    21.052632
+379    15.789474
+Name: casualty_rate, dtype: float64, 386    100.000000
+388    100.000000
+389    100.000000
+395      9.090909
+Name: casualty_rate, dtype: float64, 406    7.142857
+Name: casualty_rate, dtype: float64, 413    100.00000
+414      2.12766
+Name: casualty_rate, dtype: float64, 418     9.090909
+424    95.454545
+425    12.244898
+Name: casualty_rate, dtype: float64, 444    25.000000
+446    72.727273
+Name: casualty_rate, dtype: float64, 451    100.000000
+455    100.000000
+461     44.186047
+Name: casualty_rate, dtype: float64]
+
+
+
+phase
+Approach (APR)         3564
+En route (ENR)         4587
+Initial climb (ICL)     640
+Landing (LDG)           629
+Maneuvering (MNV)        12
+Takeoff (TOF)           635
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                                 778
+Air Mali                                  47
+Air New Zealand                          257
+Air Rhodesia                              97
+Alaska Airlines                          111
+Cruzeiro do Sul                           32
+EgyptAir                                  37
+Hughes Airwest                            49
+Iberia                                   104
+Inex-Adria Aviopromet                    113
+Invicta International Airways            108
+Jugoslovenski Aerotransport - JAT         41
+Linea Aeropostal Venezolana - LAV         82
+Lineas Aéreas del Estado - LADE           52
+Lufthansa                                 59
+Malaysia Airlines                        100
+Middle East Airlines - MEA                81
+Pacific Western Airlines                  42
+Pakistan International Airlines - PIA    156
+Pan Am                                    97
+Panarctic Oils                            32
+Philippine Air Lines                      36
+Southwest Air                            135
+Yacimientos Petroliferos Fiscales         34
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                                        701
+Aerolineas Condor                                44
+Air Mali                                         51
+Bakhtar Afghan Airlines                         105
+Burma Airways                                    45
+CAAC                                             38
+Delta Air Lines                                 134
+Ethiopian Airlines                               35
+Gulf Air                                        112
+Iran Air                                        290
+Nigeria Airways                                  53
+Olympic Aviation                                 34
+Pakistan International Airlines - PIA            54
+República de Moçambique                          34
+Saudi Arabian Airlines                          301
+Shanxi Airlines                                  44
+Somali Airlines                                  50
+Southwest Air                                    43
+TABA - Transportes Aéreos da Bacia Amazônica     44
+Thai Airways                                     83
+Widerøes Flyveselskap                            36
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                              84
+Air Mauritanie                        80
+Ariana Afghan Airlines                45
+Cameroon Airlines                     71
+China General Aviation Corp.         107
+Força Aérea Popular de Angola         48
+Malaysia Airlines                     34
+Paukn Air                             38
+Scibe Airlift Cargo Zaire             37
+Southwest Air                         61
+Stavropolskaya Aktsionernaya Avia     50
+Tajikistan Airlines                  167
+Tatarstan Airlines                    41
+Yugavia                               51
+Name: fatalities, dtype: int64
+
+
+
+operator
+ADC Airlines                                 96
+Aeriantur-M Airlines                         34
+Armavia                                     113
+Gulf Air                                    143
+Kish Air                                     43
+Pakistan International Airlines - PIA        45
+Sosoliso Airlines                           108
+Union des Transports Africains de Guinée    141
+United Airlines                              44
+Uzbekistan Airways                           37
+Wuhan Airlines                               42
+Name: fatalities, dtype: int64
+
+
+
+operator
+Linhas Aéreas de Moçambique - LAM    33
+Pamir Airways                        44
+TransAsia Airways                    48
+flydubai                             62
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroservice                 4
+China Eastern Airlines    132
+DOSAAF                     16
+Precision Air              19
+Tara Air                   22
+Name: fatalities, dtype: int64
+
+
+
+operator
+Aeroflot                                    484
+Air New Zealand                             257
+Alaska Airlines                             111
+Armavia                                     113
+China Eastern Airlines                      132
+China General Aviation Corp.                107
+Delta Air Lines                             134
+Gulf Air                                    255
+Iberia                                      104
+Inex-Adria Aviopromet                       113
+Invicta International Airways               108
+Iran Air                                    290
+Pakistan International Airlines - PIA       156
+Saudi Arabian Airlines                      301
+Sosoliso Airlines                           108
+Southwest Air                               135
+Union des Transports Africains de Guinée    141
+Name: fatalities, dtype: int64
+
+
+
+type
+Antonov AN-10               65
+Antonov AN-24              182
+Avia 14                     39
+Avro 748                    34
+Boeing 707                 253
+Boeing 720                  81
+Boeing 727                 246
+Boeing 737                 142
+Boeing 747                  59
+Douglas DC-3                66
+Fokker F-27                 52
+Hawker Siddeley HS-748      36
+Ilyushin IL-18             332
+Lockheed L-188              32
+McDonnell Douglas DC-10    257
+McDonnell Douglas DC-9     162
+Sud Aviation SE-210        145
+Tupolev TU-104              81
+Tupolev TU-124              37
+Tupolev TU-134              94
+Vickers 748                 59
+Vickers 749                 48
+Vickers 782                 38
+Vickers Vanguard           108
+Yakovlev YAK-40             32
+Name: fatalities, dtype: int64
+
+
+
+type
+Airbus A300                  290
+Antonov AN-24                159
+Antonov AN-26                105
+Boeing 737                   230
+British Aerospace BAE-146     43
+Fairchild FH-227              44
+Fokker F-27                  149
+Fokker F-28                   53
+Ilyushin IL-14                92
+Lockheed L-1011              435
+Shorts 330                    34
+Tupolev TU-134                34
+Tupolev TU-154               583
+de Havilland Canada DHC-4     44
+de Havilland Canada DHC-7     36
+Name: fatalities, dtype: int64
+
+
+
+type
+Antonov AN-24                 91
+Boeing 727                    45
+Boeing 737                    71
+British Aerospace BAE-146     38
+CASA C-212                    48
+Fokker 50                     34
+Fokker F-27                   37
+Fokker F-28                   80
+Tupolev TU-134                84
+Tupolev TU-154               146
+Yakovlev YAK-40              133
+Yakovlev YAK-42              107
+Name: fatalities, dtype: int64
+
+
+
+operator
+ADC Airlines                                 96
+Aeriantur-M Airlines                         34
+Armavia                                     113
+Gulf Air                                    143
+Kish Air                                     43
+Pakistan International Airlines - PIA        45
+Sosoliso Airlines                           108
+Union des Transports Africains de Guinée    141
+United Airlines                              44
+Uzbekistan Airways                           37
+Wuhan Airlines                               42
+Name: fatalities, dtype: int64
+
+
+
+type
+ATR 72             48
+Antonov AN-24      44
+Boeing 737         62
+Embraer ERJ 190    33
+Name: fatalities, dtype: int64
+
+
+
+type
+ATR 42                        19
+Boeing 737                   132
+Let L-410                     20
+de Havilland Canada DHC-6     22
+Name: fatalities, dtype: int64
+
+
+
+type
+Airbus A300                290
+Airbus A320                256
+Boeing 707                 156
+Boeing 727                 387
+Boeing 737                 244
+Lockheed L-1011            435
+McDonnell Douglas DC-10    257
+McDonnell Douglas DC-9     221
+Sud Aviation SE-210        104
+Tupolev TU-154             484
+Vickers Vanguard           108
+Yakovlev YAK-42            107
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger      323
+Domestic Scheduled Passenger         1659
+Int'l Non Scheduled Passenger         268
+International Scheduled Passenger     430
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger      127
+Domestic Scheduled Passenger         1768
+International Scheduled Passenger     402
+Official state flight                  34
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger     216
+Domestic Scheduled Passenger         492
+Int'l Non Scheduled Passenger        135
+International Scheduled Passenger     71
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Scheduled Passenger         372
+Int'l Non Scheduled Passenger         34
+International Scheduled Passenger    440
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Scheduled Passenger         92
+International Scheduled Passenger    95
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Scheduled Passenger    177
+Parachuting                      16
+Name: fatalities, dtype: int64
+
+
+
+nature
+Domestic Non Scheduled Passenger      257
+Domestic Scheduled Passenger         1616
+Int'l Non Scheduled Passenger         221
+International Scheduled Passenger     955
+Name: fatalities, dtype: int64
+
+
+
+departure
+Auckland International Airport       354
+Bamako Airport                        47
+Beirut International Airport          81
+Bristol Airport                      108
+Cairo International Airport           37
+Calgary International Airport         42
+Canaima Airport                       34
+Cauayan Airport                       36
+Chokurdah Airport                     34
+Cumaná Airport                        48
+Donetsk Airport                       52
+Dushanbe Airport                      79
+Edmonton International Airport        32
+El Palomar Airport                    52
+Irkutsk Airport                       81
+Jeddah International Airport         156
+Kariba Airport                        97
+Kazan Airport                         39
+Kuybyshev Airport                     65
+Los Angeles International Airport    184
+Nairobi International Airport         59
+Nukus Airport                         77
+Penang International Airport         100
+Rincón de Los Sauces Airport          34
+Rostov Airport                        37
+Semipalatinsk Airport                 32
+Sena Madureira Airport                32
+Skopje Airport                        41
+Split Airport                        113
+Tashkent Airport                      92
+Ufa Airport                           57
+Valencia Airport                     104
+Vitim                                 39
+Voronezh Airport                      94
+Yakutat Airport                      111
+Name: fatalities, dtype: int64
+
+
+
+departure
+Bahar Dar Airport                         35
+Bandar Abbas Airport                     290
+Cheboksary Airport                        38
+Eirunepé Airport                          44
+Fort Lauderdale International Airport    134
+Gilgit Airport                            54
+Hat Yai Airport                           83
+Heho Airport                              45
+Kandahar Airport                         105
+Karachi International Airport            112
+Karshi Airport                           200
+Krasnodar Airport                        174
+Krasnoyarsk Airport                      209
+Lagos/Ikeja International Airport         53
+Linfen Air Base                           44
+Los Angeles International Airport         43
+Mbala Airport                             34
+Mogadishu International Airport           50
+Namsos Airport                            36
+Nanjing Dajiaochang Airport               38
+Perm Airport                              32
+Riyadh International Airport             301
+Severomuysk                               48
+Thessaloniki International Airport        34
+Tombouctou Airport                        51
+Zumba Airport                             44
+Name: fatalities, dtype: int64
+
+
+
+departure
+Chengdu Airport                 61
+Cotonou Airport                 71
+Donetsk Airport                 84
+Dushanbe Airport                85
+Elista Airport                  51
+Kandahar Airport                45
+Khorog Airport                  82
+Kindu Airport                   37
+Kota Kinabalu Airport           34
+Málaga Airport                  38
+Nanjing Dajiaochang Airport    107
+Nizhnevartovsk Airport          41
+Nouakchott Airport              80
+Ondjiva Airport                 48
+Stavropol Airport               50
+Name: fatalities, dtype: int64
+
+
+
+departure
+Abuja International Airport     204
+Adana Airport                    34
+Cairo International Airport     143
+Cotonou Airport                 141
+Enshi Airport                    42
+Kish Island Airport              43
+Multan Airport                   45
+Newark International Airport     44
+Termez Airport                   37
+Yerevan Airport                 113
+Name: fatalities, dtype: int64
+
+
+
+departure
+Dubai Airport                      62
+Kaohsiung International Airport    48
+Kunduz Airport                     44
+Maputo International Airport       33
+Name: fatalities, dtype: int64
+
+
+
+departure
+Dar es Salaam International Airport         19
+Irkutsk Airport                              4
+Kunming Changshui International Airport    132
+Menzelinsk Airport                          16
+Pokhara Airport                             22
+Name: fatalities, dtype: int64
+
+
+
+departure
+Abuja International Airport                108
+Auckland International Airport             257
+Bandar Abbas Airport                       290
+Bristol Airport                            108
+Cairo International Airport                143
+Cotonou Airport                            141
+Fort Lauderdale International Airport      134
+Jeddah International Airport               156
+Karachi International Airport              112
+Karshi Airport                             200
+Krasnodar Airport                          174
+Krasnoyarsk Airport                        110
+Kunming Changshui International Airport    132
+Los Angeles International Airport          135
+Nanjing Dajiaochang Airport                107
+Riyadh International Airport               301
+Split Airport                              113
+Valencia Airport                           104
+Yakutat Airport                            111
+Yerevan Airport                            113
+Name: fatalities, dtype: int64
+
+
+
+destination
+Adler/Sochi Airport                               52
+Basel/Mulhouse Airport                           108
+Batagay Airport                                   34
+Chita Airport                                     81
+Christchurch International Airport               257
+Ciudad Bolívar Airport                            34
+Cranbrook Airport                                 42
+Cutral Airport                                    34
+Dubai Airport                                     81
+Ibiza Airport                                    104
+Irkutsk Airport                                   39
+Johannesburg International Airport                59
+Juneau International Airport                     111
+Karachi International Airport                    156
+Karaganda Airport                                 32
+Kishinev Airport                                  94
+Kuala Lumpur Subang International Airport        100
+Köln/Bonn Airport                                113
+Leninabad Airport                                 79
+Manila Airport                                    36
+Mineralnye Vody Airport                           77
+Niamey Airport                                    47
+Nicosia Airport                                   37
+Pago Pago International Airport                   97
+Perm Airport                                      39
+Porlamar Airport                                  48
+Rea Point Airfield                                32
+Rio Branco Airport                                32
+Salisbury Airport                                 97
+Salt Lake City International Airport              49
+Samarkand Airport                                 92
+San Carlos de Bariloche International Airport     52
+San Diego International Airport                  135
+Saratov Airport                                   57
+Titograd Airport                                  41
+Vilnius Airport                                   37
+Voroshilovgrad Airport                            65
+Name: fatalities, dtype: int64
+
+
+
+destination
+Abu Dhabi International Airport            112
+Asmara International Airport                35
+Brønnøysund Airport                         36
+Bugulma Airport                             38
+Dallas/Fort Worth International Airport    134
+Dubai Airport                              290
+Enugu Airport                               53
+Farah Airport                               52
+Hargeisa Airport                            50
+Irkutsk Airport                            110
+Islamabad International Airport             54
+Jeddah International Airport               301
+Jinan Airport                               38
+Kabul Airport                               53
+Linfen Air Base                             44
+Loja Airport                                44
+Maputo International Airport                34
+Mong Hsat Airport                           45
+Mopti Airport                               51
+Nizhneangarsk Airport                       48
+Noril'sk Airport                            99
+Omsk Airport                               174
+Phuket International Airport                83
+Samos Airport                               34
+San Francisco International Airport         43
+Sovetsky Airport                            32
+Tabatinga Internacional Airport             44
+Ufa Airport                                200
+Name: fatalities, dtype: int64
+
+
+
+destination
+Bugulma Airport               41
+Catumbela Airport             48
+Douala Airport                71
+Dushanbe Airport              82
+Goma Airport                  37
+Ivanovo Airport               84
+Kabul Airport                 45
+Makhachkala Airport           51
+Melilla Airport               38
+Sharjah Airport               85
+Tawau Airport                 34
+Tidjikja Airport              80
+Trabzon Airport               50
+Wenzhou Yongqiang Airport     61
+Xiamen Airport               107
+Name: fatalities, dtype: int64
+
+
+
+destination
+Adler/Sochi Airport                    113
+Bahrain International Airport          143
+Balad Air Base                          34
+Kufrah Airport                         141
+Lahore Airport                          45
+Port Harcourt Airport                  108
+San Francisco International Airport     44
+Sharjah Airport                         43
+Sokoto Airport                          96
+Tashkent Airport                        37
+Wuhan Tianhe International Airport      42
+Name: fatalities, dtype: int64
+
+
+
+destination
+Kabul Airport     44
+Luanda Airport    33
+Magong Airport    48
+Rostov Airport    62
+Name: fatalities, dtype: int64
+
+
+
+destination
+Bukoba Airport                             19
+Guangzhou Baiyun International Airport    132
+Jomsom Airport                             22
+Kazachinskoye Airport                       4
+Menzelinsk Airport                         16
+Name: fatalities, dtype: int64
+
+
+
+destination
+Abu Dhabi International Airport            112
+Adler/Sochi Airport                        113
+Bahrain International Airport              143
+Basel/Mulhouse Airport                     108
+Christchurch International Airport         257
+Dallas/Fort Worth International Airport    134
+Dubai Airport                              290
+Guangzhou Baiyun International Airport     132
+Ibiza Airport                              104
+Irkutsk Airport                            110
+Jeddah International Airport               301
+Juneau International Airport               111
+Karachi International Airport              156
+Kufrah Airport                             141
+Köln/Bonn Airport                          113
+Omsk Airport                               174
+Port Harcourt Airport                      108
+San Diego International Airport            135
+Ufa Airport                                200
+Xiamen Airport                             107
+Name: fatalities, dtype: int64
+
+
+
+country
+American Samoa     97
+Antarctica        257
+Argentina          86
+Brazil             32
+Burkina Faso       47
+Canada             74
+Croatia           113
+Cyprus             37
+Kazakhstan         32
+Kenya              59
+Malaysia          100
+Montenegro         41
+Philippines        36
+Russia            379
+Saudi Arabia      237
+Spain             104
+Switzerland       108
+Tajikistan         79
+Ukraine           196
+United States     295
+Uzbekistan         92
+Venezuela          82
+Zimbabwe           97
+Name: fatalities, dtype: int64
+
+
+
+country
+Afghanistan             105
+Brazil                   44
+China                    82
+Ecuador                  44
+Ethiopia                 35
+Greece                   34
+Iran                    290
+Mali                     51
+Myanmar                  45
+Nigeria                  53
+Norway                   36
+Pakistan                 54
+Russia                  501
+Saudi Arabia            301
+Somalia                  50
+South Africa             34
+Thailand                 83
+United Arab Emirates    112
+United States           177
+Uzbekistan              200
+Name: fatalities, dtype: int64
+
+
+
+country
+Afghanistan                          45
+Angola                               48
+Cameroon                             71
+China                               168
+Democratic Republic of the Congo     37
+Malaysia                             34
+Mauritania                           80
+Morocco                              38
+Russia                              226
+Tajikistan                           82
+United Arab Emirates                 85
+Name: fatalities, dtype: int64
+
+
+
+country
+Bahrain                 143
+Benin                   141
+China                    42
+Iraq                     34
+Nigeria                 204
+Pakistan                 45
+Russia                  113
+United Arab Emirates     43
+United States            44
+Uzbekistan               37
+Name: fatalities, dtype: int64
+
+
+
+country
+Afghanistan    44
+Namibia        33
+Russia         62
+Taiwan         48
+Name: fatalities, dtype: int64
+
+
+
+country
+China       132
+Nepal        22
+Russia       20
+Tanzania     19
+Name: fatalities, dtype: int64
+
+
+
+country
+Antarctica              257
+Bahrain                 143
+Benin                   141
+China                   239
+Croatia                 113
+Iran                    290
+Nigeria                 108
+Russia                  397
+Saudi Arabia            457
+Spain                   104
+Switzerland             108
+United Arab Emirates    112
+United States           380
+Uzbekistan              200
+Name: fatalities, dtype: int64
+
