@@ -43,17 +43,20 @@ This downward trend also manifested itself in a lower average casualty rate per 
 
 <img width="741" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/8df7472d-6f0c-4cd7-9632-ea08fb3c48b9">
 
+Overall and most recently, accidents occur when the aircraft is en route or approaching its destination.
+
+<img width="623" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c304e4ad-a0b3-4dad-b50d-1521ff48f053">
+
+In the last fifty years, Aeroflot has been the airline with the highest fatalities although these primarily occurred in the 1970s and 1980s during the Soviet Union era.  
+
+<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/61ab3880-a4fb-448b-80f6-fc201ac90587">
+
+In the last two years, China Eastern Airlines has had a troubling number of fatalities in an era of safer aircraft and practices.
+
+<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/40821864-b1c8-4af3-ba87-73dc3aed0e54">
 
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/08c897da-ec90-4fb8-8113-1b634a1156f9"><img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/eacad6d0-3f4f-48fb-9adb-4548efc12072">
 
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/fe7c1ea0-ad64-4a09-946d-3f875f7eeb05">
-
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/80ce7a58-549e-4c3f-bf0b-0e57783a7342">
-
-<img width="548" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/af2324ae-bb87-47ad-ab12-db951ee8805a">
-
-<img width="549" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/570722e3-7b13-4998-b1b8-b6e9f35dbe56">
 
 Although we could not accurately predict the locations of plane crashes only the likelihood based on past events, we did observe some trends.  During the last ten years, China Eastern Airlines has experienced the largest fatalities. Although the reasons for and concentrations of aviation accidents varied from decade to decade, currently, possible outside factors include terrorism, poor maintenance, and employee malfeasance, misfeasance, or nonfeasance. But, one thing for certain, the next flight on China Eastern Airlines' domestic passenger flight from Kunming Changshui International Airport to Guangzhou Baiyun International Airport on a Boeing 737 should likely be avoided!
 
