@@ -47,13 +47,9 @@ Overall and most recently, accidents occur when the aircraft is en route or appr
 
 <img width="623" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/c304e4ad-a0b3-4dad-b50d-1521ff48f053">
 
-In the last fifty years, Aeroflot has been the airline with the highest fatalities although these accidents primarily occurred in the 1970s and 1980s during the Soviet era.  
+In the last fifty years, Aeroflot has been the airline with the highest fatalities although these accidents primarily occurred in the 1970s and 1980s during the Soviet era. In the last two years, China Eastern Airlines has had a troubling number of fatalities in a time of safer aircraft and practices.
 
-<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/61ab3880-a4fb-448b-80f6-fc201ac90587">
-
-In the last two years, China Eastern Airlines has had a troubling number of fatalities in a time of safer aircraft and practices.
-
-<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/40821864-b1c8-4af3-ba87-73dc3aed0e54">
+<img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/61ab3880-a4fb-448b-80f6-fc201ac90587"><img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/40821864-b1c8-4af3-ba87-73dc3aed0e54">
 
 The aircraft most prone to fatalities from aviation accidents during the last fifty years is the Tupolev TU-154, a Soviet era aircraft, followed by the Lockheed L-1011 and Boeing 727.  In the last twenty years or so the Boeing 737 has been the leader in this infamous category.
 
