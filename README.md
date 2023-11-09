@@ -2,7 +2,7 @@
 
 # Aviation Accidents Visualization Project
 ----
-Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages: unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges, especially concerning the issue of safety. In this project, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators in a comprehensive analysis of aviation accident data collected over 50 years (1970-2022). 
+Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages: unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges, especially concerning the issue of safety. In this project, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators in a comprehensive analysis of over 50 years of aviation accident data (1970-2022). 
 
 Questions we considered:
 * Where are aviation accidents likely to occur?
