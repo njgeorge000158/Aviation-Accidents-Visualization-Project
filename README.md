@@ -51,7 +51,7 @@ In the last fifty years, Aeroflot has been the airline with the highest fataliti
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/61ab3880-a4fb-448b-80f6-fc201ac90587">
 
-In the last two years, China Eastern Airlines has had a troubling number of fatalities in an era of safer aircraft and practices.
+In the last two years, China Eastern Airlines has had a troubling number of fatalities in a time of safer aircraft and practices.
 
 <img width="404" alt="image" src="https://github.com/njgeorge000158/Aviation-Accidents-Visualization-Project/assets/137228821/40821864-b1c8-4af3-ba87-73dc3aed0e54">
 
