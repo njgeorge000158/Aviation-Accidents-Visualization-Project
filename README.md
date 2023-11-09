@@ -2,14 +2,14 @@
 
 # Aviation Accidents Visualization Project
 ----
-Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages. These include unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges and predicaments, especially concerning the issue of safety. In this project, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators. This project involves a comprehensive analysis of aviation accident data collected over 50 years from 1970 to 2022. We employed D3, JSON, JS, Plotly, and Bootstrap. We aimed to create an informative representation of historical aviation accident data which could allow stakeholders to uncover patterns, trends, and insight.
+Air travel stands as an undeniable revolution in the transportation sector, delivering a multitude of invaluable advantages. These include unprecedented speed, unparalleled global connectivity, and a continuous drive for innovation. Nevertheless, the aviation industry encounters its fair share of challenges and predicaments, especially concerning the issue of safety. In this project, we delve into the intricate tapestry of aviation safety, exploring how it varies among different countries, aircraft types, and operators. This project involves a comprehensive analysis of aviation accident data collected over 50 years from 1970 to 2022. To accomplish our goal, we employed D3, JSON, JS, Plotly, and Bootstrap and aimed to create an informative representation of historical aviation accident data which could allow stakeholders to uncover patterns, trends, and insight.
 
 Questions to be considered:
-Can we accurately predict where plane crashes are likely to occur?
-Are there certain airlines that have more crashes than others?
-Are there possible outside factors affecting these trends?
+* Can we accurately predict where plane crashes are likely to occur?
+* Are there certain airlines that have more crashes than others?
+* Are there possible outside factors affecting these trends?
 
-To find the answer to our many questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. Once the data was available, we created a dashboard and interactive toolkits.
+To find the answers to our many questions, we obtained the requisite information by means of a customized Extract-Transform-Load process. Once the data was available, we created a dashboard and interactive toolkits.
 
 ## Aviation Accidents Visualization Toolkit:
 
