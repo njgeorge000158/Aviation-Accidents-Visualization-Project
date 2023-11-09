@@ -142,6 +142,52 @@ Project3GroupCreateTableSchemata.sql, Project3GroupFutureCreateTableSchemata.sql
 
 |&rarr; [./Images/](./Images/)
 
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDepartureAirport20202022.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDepartureAirport20202022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDepartureAirport19702022100Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDepartureAirport19702022100Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport1970s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport1970s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport1980s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport1980s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport1990s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport1990s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport2000s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport2000s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport2010s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport2010s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport20202022.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport20202022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport19702022100Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperDestinationAirport19702022100Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperFlightPhase1970202210Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperFlightPhase1970202210Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight1970s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight1970s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight1980s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight1980s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight1990s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight1990s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight2000s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight2000s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight2010s30Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight2010s30Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight20202022.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight20202022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight19702022100Fatalities.png](./Images/PyAviationAccidentsAnalysisFatalitiesperNatureofFlight19702022100Fatalities.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFlightCasualtyRateDistributionperYear19702022.png](./Images/PyAviationAccidentsAnalysisFlightCasualtyRateDistributionperYear19702022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisFlightCasualtyRateMeanperYear19702022.png](./Images/PyAviationAccidentsAnalysisFlightCasualtyRateMeanperYear19702022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisTable121AviationAccidents19702022.png](./Images/PyAviationAccidentsAnalysisTable121AviationAccidents19702022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisTable122DepartureAirports19702022.png](./Images/PyAviationAccidentsAnalysisTable122DepartureAirports19702022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisTable123DestinationAirports19702022.png](./Images/PyAviationAccidentsAnalysisTable123DestinationAirports19702022.png)
+
+  &emsp; |&rarr; [./Images/PyAviationAccidentsAnalysisTotalAviationFatalitiesvsYear19702022.png](./Images/PyAviationAccidentsAnalysisTotalAviationFatalitiesvsYear19702022.png)
+
   &emsp; |&rarr; [./Images/PyAviationAccidentsExtractTable131AviationAccidentScrapedData19722022First.png](./Images/PyAviationAccidentsExtractTable131AviationAccidentScrapedData19722022First.png)
   
   &emsp; |&rarr; [./Images/PyAviationAccidentsExtractTable132AviationAccidentScrapedData19722022Last.png](./Images/PyAviationAccidentsExtractTable132AviationAccidentScrapedData19722022Last.png)
