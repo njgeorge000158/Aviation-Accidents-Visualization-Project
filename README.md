@@ -87,12 +87,6 @@ Ultimately, we could not accurately predict the locations of aircraft accidents 
 
 ----
 
-## **Authors and Acknowledgment:**
-
-Arame Diasse, Jackie Ochuida, Nicholas George, Rajib Maji, Stephen Grantham, Theresa Bravo, Vishnu Pillai
-
-----
-
 ## Copyright
 
 N. James George © 2023. All Rights Reserved.
