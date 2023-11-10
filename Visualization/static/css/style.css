@@ -9,55 +9,62 @@
  #
  #  Date            Description                             Programmer
  #  ----------      ------------------------------------    ------------------
- #  10/18/2023      Initial Development                     Rajib Maji
- #  10/24/2023      Integerated code with new data set      N. James George
+ #  10/18/2023      Initial Development                     N. James George
  #
  #******************************************************************************************/
 
 #mapid,
 body,
-html {
+html 
+{
   height: 95%;
 }
 
-body {
-  padding: 0;
+body 
+{
   margin: 0;
+  padding: 0;
 }
 
-h3 {
+h3 
+{
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 2px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+p 
+{
+  font-family: Arial, Helvetica, sans-serif;
   margin: -5px;
   padding: -6px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-label {
+label 
+{
+  font-family: Arial, Helvetica, sans-serif;
   margin: 5px;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.info {
+.info 
+{
+  border-radius: 5px;
   padding: 1px 10px;
   background: #ebfae2;
-  border-radius: 5px;
 }
 
-.legend {
-  line-height: 25px;
+.legend 
+{
   color: #000000;
+  line-height: 25px;
 }
 
-.legend i {
-  width: 20px;
-  height: 20px;
+.legend i 
+{
   float: right;
+  height: 20px;
+  width: 20px;
   margin-right: 10px;
   margin-left: 10px;
   opacity: 0.75;

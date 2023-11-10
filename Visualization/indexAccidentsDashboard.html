@@ -9,132 +9,139 @@
  #
  #  Date            Description                             Programmer
  #  ----------      ------------------------------------    ------------------
- #  10/18/2023      Initial Development                     Rajib Maji
- #  10/26/2023      Integrated code with new data set       N. James George
+ #  10/18/2023      Initial Development                     N. James George
  #
  #******************************************************************************************-->
 
 <!DOCTYPE html>
+
 <html lang = 'en'>
 
-<head>
 
-  <script src = 'https://d3js.org/d3.v7.min.js'></script>
+  <head>
+
+    <meta charset = 'UTF-8'>
+
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+
+    <meta http-equiv = 'X-UA-Compatible' content = 'ie = edge'>
   
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  <meta charset = 'UTF-8'>
-
-  <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
-
-  <meta http-equiv = 'X-UA-Compatible' content = 'ie=edge'>
+    <title>Accidents Dashboard</title>
   
-  <title>Accidents Dashboard</title>
+
+    <link rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
   
-  <link rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+
+    <script src = 'https://d3js.org/d3.v7.min.js'></script>
   
-  <style>
+    <script src = 'https://cdn.plot.ly/plotly-latest.min.js'></script>
 
-    .jumbotron {background: none; font-weight: bold; color: white}
+
+    <style>
+
+      .jumbotron {background: none; font-weight: bold; color: white}
   
-    .card-header {background-color: darkblue; font-weight: bold;}
+      .card-header {background-color: darkblue; font-weight: bold;}
 
-    .card-body {background-color: #E1F3FB; font-weight: bold;}
+      .card-body {background-color: #E1F3FB; font-weight: bold;}
 
-  </style>
+    </style>
 
-</head>
+  </head>
 
-<body>
 
-  <div class = 'container-md'>
+  <body>
 
-    <div class = 'row' style = "background:transparent url('./img/aviationAccidentsDashboard.jpg') no-repeat center center /cover" width = '2500'>
+    <div class = 'container-md'>
+
+      <div class = 'row' style = "background:transparent url('./static/img/aviationAccidentsDashboard.jpg') no-repeat center center /cover" width = '2500'>
       
-      <div class = 'col-md-12 jumbotron text-center'>
+        <div class = 'col-md-12 jumbotron text-center'>
       
-        <h1><b>Aviation Accidents Worldwide Dashboard</b></h1>
+          <h1><b>Aviation Accidents Worldwide Dashboard</b></h1>
    
-        <select id = 'selectStartYear' onchange = 'ChangeStartYearSubroutine (this.value)'>
+          <select id = 'selectStartYear' onchange = 'ChangeStartYearSubroutine (this.value)'>
 
-          <option>Start Year</option>
+            <option>Start Year</option>
 
-        </select>
+          </select>
 
-        <select id = 'selectEndYear' onchange = 'ChangeEndYearSubroutine (this.value)'>
+          <select id = 'selectEndYear' onchange = 'ChangeEndYearSubroutine (this.value)'>
 
-          <option>End Year</option>
+            <option>End Year</option>
         
-        </select>
+          </select>
 
-        <select id = 'selectThreshold' onchange = 'ChangeThresholdSubroutine (this.value)'>
+          <select id = 'selectThreshold' onchange = 'ChangeThresholdSubroutine (this.value)'>
 
-          <option>Threshold</option>
+            <option>Threshold</option>
         
-        </select>
+          </select>
       
+        </div>
+
       </div>
 
-    </div>
 
-    <div class = 'row'>
+      <div class = 'row'>
     
-      <div class = 'col-md-2'>
+        <div class = 'col-md-2'>
     
-        <div class = 'card mb-4'>
+          <div class = 'card mb-4'>
     
-          <div class = 'card-header text-center header-font text-light display-6'>
-            Aviation Accident ID:
+            <div class = 'card-header text-center header-font text-light display-6'>
+              Aviation Accident ID:
+            </div>
+    
+            <div class = 'card-body p-2 text-center'>
+    
+              <select id = 'selectAccidentID' onchange = 'ChangeAccidentIDSubroutine (this.value)'></select>
+    
+            </div>
+    
           </div>
     
-          <div class = 'card-body p-2 text-center'>
+          <div class = 'card'>
     
-            <select id = 'selectAccidentID' onchange = 'ChangeAccidentIDSubroutine (this.value)'></select>
+            <div class = 'card-header text-center header-font text-light'>
+              Aviation Accident Details:
+            </div>
     
-          </div>
-    
-        </div>
-    
-        <div class = 'card'>
-    
-          <div class = 'card-header text-center header-font text-light'>
-            Aviation Accident Details:
-          </div>
-    
-          <div class = 'card-body p-2' id = 'metadata-accidents'></div>
+            <div class = 'card-body p-2' id = 'metadata-accidents'></div>
      
+          </div>
+    
+        </div>
+
+        <div class = 'col-md-6'>
+    
+          <div id = 'bubbleChart'></div>
+    
+        </div>
+
+        <div class = 'col-md-4'>
+    
+          <div id = 'pieChart'></div>
+    
         </div>
     
       </div>
+    
+      <div class = 'row'>
+    
+        <div class = 'col-md-12'>
+    
+          <div id = 'barChart'></div>
 
-      <div class = 'col-md-6'>
-    
-        <div id = 'bubbleChart'></div>
-    
-      </div>
-
-      <div class = 'col-md-4'>
-    
-        <div id = 'pieChart'></div>
-    
-      </div>
-    
-    </div>
-    
-    <div class = 'row'>
-    
-      <div class = 'col-md-12'>
-    
-        <div id = 'barChart'></div>
+        </div>
 
       </div>
 
     </div>
 
-  </div>
-
-  <script src = './static/js/aviationAccidentsDashboard.js'></script>
+    <script src = './static/js/aviationAccidentsDashboard.js'></script>
   
-</body>
+  </body>
 
 </html>

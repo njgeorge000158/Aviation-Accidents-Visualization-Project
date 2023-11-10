@@ -39,7 +39,7 @@
  *
  *  Date        Description                             Programmer
  *  ----------  ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -191,7 +191,7 @@ const defaultSelectedDropdownMenuOptionsDictionary
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -241,7 +241,7 @@ async function FetchJsonDataFromURLFunction
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -298,7 +298,7 @@ function ChooseColorFromFatalitiesFunction
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -328,7 +328,7 @@ function SetMarkerSizeFromFatalitiesFunction
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -368,7 +368,7 @@ function ReturnStartYearFunction()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -408,7 +408,7 @@ function ReturnEndYearFunction()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -451,7 +451,7 @@ function CreateControlMenuSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -557,7 +557,7 @@ function InsertDefaultAsFirstInDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -608,7 +608,7 @@ function AddOptionToDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -656,7 +656,7 @@ function ChangeDropdownMenuSelectedOptionSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -713,7 +713,7 @@ function PopulateYearDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -784,7 +784,7 @@ function PopulateCategoryDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -859,7 +859,7 @@ function PopulateCategoryDropdownMenusSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -934,7 +934,7 @@ function ChangeStartYearSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1008,7 +1008,7 @@ function ChangeEndYearSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1045,7 +1045,7 @@ function ChangeTypeSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1082,7 +1082,7 @@ function ChangeOperatorSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1119,7 +1119,7 @@ function ChangeDamageSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1156,7 +1156,7 @@ function ChangePhaseSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1193,7 +1193,7 @@ function ChangeNatureSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1227,7 +1227,7 @@ function ChangeCountrySubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1376,7 +1376,7 @@ function UpdateAllMapMarkersSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1422,8 +1422,8 @@ function UpdateAccidentMapMarkersSubroutine
                 L.Icon
                 (
                     {
-                        iconUrl: './img/marker-icon-2x-blue.png',
-                        shadowUrl: './img/marker-shadow.png',
+                        iconUrl: './static/img/marker-icon-2x-blue.png',
+                        shadowUrl: './static/img/marker-shadow.png',
                         iconSize: [18, 30],
                         iconAnchor: [12, 41],
                         popupAnchor: [1, -34],
@@ -1501,7 +1501,7 @@ function UpdateAccidentMapMarkersSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Theresa Bravo
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/

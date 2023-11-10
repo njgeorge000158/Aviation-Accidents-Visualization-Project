@@ -9,24 +9,26 @@
  #
  #  Date            Description                             Programmer
  #  ----------      ------------------------------------    ------------------
- #  10/18/2023      Initial Development                     Theresa Bravo
- #  10/26/2023      Integerated code with new data set      N. James George
+ #  10/18/2023      Initial Development                     N. James George
  #
  #******************************************************************************************-->
 
 <!DOCTYPE html>
+
 <html lang = 'en'>
 
-<head>
+  <head>
 
-  <meta charset = 'UTF-8'>
+    <meta charset = 'UTF-8'>
 
-  <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
 
-  <meta http-equiv = 'X-UA-Compatible' content = 'ie = edge'>
+    <meta http-equiv = 'X-UA-Compatible' content = 'ie = edge'>
 
-  <title>Accidents Heatmap</title>
+    
+    <title>Accidents Heatmap</title>
 
+    
     <!-- Leaflet JavaScript code -->
     <script src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
     integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo='
@@ -37,27 +39,26 @@
     integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY='
     crossorigin = '' />
 
+    <!-- Import CSS file -->
+    <link rel = 'stylesheet' type = 'text/css' href = './static/css/style.css'>
+
     <!-- Leaflet heatmap plugin-->
     <script type = 'text/javascript' src = './static/js/leaflet-heat.js'></script>
 
-    <script src = 'https://d3js.org/d3.v7.min.js'></script>
-
-    <!-- Import CSS file -->
-    <link rel = 'stylesheet' type = 'text/css' href = './static/css/style.css'>
-   
     <!-- D3 library -->
     <script src = 'https://d3js.org/d3.v7.min.js'></script>
 
-  <style>
+    <style>
 
-    .jumbotron {background: none;}
+      .jumbotron {background: none;}
   
-    .card-header {background-color: #2d10e6; font-weight: bold;}
+      .card-header {background-color: #2d10e6; font-weight: bold;}
   
-  </style>
+    </style>
 
-</head>
+  </head>
 
+  
   <body>
 
       <div class = 'row' style = 'background-color:transparent;padding:15px;text-align:center;'>
@@ -119,6 +120,7 @@
     </select>
   
     <div id = 'mapid'></div>
+    
   
     <script type = 'text/javascript' src = './static/js/config.js'></script>
 

@@ -41,7 +41,7 @@
  *
  *  Date        Description                             Programmer
  *  ----------  ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -172,7 +172,7 @@ let currentThresholdInteger = 1;
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -218,7 +218,7 @@ async function FetchJsonDataFromURLFunction
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -260,7 +260,7 @@ function ReturnStartYearStringFunction()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -317,7 +317,7 @@ function ReturnEndYearStringFunction()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -383,7 +383,7 @@ function ReturnSortedCategoryStringListFunction
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -442,7 +442,7 @@ function ReturnFatalitiesIntegerListFunction
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -476,7 +476,7 @@ function PopulateYearDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -519,7 +519,7 @@ function PopulateAccidentIDDropdownMenuSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -571,7 +571,7 @@ function PopulateThresholdDropdownMenuSubroutine()
  *
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -635,7 +635,7 @@ function PopulateDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -701,7 +701,7 @@ function RetrieveAccidentDataFromAPISubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -752,7 +752,7 @@ function AddOptionToDropdownMenuSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -801,7 +801,7 @@ function ChangeDropdownMenuSelectedOptionSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -876,7 +876,7 @@ function ChangeStartYearSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -950,7 +950,7 @@ function ChangeEndYearSubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -994,7 +994,7 @@ function ChangeThresholdSubroutine
  *
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1134,7 +1134,7 @@ function ChangeAccidentIDSubroutine
  *
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1215,7 +1215,7 @@ function SetCurrentCategoryDictionarySubroutine
  *
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1354,7 +1354,7 @@ function SetCurrentBubbleChartDictionarySubroutine
  *
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1421,8 +1421,7 @@ function SetCurrentPieChartDictionarySubroutine
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
- *  10/24/2023  Integrated code with new data set       N. James George
+ *  10/24/2023  Initial Development                     N. James George
  *
  ****************************************************************************/
 
@@ -1551,7 +1550,7 @@ function GenerateBarChartSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1622,7 +1621,7 @@ function GenerateBubbleChartSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1688,7 +1687,7 @@ function GeneratePieChartSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/24/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
@@ -1722,7 +1721,7 @@ function GenerateChartsSubroutine()
  * 
  *  Date        Description                             Programmer
  *  --------    ------------------------------------    ------------------
- *  10/18/2023  Initial Development                     Rajib Maji
+ *  10/18/2023  Initial Development                     N. James George
  *  10/26/2023  Integrated code with new data set       N. James George
  *
  ****************************************************************************/
