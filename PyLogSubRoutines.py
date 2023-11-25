@@ -858,3 +858,57 @@ def ConvertSVGFileToPNG \
             (f'The subroutine, ConvertSVGFileToPNG, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
              + f'could not convert an svg file to a png file for caption, {captionString}.')
 
+
+# In[17]:
+
+
+#*******************************************************************************************
+ #
+ #  Subroutine Name:  SavePlotlyImage
+ #
+ #  Subroutine Description:
+ #      This subroutine save a Plotly image to the Images folder.
+ #
+ #
+ #  Subroutine Parameters:
+ #
+ #  Type    Name            Description
+ #  -----   -------------   ----------------------------------------------
+ #  String
+ #          figureObject
+ #                          This parameter is the Plotly Figure Object.
+ #  String
+ #          figureTitleString
+ #                          This parameter is the figure title.
+ #
+ #
+ #  Date                Description                                 Programmer
+ #  ---------------     ------------------------------------        ------------------
+ #  11/22/2023          Initial Development                         N. James George
+ #
+ #******************************************************************************************/
+
+def SavePlotlyImage \
+        (figureObject,
+         figureTitleString):
+
+    try:
+        
+        if log_constant.IMAGE_FLAG == True:
+
+            imageFilePathStringVariable \
+                = log_function \
+                    .ReturnImageFilePathString \
+                        (figureTitleString,
+                         'png')
+
+            figureObject \
+                .write_image \
+                    (imageFilePathStringVariable)
+
+    except:
+        
+        print \
+            (f'The subroutine, SavePlotlyImage, in file {CONSTANT_LOCAL_FILE_NAME}, ' \
+             + f'could not save a Plotly image to a file for caption, {captionStringParameter}.')   
+
