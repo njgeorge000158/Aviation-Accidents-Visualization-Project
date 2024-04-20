@@ -4,4 +4,4 @@ This folder holds the presentation files for the Aviation Accidents Visualizatio
 
 ## Copyright
 
-N. James George © 2023. All Rights Reserved.
+Nicholas J. George © 2023. All Rights Reserved.
