@@ -4,4 +4,4 @@ This folder holds one debug file and one log file from two test runs of each IPy
 
 ## Copyright
 
-N. James George © 2023. All Rights Reserved.
+Nicholas J. George © 2023. All Rights Reserved.
